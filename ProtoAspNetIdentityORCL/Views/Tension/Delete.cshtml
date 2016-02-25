@@ -1,0 +1,39 @@
+﻿@model NSPecor.Models.MUB_TENSION
+
+@{
+    ViewBag.Title = "Borrar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Borrar</h2>
+<h3>Esta seguro que desea Eliminarlo?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DESCRIPCION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DESCRIPCION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MUB_NIVEL_TENSION.DESCRIPCION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MUB_NIVEL_TENSION.DESCRIPCION)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Borrar" class="btn btn-default" /> |
+            @Html.ActionLink("Ver Listado", "Index")
+        </div>
+    }
+</div>

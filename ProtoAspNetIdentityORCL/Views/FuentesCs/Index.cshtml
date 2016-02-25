@@ -1,0 +1,33 @@
+﻿@model IEnumerable<NSPecor.Models.MUB_FUENTES_CS>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Listado de Fuentes de Información</h2>
+<p>
+    @Html.ActionLink("Crear Nuevo", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NOM_FUENTE_CS)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NOM_FUENTE_CS)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.ID_FUENTE_CS }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.ID_FUENTE_CS }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.ID_FUENTE_CS })
+        </td>
+    </tr>
+}
+
+</table>

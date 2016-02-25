@@ -45,6 +45,9 @@
   <project key="-259011890">
     <configuration>CODE_ANALYSIS;DEBUG;TRACE</configuration>
   </project>
+  <project key="1292459229">
+    <configuration>CODE_ANALYSIS;DEBUG;TRACE</configuration>
+  </project>
   <sourcecode name="RoleNotFoundException.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/05/12 17:26:49.529</styleCop>
@@ -5948,7 +5951,7 @@
     <timestamps>
       <styleCop>2015/05/12 17:26:49.529</styleCop>
       <settingsFile>2015/05/12 17:26:49.529</settingsFile>
-      <sourceFile>2015/10/28 11:26:17.369</sourceFile>
+      <sourceFile>2016/02/25 12:19:27.343</sourceFile>
       <parser>2015/05/12 17:26:49.529</parser>
       <StyleCop.CSharp.DocumentationRules>2015/05/12 17:26:49.529</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>471780074</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -6054,7 +6057,7 @@
       </violation>
     </violations>
   </sourcecode>
-  <project key="1292459229">
+  <project key="830625989">
     <configuration>CODE_ANALYSIS;DEBUG;TRACE</configuration>
   </project>
 </stylecopresultscache>

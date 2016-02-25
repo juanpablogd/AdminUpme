@@ -1,0 +1,34 @@
+﻿@model NSPecor.Models.MUB_ESTADO_SUB
+
+@{
+    ViewBag.Title = "Detalle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Detalle</h2>
+
+<div>
+    <h4>ESTADO SUBESTACIÓN</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NOM_ESTADO_SUB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOM_ESTADO_SUB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ACTIVO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ACTIVO)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.ID_ESTADO_SUB }) |
+    @Html.ActionLink("Ver Listado", "Index")
+</p>
