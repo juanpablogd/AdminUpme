@@ -1,0 +1,51 @@
+﻿@model NSPecor.Models.GEOB_TIPO_CATALOGO
+
+@{
+    ViewBag.Title = "Editar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Catalogos de Mapas</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Editar</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.ID_TIPO_CATAL)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TIPO_MAPA,"Nombre Catalogo", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TIPO_MAPA)
+                @Html.ValidationMessageFor(model => model.TIPO_MAPA)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FK_ID_ESTADO, "Estado", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("FK_ID_ESTADO", String.Empty)
+                @Html.ValidationMessageFor(model => model.FK_ID_ESTADO)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Guardar" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Regresar", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

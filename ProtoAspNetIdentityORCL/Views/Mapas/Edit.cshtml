@@ -1,0 +1,141 @@
+﻿@model NSPecor.Models.GEOB_MAPAS_CATALOGO
+
+@{
+    ViewBag.Title = "Editar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Mapas y Visores</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Editar</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.ID_MAPA)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FK_ID_TEMATICA, "TEMATICA", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("FK_ID_TEMATICA", String.Empty)
+                @Html.ValidationMessageFor(model => model.FK_ID_TEMATICA)
+            </div>
+        </div>
+
+        <!----div class="form-group">
+            @Html.LabelFor(model => model.CATALOGO,"ORDEN", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CATALOGO)
+                @Html.ValidationMessageFor(model => model.CATALOGO)
+            </div>
+        </!--div-->
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TITULO, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TITULO)
+                @Html.ValidationMessageFor(model => model.TITULO)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DESCRIPCION, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DESCRIPCION)
+                @Html.ValidationMessageFor(model => model.DESCRIPCION)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.URL_IMG, "IMAGEN",new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.URL_IMG)
+                @Html.ValidationMessageFor(model => model.URL_IMG)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.URL_MANUAL,"MANUAL DE USUARIO", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.URL_MANUAL)
+                @Html.ValidationMessageFor(model => model.URL_MANUAL)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TAGS,"PALABRAS CLAVE", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TAGS)
+                @Html.ValidationMessageFor(model => model.TAGS)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FK_ID_TIPO_CATAL, "CATALOGO", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("FK_ID_TIPO_CATAL", String.Empty)
+                @Html.ValidationMessageFor(model => model.FK_ID_TIPO_CATAL)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.URL, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.URL)
+                @Html.ValidationMessageFor(model => model.URL)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FECHA_PUBLICACION,"FECHA PUBLICACION", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FECHA_PUBLICACION)
+                @Html.ValidationMessageFor(model => model.FECHA_PUBLICACION)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FUENTE, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FUENTE)
+                @Html.ValidationMessageFor(model => model.FUENTE)
+            </div>
+        </div>
+
+       
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FK_ID_ESTADO, "ESTADO", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("FK_ID_ESTADO", String.Empty)
+                @Html.ValidationMessageFor(model => model.FK_ID_ESTADO)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FK_ID_GRUPO, "GRUPO", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("FK_ID_GRUPO", String.Empty)
+                @Html.ValidationMessageFor(model => model.FK_ID_GRUPO)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Guardar" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Regresar", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

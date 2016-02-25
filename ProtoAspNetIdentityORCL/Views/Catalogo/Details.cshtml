@@ -1,0 +1,35 @@
+﻿@model NSPecor.Models.GEOB_TIPO_CATALOGO
+
+@{
+    ViewBag.Title = "Detalle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Catalogos de Mapas</h2>
+
+<div>
+    <h4>Detalle</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Nombre Catalogo
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TIPO_MAPA)
+        </dd>
+
+        <dt>
+            Estado
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GEOB_ESTADO.ESTADO)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.ID_TIPO_CATAL }) |
+    @Html.ActionLink("Regresar", "Index")
+</p>

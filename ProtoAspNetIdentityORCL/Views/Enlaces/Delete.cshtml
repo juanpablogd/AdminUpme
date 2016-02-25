@@ -1,0 +1,74 @@
+﻿@model NSPecor.Models.GEOB_ENLACES_PANEL
+
+@{
+    ViewBag.Title = "Borrar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Enlaces del Panel</h2>
+
+<h3>Esta seguro que desea Borrar?</h3>
+<div>
+    <h4>Borrar</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TITULO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TITULO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DESCRIPCION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DESCRIPCION)
+        </dd>
+
+        <dt>
+            URL
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.URL_ENLACE)
+        </dd>
+
+        
+        <dt>
+            FECHA REGISTRO
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FECHA_REGISTRO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GEOB_ESTADO.ESTADO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GEOB_ESTADO.ESTADO)
+        </dd>
+
+        <dt>
+            PANEL
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GEOB_PANEL.DESCRIPCION)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Borrar" class="btn btn-default" /> |
+            @Html.ActionLink("Regresar", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,63 @@
+﻿@model IEnumerable<NSPecor.Models.GEOB_MAPAS_CATALOGO>
+
+@{
+    ViewBag.Title = "Mapas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Mapas y Visores</h2>
+
+<p>
+    @Html.ActionLink("Adicionar", "Create")
+</p>
+<table class="table">
+    <tr>
+       
+        <th>
+            @Html.DisplayNameFor(model => model.TITULO)
+        </th>
+       
+        
+        <th>
+            @Html.DisplayNameFor(model => model.GEOB_ESTADO.ESTADO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GEOB_GRUPOS.GRUPO)
+        </th>
+        <th>
+            CATALOGO
+        </th>
+        <th>
+            TEMATICA
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.TITULO)
+        </td>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.GEOB_ESTADO.ESTADO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GEOB_GRUPOS.GRUPO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GEOB_TIPO_CATALOGO.TIPO_MAPA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GEOB_TEMATICAS.NOMBRE)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.ID_MAPA }) |
+            @Html.ActionLink("Detalle", "Details", new { id=item.ID_MAPA }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.ID_MAPA })
+        </td>
+    </tr>
+}
+
+</table>

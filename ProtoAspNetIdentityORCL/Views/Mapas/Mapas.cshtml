@@ -1,0 +1,54 @@
+﻿@model IEnumerable<NSPecor.Models.GEOB_MAPAS_CATALOGO>
+
+@{
+    ViewBag.Title = "Mapas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<section id="portfolio" class="container">
+
+    <ul class="portfolio-filter concrete" id="filter-container">     
+    </ul><!--/#portfolio-filter-->
+
+    <ul class="portfolio-items " id="filter-active">
+        <li class="portfolio-item ENERGIA">
+            <div class="row">
+                <div class="col-sm-2 ">
+                    <img src="~/images/IMG/energia.png" class="imagen-cat" />
+                </div>
+                <div class="col-sm-6">
+                    <h4>Energía</h4>
+                    <p class="tex-justif">La Subdirección de Energía orienta, propone y dirige las actividades, estudios e investigaciones requeridas para el establecimiento y fijación de lineamientos de políticas y planes en los sectores de energía, encaminadas a realizar una planeación integral para el desarrollo de los sectores de minas y energía.</p>
+                </div>
+                <div class="col-sm-4">
+                    <input type="search" id="container-search" value="" class="form-control" placeholder="Búsqueda rápida...">
+                </div>
+            </div>
+        </li>
+   </ul>
+
+
+        <input type="search" id="container-search" value="" class="form-control" placeholder="Búsqueda rápida...">
+        <hr>
+        <ul class="portfolio-items col-3" id="searchable-container">
+            @foreach (var item in Model)
+            {
+                if (item.GEOB_TIPO_CATALOGO.ID_TIPO_CATAL == 1)
+                {
+                    <li class="portfolio-item @(item.GEOB_TEMATICAS.NOMBRE)" data-filter='@Html.DisplayFor(modelItem => item.GEOB_TEMATICAS.NOMBRE)'>
+                        <div class="item-inner">
+                            <img src="~/images/IMG_pdf/@(item.URL_IMG)" alt="">
+                            <h5 class="searchable-filter">@Html.DisplayFor(modelItem => item.TITULO)</h5>
+                            <small class="searchable-filter">@Html.DisplayFor(modelItem => item.DESCRIPCION)</small>
+                            <a href="~/images/pdf/@Html.DisplayFor(modelItem => item.URL)" target="_blank">
+                                <div class="overlay">
+
+                                </div>
+                            </a>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                }
+            }
+        </ul>
+</section><!--/#portfolio-->

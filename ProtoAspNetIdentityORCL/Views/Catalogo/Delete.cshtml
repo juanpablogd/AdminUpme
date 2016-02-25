@@ -1,0 +1,41 @@
+﻿@model NSPecor.Models.GEOB_TIPO_CATALOGO
+
+@{
+    ViewBag.Title = "Borrar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Catalogos de Mapas</h2>
+
+<h3>Esta seguro que desea borrar?</h3>
+<div>
+    <h4>Borrar</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+           Nombre Catalogo
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TIPO_MAPA)
+        </dd>
+
+        <dt>
+            Estado
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GEOB_ESTADO.ESTADO)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Borrar" class="btn btn-default" /> |
+            @Html.ActionLink("Regresar", "Index")
+        </div>
+    }
+</div>

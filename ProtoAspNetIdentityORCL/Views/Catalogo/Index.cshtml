@@ -1,0 +1,40 @@
+﻿@model IEnumerable<NSPecor.Models.GEOB_TIPO_CATALOGO>
+
+@{
+    ViewBag.Title = "Catalogos de Mapas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Catalogos de Mapas</h2>
+
+<p>
+    @Html.ActionLink("Adicionar", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Catalogo de Mapa
+        </th>
+        <th>
+            Estado
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TIPO_MAPA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GEOB_ESTADO.ESTADO)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.ID_TIPO_CATAL }) |
+            @Html.ActionLink("Detalle", "Details", new { id=item.ID_TIPO_CATAL }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.ID_TIPO_CATAL })
+        </td>
+    </tr>
+}
+
+</table>

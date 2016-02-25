@@ -1,0 +1,48 @@
+﻿@model IEnumerable<NSPecor.Models.GEOB_TIPO_SRV>
+
+@{
+    ViewBag.Title = "Estandard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Estandard</h2>
+
+<p>
+    @Html.ActionLink("Adicionar", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NOMBRE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ESTANDARD)
+        </th>
+  
+        <th>
+            @Html.DisplayNameFor(model => model.GEOB_ESTADO.ESTADO)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NOMBRE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ESTANDARD)
+        </td>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.GEOB_ESTADO.ESTADO)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.ID_TIPO_SRV }) |
+            @Html.ActionLink("Detalle", "Details", new { id=item.ID_TIPO_SRV }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.ID_TIPO_SRV })
+        </td>
+    </tr>
+}
+
+</table>

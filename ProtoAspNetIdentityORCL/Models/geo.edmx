@@ -1,0 +1,946 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ModelGeo.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="GEOB_CARROUSEL">
+          <Key>
+            <PropertyRef Name="ID_CARROUSEL" />
+          </Key>
+          <Property Name="ID_CARROUSEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="TITULO" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="SUBTITULO" Type="varchar2" MaxLength="100" />
+          <Property Name="URL_IMG_FONDO" Type="varchar2" MaxLength="150" Nullable="false" />
+          <Property Name="FK_ID_USUARIO" Type="number" Precision="38" Scale="0" />
+          <Property Name="FECHA_REGISTRO" Type="date" />
+          <Property Name="FK_ID_ESTADO" Type="number" Precision="38" Scale="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GEOB_ENLACES_PANEL">
+          <Key>
+            <PropertyRef Name="ID_ENLACE" />
+          </Key>
+          <Property Name="ID_ENLACE" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="FK_ID_PANEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="TITULO" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar2" MaxLength="150" />
+          <Property Name="URL_ENLACE" Type="varchar2" MaxLength="250" Nullable="false" />
+          <Property Name="FK_ID_ESTADO" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="FK_ID_USUARIO" Type="number" Precision="38" Scale="0" />
+          <Property Name="FECHA_REGISTRO" Type="date" />
+        </EntityType>
+        <EntityType Name="GEOB_ESTADO">
+          <Key>
+            <PropertyRef Name="ID_ESTADO" />
+          </Key>
+          <Property Name="ID_ESTADO" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="ESTADO" Type="varchar2" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GEOB_GRUPOS">
+          <Key>
+            <PropertyRef Name="ID_GRUPO" />
+          </Key>
+          <Property Name="ID_GRUPO" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="GRUPO" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="FK_ID_TEMATICA" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="FK_ID_ESTADO" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="FK_ID_USUARIO" Type="number" Precision="38" Scale="0" />
+          <Property Name="FECHA_REGISTRO" Type="date" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GEOB_MAPAS_CATALOGO">
+          <Key>
+            <PropertyRef Name="ID_MAPA" />
+          </Key>
+          <Property Name="ID_MAPA" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="FK_ID_TEMATICA" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CATALOGO" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="TITULO" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar2" MaxLength="200" />
+          <Property Name="URL_IMG" Type="varchar2" MaxLength="250" Nullable="false" />
+          <Property Name="URL_MANUAL" Type="varchar2" MaxLength="250" />
+          <Property Name="TAGS" Type="varchar2" MaxLength="200" Nullable="false" />
+          <Property Name="FK_ID_TIPO_CATAL" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="URL" Type="varchar2" MaxLength="250" Nullable="false" />
+          <Property Name="FECHA_PUBLICACION" Type="date" />
+          <Property Name="FUENTE" Type="varchar2" MaxLength="250" />
+          <Property Name="FK_ID_USUARIO" Type="number" Precision="38" Scale="0" />
+          <Property Name="FECHA_REGISTRO" Type="date" />
+          <Property Name="FK_ID_ESTADO" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="FK_ID_GRUPO" Type="number" Precision="38" Scale="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GEOB_PANEL">
+          <Key>
+            <PropertyRef Name="ID_PANEL" />
+          </Key>
+          <Property Name="ID_PANEL" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar2" MaxLength="20" />
+          <Property Name="TITULO" Type="varchar2" MaxLength="50" Nullable="false" />
+          <Property Name="FK_ID_ESTADO" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="FK_ID_USUARIO" Type="number" Precision="38" Scale="0" />
+          <Property Name="FECHA_REGISTRO" Type="date" />
+        </EntityType>
+        <EntityType Name="GEOB_SERVICIOS_CATALOGO">
+          <Key>
+            <PropertyRef Name="ID_SERVICIO" />
+          </Key>
+          <Property Name="ID_SERVICIO" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="TITULO" Type="nvarchar2" MaxLength="50" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="varchar2" MaxLength="200" Nullable="false" />
+          <Property Name="URL" Type="varchar2" MaxLength="150" Nullable="false" />
+          <Property Name="TAGS" Type="varchar2" MaxLength="200" Nullable="false" />
+          <Property Name="FK_ID_TIPO_SRV" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="FK_ID_ESTADO" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="FK_ID_USUARIO" Type="number" Precision="38" Scale="0" />
+          <Property Name="FECHA_REGISTRO" Type="date" />
+        </EntityType>
+        <EntityType Name="GEOB_TEMATICAS">
+          <Key>
+            <PropertyRef Name="ID_TEMATICA" />
+          </Key>
+          <Property Name="ID_TEMATICA" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar2" MaxLength="15" Nullable="false" />
+          <Property Name="URL_IMG" Type="varchar2" MaxLength="250" />
+          <Property Name="FK_ID_ESTADO" Type="number" Precision="38" Scale="0" />
+          <Property Name="FK_ID_USUARIO" Type="number" Precision="38" Scale="0" />
+          <Property Name="FECHA_REGISTRO" Type="date" />
+          <Property Name="DESCRIPCION" Type="varchar2" MaxLength="800" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GEOB_TIPO_CATALOGO">
+          <Key>
+            <PropertyRef Name="ID_TIPO_CATAL" />
+          </Key>
+          <Property Name="ID_TIPO_CATAL" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="TIPO_MAPA" Type="varchar2" MaxLength="20" Nullable="false" />
+          <Property Name="FK_ID_ESTADO" Type="number" Precision="38" Scale="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GEOB_TIPO_SRV">
+          <Key>
+            <PropertyRef Name="ID_TIPO_SRV" />
+          </Key>
+          <Property Name="ID_TIPO_SRV" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar2" MaxLength="15" Nullable="false" />
+          <Property Name="ESTANDARD" Type="varchar2" MaxLength="50" />
+          <Property Name="FK_ID_ESTADO" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="FK_ID_USUARIO" Type="number" Precision="38" Scale="0" />
+          <Property Name="FECHA_REGISTRO" Type="date" />
+        </EntityType>
+        <Association Name="FK_CAROUSEL_ESTADO">
+          <End Role="GEOB_ESTADO" Type="Self.GEOB_ESTADO" Multiplicity="1" />
+          <End Role="GEOB_CARROUSEL" Type="Self.GEOB_CARROUSEL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_ESTADO">
+              <PropertyRef Name="ID_ESTADO" />
+            </Principal>
+            <Dependent Role="GEOB_CARROUSEL">
+              <PropertyRef Name="FK_ID_ESTADO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GEOB_ENLACE_ESTADO">
+          <End Role="GEOB_ESTADO" Type="Self.GEOB_ESTADO" Multiplicity="1" />
+          <End Role="GEOB_ENLACES_PANEL" Type="Self.GEOB_ENLACES_PANEL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_ESTADO">
+              <PropertyRef Name="ID_ESTADO" />
+            </Principal>
+            <Dependent Role="GEOB_ENLACES_PANEL">
+              <PropertyRef Name="FK_ID_ESTADO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GEOB_GRUPO_ESTADO">
+          <End Role="GEOB_ESTADO" Type="Self.GEOB_ESTADO" Multiplicity="1" />
+          <End Role="GEOB_GRUPOS" Type="Self.GEOB_GRUPOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_ESTADO">
+              <PropertyRef Name="ID_ESTADO" />
+            </Principal>
+            <Dependent Role="GEOB_GRUPOS">
+              <PropertyRef Name="FK_ID_ESTADO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GEOB_GRUPO_TEMA">
+          <End Role="GEOB_TEMATICAS" Type="Self.GEOB_TEMATICAS" Multiplicity="1" />
+          <End Role="GEOB_GRUPOS" Type="Self.GEOB_GRUPOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_TEMATICAS">
+              <PropertyRef Name="ID_TEMATICA" />
+            </Principal>
+            <Dependent Role="GEOB_GRUPOS">
+              <PropertyRef Name="FK_ID_TEMATICA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GEOB_MAPAS_ESTADO">
+          <End Role="GEOB_ESTADO" Type="Self.GEOB_ESTADO" Multiplicity="1" />
+          <End Role="GEOB_MAPAS_CATALOGO" Type="Self.GEOB_MAPAS_CATALOGO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_ESTADO">
+              <PropertyRef Name="ID_ESTADO" />
+            </Principal>
+            <Dependent Role="GEOB_MAPAS_CATALOGO">
+              <PropertyRef Name="FK_ID_ESTADO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GEOB_MAPAS_GRUPO">
+          <End Role="GEOB_GRUPOS" Type="Self.GEOB_GRUPOS" Multiplicity="1" />
+          <End Role="GEOB_MAPAS_CATALOGO" Type="Self.GEOB_MAPAS_CATALOGO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_GRUPOS">
+              <PropertyRef Name="ID_GRUPO" />
+            </Principal>
+            <Dependent Role="GEOB_MAPAS_CATALOGO">
+              <PropertyRef Name="FK_ID_GRUPO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GEOB_MAPAS_TIPO_CAT">
+          <End Role="GEOB_TIPO_CATALOGO" Type="Self.GEOB_TIPO_CATALOGO" Multiplicity="1" />
+          <End Role="GEOB_MAPAS_CATALOGO" Type="Self.GEOB_MAPAS_CATALOGO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_TIPO_CATALOGO">
+              <PropertyRef Name="ID_TIPO_CATAL" />
+            </Principal>
+            <Dependent Role="GEOB_MAPAS_CATALOGO">
+              <PropertyRef Name="FK_ID_TIPO_CATAL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GEOB_PANEL_ENLACE">
+          <End Role="GEOB_PANEL" Type="Self.GEOB_PANEL" Multiplicity="1" />
+          <End Role="GEOB_ENLACES_PANEL" Type="Self.GEOB_ENLACES_PANEL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_PANEL">
+              <PropertyRef Name="ID_PANEL" />
+            </Principal>
+            <Dependent Role="GEOB_ENLACES_PANEL">
+              <PropertyRef Name="FK_ID_PANEL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GEOB_PANEL_ESTADO">
+          <End Role="GEOB_ESTADO" Type="Self.GEOB_ESTADO" Multiplicity="1" />
+          <End Role="GEOB_PANEL" Type="Self.GEOB_PANEL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_ESTADO">
+              <PropertyRef Name="ID_ESTADO" />
+            </Principal>
+            <Dependent Role="GEOB_PANEL">
+              <PropertyRef Name="FK_ID_ESTADO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GEOB_SERVICIOS_ESTADO">
+          <End Role="GEOB_ESTADO" Type="Self.GEOB_ESTADO" Multiplicity="1" />
+          <End Role="GEOB_SERVICIOS_CATALOGO" Type="Self.GEOB_SERVICIOS_CATALOGO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_ESTADO">
+              <PropertyRef Name="ID_ESTADO" />
+            </Principal>
+            <Dependent Role="GEOB_SERVICIOS_CATALOGO">
+              <PropertyRef Name="FK_ID_ESTADO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GEOB_TIPO_CTLG_ESTADO">
+          <End Role="GEOB_ESTADO" Type="Self.GEOB_ESTADO" Multiplicity="1" />
+          <End Role="GEOB_TIPO_CATALOGO" Type="Self.GEOB_TIPO_CATALOGO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_ESTADO">
+              <PropertyRef Name="ID_ESTADO" />
+            </Principal>
+            <Dependent Role="GEOB_TIPO_CATALOGO">
+              <PropertyRef Name="FK_ID_ESTADO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ID_TIPO_SRV_ESTADO">
+          <End Role="GEOB_ESTADO" Type="Self.GEOB_ESTADO" Multiplicity="1" />
+          <End Role="GEOB_TIPO_SRV" Type="Self.GEOB_TIPO_SRV" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_ESTADO">
+              <PropertyRef Name="ID_ESTADO" />
+            </Principal>
+            <Dependent Role="GEOB_TIPO_SRV">
+              <PropertyRef Name="FK_ID_ESTADO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MAPAS_CAT_TEMATICA">
+          <End Role="GEOB_TEMATICAS" Type="Self.GEOB_TEMATICAS" Multiplicity="1" />
+          <End Role="GEOB_MAPAS_CATALOGO" Type="Self.GEOB_MAPAS_CATALOGO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_TEMATICAS">
+              <PropertyRef Name="ID_TEMATICA" />
+            </Principal>
+            <Dependent Role="GEOB_MAPAS_CATALOGO">
+              <PropertyRef Name="FK_ID_TEMATICA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SERVS_CAT_TIPO_SRV">
+          <End Role="GEOB_TIPO_SRV" Type="Self.GEOB_TIPO_SRV" Multiplicity="1" />
+          <End Role="GEOB_SERVICIOS_CATALOGO" Type="Self.GEOB_SERVICIOS_CATALOGO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_TIPO_SRV">
+              <PropertyRef Name="ID_TIPO_SRV" />
+            </Principal>
+            <Dependent Role="GEOB_SERVICIOS_CATALOGO">
+              <PropertyRef Name="FK_ID_TIPO_SRV" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TEMATICA_ESTADO">
+          <End Role="GEOB_ESTADO" Type="Self.GEOB_ESTADO" Multiplicity="0..1" />
+          <End Role="GEOB_TEMATICAS" Type="Self.GEOB_TEMATICAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_ESTADO">
+              <PropertyRef Name="ID_ESTADO" />
+            </Principal>
+            <Dependent Role="GEOB_TEMATICAS">
+              <PropertyRef Name="FK_ID_ESTADO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ModelGeoStoreContainer">
+          <EntitySet Name="GEOB_CARROUSEL" EntityType="Self.GEOB_CARROUSEL" Schema="GEO" store:Type="Tables" />
+          <EntitySet Name="GEOB_ENLACES_PANEL" EntityType="Self.GEOB_ENLACES_PANEL" Schema="GEO" store:Type="Tables" />
+          <EntitySet Name="GEOB_ESTADO" EntityType="Self.GEOB_ESTADO" Schema="GEO" store:Type="Tables" />
+          <EntitySet Name="GEOB_GRUPOS" EntityType="Self.GEOB_GRUPOS" Schema="GEO" store:Type="Tables" />
+          <EntitySet Name="GEOB_MAPAS_CATALOGO" EntityType="Self.GEOB_MAPAS_CATALOGO" Schema="GEO" store:Type="Tables" />
+          <EntitySet Name="GEOB_PANEL" EntityType="Self.GEOB_PANEL" Schema="GEO" store:Type="Tables" />
+          <EntitySet Name="GEOB_SERVICIOS_CATALOGO" EntityType="Self.GEOB_SERVICIOS_CATALOGO" Schema="GEO" store:Type="Tables" />
+          <EntitySet Name="GEOB_TEMATICAS" EntityType="Self.GEOB_TEMATICAS" Schema="GEO" store:Type="Tables" />
+          <EntitySet Name="GEOB_TIPO_CATALOGO" EntityType="Self.GEOB_TIPO_CATALOGO" Schema="GEO" store:Type="Tables" />
+          <EntitySet Name="GEOB_TIPO_SRV" EntityType="Self.GEOB_TIPO_SRV" Schema="GEO" store:Type="Tables" />
+          <AssociationSet Name="FK_CAROUSEL_ESTADO" Association="Self.FK_CAROUSEL_ESTADO">
+            <End Role="GEOB_ESTADO" EntitySet="GEOB_ESTADO" />
+            <End Role="GEOB_CARROUSEL" EntitySet="GEOB_CARROUSEL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GEOB_ENLACE_ESTADO" Association="Self.FK_GEOB_ENLACE_ESTADO">
+            <End Role="GEOB_ESTADO" EntitySet="GEOB_ESTADO" />
+            <End Role="GEOB_ENLACES_PANEL" EntitySet="GEOB_ENLACES_PANEL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GEOB_GRUPO_ESTADO" Association="Self.FK_GEOB_GRUPO_ESTADO">
+            <End Role="GEOB_ESTADO" EntitySet="GEOB_ESTADO" />
+            <End Role="GEOB_GRUPOS" EntitySet="GEOB_GRUPOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GEOB_GRUPO_TEMA" Association="Self.FK_GEOB_GRUPO_TEMA">
+            <End Role="GEOB_TEMATICAS" EntitySet="GEOB_TEMATICAS" />
+            <End Role="GEOB_GRUPOS" EntitySet="GEOB_GRUPOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GEOB_MAPAS_ESTADO" Association="Self.FK_GEOB_MAPAS_ESTADO">
+            <End Role="GEOB_ESTADO" EntitySet="GEOB_ESTADO" />
+            <End Role="GEOB_MAPAS_CATALOGO" EntitySet="GEOB_MAPAS_CATALOGO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GEOB_MAPAS_GRUPO" Association="Self.FK_GEOB_MAPAS_GRUPO">
+            <End Role="GEOB_GRUPOS" EntitySet="GEOB_GRUPOS" />
+            <End Role="GEOB_MAPAS_CATALOGO" EntitySet="GEOB_MAPAS_CATALOGO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GEOB_MAPAS_TIPO_CAT" Association="Self.FK_GEOB_MAPAS_TIPO_CAT">
+            <End Role="GEOB_TIPO_CATALOGO" EntitySet="GEOB_TIPO_CATALOGO" />
+            <End Role="GEOB_MAPAS_CATALOGO" EntitySet="GEOB_MAPAS_CATALOGO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GEOB_PANEL_ENLACE" Association="Self.FK_GEOB_PANEL_ENLACE">
+            <End Role="GEOB_PANEL" EntitySet="GEOB_PANEL" />
+            <End Role="GEOB_ENLACES_PANEL" EntitySet="GEOB_ENLACES_PANEL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GEOB_PANEL_ESTADO" Association="Self.FK_GEOB_PANEL_ESTADO">
+            <End Role="GEOB_ESTADO" EntitySet="GEOB_ESTADO" />
+            <End Role="GEOB_PANEL" EntitySet="GEOB_PANEL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GEOB_SERVICIOS_ESTADO" Association="Self.FK_GEOB_SERVICIOS_ESTADO">
+            <End Role="GEOB_ESTADO" EntitySet="GEOB_ESTADO" />
+            <End Role="GEOB_SERVICIOS_CATALOGO" EntitySet="GEOB_SERVICIOS_CATALOGO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GEOB_TIPO_CTLG_ESTADO" Association="Self.FK_GEOB_TIPO_CTLG_ESTADO">
+            <End Role="GEOB_ESTADO" EntitySet="GEOB_ESTADO" />
+            <End Role="GEOB_TIPO_CATALOGO" EntitySet="GEOB_TIPO_CATALOGO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ID_TIPO_SRV_ESTADO" Association="Self.FK_ID_TIPO_SRV_ESTADO">
+            <End Role="GEOB_ESTADO" EntitySet="GEOB_ESTADO" />
+            <End Role="GEOB_TIPO_SRV" EntitySet="GEOB_TIPO_SRV" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MAPAS_CAT_TEMATICA" Association="Self.FK_MAPAS_CAT_TEMATICA">
+            <End Role="GEOB_TEMATICAS" EntitySet="GEOB_TEMATICAS" />
+            <End Role="GEOB_MAPAS_CATALOGO" EntitySet="GEOB_MAPAS_CATALOGO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SERVS_CAT_TIPO_SRV" Association="Self.FK_SERVS_CAT_TIPO_SRV">
+            <End Role="GEOB_TIPO_SRV" EntitySet="GEOB_TIPO_SRV" />
+            <End Role="GEOB_SERVICIOS_CATALOGO" EntitySet="GEOB_SERVICIOS_CATALOGO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TEMATICA_ESTADO" Association="Self.FK_TEMATICA_ESTADO">
+            <End Role="GEOB_ESTADO" EntitySet="GEOB_ESTADO" />
+            <End Role="GEOB_TEMATICAS" EntitySet="GEOB_TEMATICAS" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ModelGeo" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="GEOB_CARROUSEL">
+          <Key>
+            <PropertyRef Name="ID_CARROUSEL" />
+          </Key>
+          <Property Name="ID_CARROUSEL" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="TITULO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SUBTITULO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="URL_IMG_FONDO" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FK_ID_USUARIO" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="FECHA_REGISTRO" Type="DateTime" />
+          <Property Name="FK_ID_ESTADO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <NavigationProperty Name="GEOB_ESTADO" Relationship="Self.FK_CAROUSEL_ESTADO" FromRole="GEOB_CARROUSEL" ToRole="GEOB_ESTADO" />
+        </EntityType>
+        <EntityType Name="GEOB_ENLACES_PANEL">
+          <Key>
+            <PropertyRef Name="ID_ENLACE" />
+          </Key>
+          <Property Name="ID_ENLACE" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="FK_ID_PANEL" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="TITULO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="URL_ENLACE" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FK_ID_ESTADO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="FK_ID_USUARIO" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="FECHA_REGISTRO" Type="DateTime" />
+          <NavigationProperty Name="GEOB_ESTADO" Relationship="Self.FK_GEOB_ENLACE_ESTADO" FromRole="GEOB_ENLACES_PANEL" ToRole="GEOB_ESTADO" />
+          <NavigationProperty Name="GEOB_PANEL" Relationship="Self.FK_GEOB_PANEL_ENLACE" FromRole="GEOB_ENLACES_PANEL" ToRole="GEOB_PANEL" />
+        </EntityType>
+        <EntityType Name="GEOB_ESTADO">
+          <Key>
+            <PropertyRef Name="ID_ESTADO" />
+          </Key>
+          <Property Name="ID_ESTADO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="ESTADO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="GEOB_CARROUSEL" Relationship="Self.FK_CAROUSEL_ESTADO" FromRole="GEOB_ESTADO" ToRole="GEOB_CARROUSEL" />
+          <NavigationProperty Name="GEOB_ENLACES_PANEL" Relationship="Self.FK_GEOB_ENLACE_ESTADO" FromRole="GEOB_ESTADO" ToRole="GEOB_ENLACES_PANEL" />
+          <NavigationProperty Name="GEOB_GRUPOS" Relationship="Self.FK_GEOB_GRUPO_ESTADO" FromRole="GEOB_ESTADO" ToRole="GEOB_GRUPOS" />
+          <NavigationProperty Name="GEOB_MAPAS_CATALOGO" Relationship="Self.FK_GEOB_MAPAS_ESTADO" FromRole="GEOB_ESTADO" ToRole="GEOB_MAPAS_CATALOGO" />
+          <NavigationProperty Name="GEOB_PANEL" Relationship="Self.FK_GEOB_PANEL_ESTADO" FromRole="GEOB_ESTADO" ToRole="GEOB_PANEL" />
+          <NavigationProperty Name="GEOB_SERVICIOS_CATALOGO" Relationship="Self.FK_GEOB_SERVICIOS_ESTADO" FromRole="GEOB_ESTADO" ToRole="GEOB_SERVICIOS_CATALOGO" />
+          <NavigationProperty Name="GEOB_TIPO_CATALOGO" Relationship="Self.FK_GEOB_TIPO_CTLG_ESTADO" FromRole="GEOB_ESTADO" ToRole="GEOB_TIPO_CATALOGO" />
+          <NavigationProperty Name="GEOB_TIPO_SRV" Relationship="Self.FK_ID_TIPO_SRV_ESTADO" FromRole="GEOB_ESTADO" ToRole="GEOB_TIPO_SRV" />
+          <NavigationProperty Name="GEOB_TEMATICAS" Relationship="Self.FK_TEMATICA_ESTADO" FromRole="GEOB_ESTADO" ToRole="GEOB_TEMATICAS" />
+        </EntityType>
+        <EntityType Name="GEOB_GRUPOS">
+          <Key>
+            <PropertyRef Name="ID_GRUPO" />
+          </Key>
+          <Property Name="ID_GRUPO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="GRUPO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FK_ID_TEMATICA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="FK_ID_ESTADO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="FK_ID_USUARIO" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="FECHA_REGISTRO" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="GEOB_ESTADO" Relationship="Self.FK_GEOB_GRUPO_ESTADO" FromRole="GEOB_GRUPOS" ToRole="GEOB_ESTADO" />
+          <NavigationProperty Name="GEOB_TEMATICAS" Relationship="Self.FK_GEOB_GRUPO_TEMA" FromRole="GEOB_GRUPOS" ToRole="GEOB_TEMATICAS" />
+          <NavigationProperty Name="GEOB_MAPAS_CATALOGO" Relationship="Self.FK_GEOB_MAPAS_GRUPO" FromRole="GEOB_GRUPOS" ToRole="GEOB_MAPAS_CATALOGO" />
+        </EntityType>
+        <EntityType Name="GEOB_MAPAS_CATALOGO">
+          <Key>
+            <PropertyRef Name="ID_MAPA" />
+          </Key>
+          <Property Name="ID_MAPA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="FK_ID_TEMATICA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="CATALOGO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="TITULO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="URL_IMG" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="URL_MANUAL" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="TAGS" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FK_ID_TIPO_CATAL" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="URL" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FECHA_PUBLICACION" Type="DateTime" />
+          <Property Name="FUENTE" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="FK_ID_USUARIO" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="FECHA_REGISTRO" Type="DateTime" />
+          <Property Name="FK_ID_ESTADO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="FK_ID_GRUPO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <NavigationProperty Name="GEOB_ESTADO" Relationship="Self.FK_GEOB_MAPAS_ESTADO" FromRole="GEOB_MAPAS_CATALOGO" ToRole="GEOB_ESTADO" />
+          <NavigationProperty Name="GEOB_GRUPOS" Relationship="Self.FK_GEOB_MAPAS_GRUPO" FromRole="GEOB_MAPAS_CATALOGO" ToRole="GEOB_GRUPOS" />
+          <NavigationProperty Name="GEOB_TIPO_CATALOGO" Relationship="Self.FK_GEOB_MAPAS_TIPO_CAT" FromRole="GEOB_MAPAS_CATALOGO" ToRole="GEOB_TIPO_CATALOGO" />
+          <NavigationProperty Name="GEOB_TEMATICAS" Relationship="Self.FK_MAPAS_CAT_TEMATICA" FromRole="GEOB_MAPAS_CATALOGO" ToRole="GEOB_TEMATICAS" />
+        </EntityType>
+        <EntityType Name="GEOB_PANEL">
+          <Key>
+            <PropertyRef Name="ID_PANEL" />
+          </Key>
+          <Property Name="ID_PANEL" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="TITULO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FK_ID_ESTADO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="FK_ID_USUARIO" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="FECHA_REGISTRO" Type="DateTime" />
+          <NavigationProperty Name="GEOB_ENLACES_PANEL" Relationship="Self.FK_GEOB_PANEL_ENLACE" FromRole="GEOB_PANEL" ToRole="GEOB_ENLACES_PANEL" />
+          <NavigationProperty Name="GEOB_ESTADO" Relationship="Self.FK_GEOB_PANEL_ESTADO" FromRole="GEOB_PANEL" ToRole="GEOB_ESTADO" />
+        </EntityType>
+        <EntityType Name="GEOB_SERVICIOS_CATALOGO">
+          <Key>
+            <PropertyRef Name="ID_SERVICIO" />
+          </Key>
+          <Property Name="ID_SERVICIO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="TITULO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="URL" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TAGS" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FK_ID_TIPO_SRV" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="FK_ID_ESTADO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="FK_ID_USUARIO" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="FECHA_REGISTRO" Type="DateTime" />
+          <NavigationProperty Name="GEOB_ESTADO" Relationship="Self.FK_GEOB_SERVICIOS_ESTADO" FromRole="GEOB_SERVICIOS_CATALOGO" ToRole="GEOB_ESTADO" />
+          <NavigationProperty Name="GEOB_TIPO_SRV" Relationship="Self.FK_SERVS_CAT_TIPO_SRV" FromRole="GEOB_SERVICIOS_CATALOGO" ToRole="GEOB_TIPO_SRV" />
+        </EntityType>
+        <EntityType Name="GEOB_TEMATICAS">
+          <Key>
+            <PropertyRef Name="ID_TEMATICA" />
+          </Key>
+          <Property Name="ID_TEMATICA" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="NOMBRE" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="URL_IMG" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="FK_ID_ESTADO" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="FK_ID_USUARIO" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="FECHA_REGISTRO" Type="DateTime" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="800" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="GEOB_ESTADO" Relationship="Self.FK_TEMATICA_ESTADO" FromRole="GEOB_TEMATICAS" ToRole="GEOB_ESTADO" />
+          <NavigationProperty Name="GEOB_GRUPOS" Relationship="Self.FK_GEOB_GRUPO_TEMA" FromRole="GEOB_TEMATICAS" ToRole="GEOB_GRUPOS" />
+          <NavigationProperty Name="GEOB_MAPAS_CATALOGO" Relationship="Self.FK_MAPAS_CAT_TEMATICA" FromRole="GEOB_TEMATICAS" ToRole="GEOB_MAPAS_CATALOGO" />
+        </EntityType>
+        <EntityType Name="GEOB_TIPO_CATALOGO">
+          <Key>
+            <PropertyRef Name="ID_TIPO_CATAL" />
+          </Key>
+          <Property Name="ID_TIPO_CATAL" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="TIPO_MAPA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FK_ID_ESTADO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <NavigationProperty Name="GEOB_ESTADO" Relationship="Self.FK_GEOB_TIPO_CTLG_ESTADO" FromRole="GEOB_TIPO_CATALOGO" ToRole="GEOB_ESTADO" />
+          <NavigationProperty Name="GEOB_MAPAS_CATALOGO" Relationship="Self.FK_GEOB_MAPAS_TIPO_CAT" FromRole="GEOB_TIPO_CATALOGO" ToRole="GEOB_MAPAS_CATALOGO" />
+        </EntityType>
+        <EntityType Name="GEOB_TIPO_SRV">
+          <Key>
+            <PropertyRef Name="ID_TIPO_SRV" />
+          </Key>
+          <Property Name="ID_TIPO_SRV" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="NOMBRE" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ESTANDARD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FK_ID_ESTADO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="FK_ID_USUARIO" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="FECHA_REGISTRO" Type="DateTime" />
+          <NavigationProperty Name="GEOB_ESTADO" Relationship="Self.FK_ID_TIPO_SRV_ESTADO" FromRole="GEOB_TIPO_SRV" ToRole="GEOB_ESTADO" />
+          <NavigationProperty Name="GEOB_SERVICIOS_CATALOGO" Relationship="Self.FK_SERVS_CAT_TIPO_SRV" FromRole="GEOB_TIPO_SRV" ToRole="GEOB_SERVICIOS_CATALOGO" />
+        </EntityType>
+        <Association Name="FK_CAROUSEL_ESTADO">
+          <End Role="GEOB_ESTADO" Type="Self.GEOB_ESTADO" Multiplicity="1" />
+          <End Role="GEOB_CARROUSEL" Type="Self.GEOB_CARROUSEL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_ESTADO">
+              <PropertyRef Name="ID_ESTADO" />
+            </Principal>
+            <Dependent Role="GEOB_CARROUSEL">
+              <PropertyRef Name="FK_ID_ESTADO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GEOB_ENLACE_ESTADO">
+          <End Role="GEOB_ESTADO" Type="Self.GEOB_ESTADO" Multiplicity="1" />
+          <End Role="GEOB_ENLACES_PANEL" Type="Self.GEOB_ENLACES_PANEL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_ESTADO">
+              <PropertyRef Name="ID_ESTADO" />
+            </Principal>
+            <Dependent Role="GEOB_ENLACES_PANEL">
+              <PropertyRef Name="FK_ID_ESTADO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GEOB_PANEL_ENLACE">
+          <End Role="GEOB_PANEL" Type="Self.GEOB_PANEL" Multiplicity="1" />
+          <End Role="GEOB_ENLACES_PANEL" Type="Self.GEOB_ENLACES_PANEL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_PANEL">
+              <PropertyRef Name="ID_PANEL" />
+            </Principal>
+            <Dependent Role="GEOB_ENLACES_PANEL">
+              <PropertyRef Name="FK_ID_PANEL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GEOB_GRUPO_ESTADO">
+          <End Role="GEOB_ESTADO" Type="Self.GEOB_ESTADO" Multiplicity="1" />
+          <End Role="GEOB_GRUPOS" Type="Self.GEOB_GRUPOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_ESTADO">
+              <PropertyRef Name="ID_ESTADO" />
+            </Principal>
+            <Dependent Role="GEOB_GRUPOS">
+              <PropertyRef Name="FK_ID_ESTADO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GEOB_MAPAS_ESTADO">
+          <End Role="GEOB_ESTADO" Type="Self.GEOB_ESTADO" Multiplicity="1" />
+          <End Role="GEOB_MAPAS_CATALOGO" Type="Self.GEOB_MAPAS_CATALOGO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_ESTADO">
+              <PropertyRef Name="ID_ESTADO" />
+            </Principal>
+            <Dependent Role="GEOB_MAPAS_CATALOGO">
+              <PropertyRef Name="FK_ID_ESTADO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GEOB_PANEL_ESTADO">
+          <End Role="GEOB_ESTADO" Type="Self.GEOB_ESTADO" Multiplicity="1" />
+          <End Role="GEOB_PANEL" Type="Self.GEOB_PANEL" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_ESTADO">
+              <PropertyRef Name="ID_ESTADO" />
+            </Principal>
+            <Dependent Role="GEOB_PANEL">
+              <PropertyRef Name="FK_ID_ESTADO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GEOB_SERVICIOS_ESTADO">
+          <End Role="GEOB_ESTADO" Type="Self.GEOB_ESTADO" Multiplicity="1" />
+          <End Role="GEOB_SERVICIOS_CATALOGO" Type="Self.GEOB_SERVICIOS_CATALOGO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_ESTADO">
+              <PropertyRef Name="ID_ESTADO" />
+            </Principal>
+            <Dependent Role="GEOB_SERVICIOS_CATALOGO">
+              <PropertyRef Name="FK_ID_ESTADO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GEOB_TIPO_CTLG_ESTADO">
+          <End Role="GEOB_ESTADO" Type="Self.GEOB_ESTADO" Multiplicity="1" />
+          <End Role="GEOB_TIPO_CATALOGO" Type="Self.GEOB_TIPO_CATALOGO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_ESTADO">
+              <PropertyRef Name="ID_ESTADO" />
+            </Principal>
+            <Dependent Role="GEOB_TIPO_CATALOGO">
+              <PropertyRef Name="FK_ID_ESTADO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ID_TIPO_SRV_ESTADO">
+          <End Role="GEOB_ESTADO" Type="Self.GEOB_ESTADO" Multiplicity="1" />
+          <End Role="GEOB_TIPO_SRV" Type="Self.GEOB_TIPO_SRV" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_ESTADO">
+              <PropertyRef Name="ID_ESTADO" />
+            </Principal>
+            <Dependent Role="GEOB_TIPO_SRV">
+              <PropertyRef Name="FK_ID_ESTADO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TEMATICA_ESTADO">
+          <End Role="GEOB_ESTADO" Type="Self.GEOB_ESTADO" Multiplicity="0..1" />
+          <End Role="GEOB_TEMATICAS" Type="Self.GEOB_TEMATICAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_ESTADO">
+              <PropertyRef Name="ID_ESTADO" />
+            </Principal>
+            <Dependent Role="GEOB_TEMATICAS">
+              <PropertyRef Name="FK_ID_ESTADO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GEOB_GRUPO_TEMA">
+          <End Role="GEOB_TEMATICAS" Type="Self.GEOB_TEMATICAS" Multiplicity="1" />
+          <End Role="GEOB_GRUPOS" Type="Self.GEOB_GRUPOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_TEMATICAS">
+              <PropertyRef Name="ID_TEMATICA" />
+            </Principal>
+            <Dependent Role="GEOB_GRUPOS">
+              <PropertyRef Name="FK_ID_TEMATICA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GEOB_MAPAS_GRUPO">
+          <End Role="GEOB_GRUPOS" Type="Self.GEOB_GRUPOS" Multiplicity="1" />
+          <End Role="GEOB_MAPAS_CATALOGO" Type="Self.GEOB_MAPAS_CATALOGO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_GRUPOS">
+              <PropertyRef Name="ID_GRUPO" />
+            </Principal>
+            <Dependent Role="GEOB_MAPAS_CATALOGO">
+              <PropertyRef Name="FK_ID_GRUPO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GEOB_MAPAS_TIPO_CAT">
+          <End Role="GEOB_TIPO_CATALOGO" Type="Self.GEOB_TIPO_CATALOGO" Multiplicity="1" />
+          <End Role="GEOB_MAPAS_CATALOGO" Type="Self.GEOB_MAPAS_CATALOGO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_TIPO_CATALOGO">
+              <PropertyRef Name="ID_TIPO_CATAL" />
+            </Principal>
+            <Dependent Role="GEOB_MAPAS_CATALOGO">
+              <PropertyRef Name="FK_ID_TIPO_CATAL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MAPAS_CAT_TEMATICA">
+          <End Role="GEOB_TEMATICAS" Type="Self.GEOB_TEMATICAS" Multiplicity="1" />
+          <End Role="GEOB_MAPAS_CATALOGO" Type="Self.GEOB_MAPAS_CATALOGO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_TEMATICAS">
+              <PropertyRef Name="ID_TEMATICA" />
+            </Principal>
+            <Dependent Role="GEOB_MAPAS_CATALOGO">
+              <PropertyRef Name="FK_ID_TEMATICA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SERVS_CAT_TIPO_SRV">
+          <End Role="GEOB_TIPO_SRV" Type="Self.GEOB_TIPO_SRV" Multiplicity="1" />
+          <End Role="GEOB_SERVICIOS_CATALOGO" Type="Self.GEOB_SERVICIOS_CATALOGO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GEOB_TIPO_SRV">
+              <PropertyRef Name="ID_TIPO_SRV" />
+            </Principal>
+            <Dependent Role="GEOB_SERVICIOS_CATALOGO">
+              <PropertyRef Name="FK_ID_TIPO_SRV" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="geo" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="GEOB_CARROUSEL" EntityType="Self.GEOB_CARROUSEL" />
+          <EntitySet Name="GEOB_ENLACES_PANEL" EntityType="Self.GEOB_ENLACES_PANEL" />
+          <EntitySet Name="GEOB_ESTADO" EntityType="Self.GEOB_ESTADO" />
+          <EntitySet Name="GEOB_GRUPOS" EntityType="Self.GEOB_GRUPOS" />
+          <EntitySet Name="GEOB_MAPAS_CATALOGO" EntityType="Self.GEOB_MAPAS_CATALOGO" />
+          <EntitySet Name="GEOB_PANEL" EntityType="Self.GEOB_PANEL" />
+          <EntitySet Name="GEOB_SERVICIOS_CATALOGO" EntityType="Self.GEOB_SERVICIOS_CATALOGO" />
+          <EntitySet Name="GEOB_TEMATICAS" EntityType="Self.GEOB_TEMATICAS" />
+          <EntitySet Name="GEOB_TIPO_CATALOGO" EntityType="Self.GEOB_TIPO_CATALOGO" />
+          <EntitySet Name="GEOB_TIPO_SRV" EntityType="Self.GEOB_TIPO_SRV" />
+          <AssociationSet Name="FK_CAROUSEL_ESTADO" Association="Self.FK_CAROUSEL_ESTADO">
+            <End Role="GEOB_ESTADO" EntitySet="GEOB_ESTADO" />
+            <End Role="GEOB_CARROUSEL" EntitySet="GEOB_CARROUSEL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GEOB_ENLACE_ESTADO" Association="Self.FK_GEOB_ENLACE_ESTADO">
+            <End Role="GEOB_ESTADO" EntitySet="GEOB_ESTADO" />
+            <End Role="GEOB_ENLACES_PANEL" EntitySet="GEOB_ENLACES_PANEL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GEOB_PANEL_ENLACE" Association="Self.FK_GEOB_PANEL_ENLACE">
+            <End Role="GEOB_PANEL" EntitySet="GEOB_PANEL" />
+            <End Role="GEOB_ENLACES_PANEL" EntitySet="GEOB_ENLACES_PANEL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GEOB_GRUPO_ESTADO" Association="Self.FK_GEOB_GRUPO_ESTADO">
+            <End Role="GEOB_ESTADO" EntitySet="GEOB_ESTADO" />
+            <End Role="GEOB_GRUPOS" EntitySet="GEOB_GRUPOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GEOB_MAPAS_ESTADO" Association="Self.FK_GEOB_MAPAS_ESTADO">
+            <End Role="GEOB_ESTADO" EntitySet="GEOB_ESTADO" />
+            <End Role="GEOB_MAPAS_CATALOGO" EntitySet="GEOB_MAPAS_CATALOGO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GEOB_PANEL_ESTADO" Association="Self.FK_GEOB_PANEL_ESTADO">
+            <End Role="GEOB_ESTADO" EntitySet="GEOB_ESTADO" />
+            <End Role="GEOB_PANEL" EntitySet="GEOB_PANEL" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GEOB_SERVICIOS_ESTADO" Association="Self.FK_GEOB_SERVICIOS_ESTADO">
+            <End Role="GEOB_ESTADO" EntitySet="GEOB_ESTADO" />
+            <End Role="GEOB_SERVICIOS_CATALOGO" EntitySet="GEOB_SERVICIOS_CATALOGO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GEOB_TIPO_CTLG_ESTADO" Association="Self.FK_GEOB_TIPO_CTLG_ESTADO">
+            <End Role="GEOB_ESTADO" EntitySet="GEOB_ESTADO" />
+            <End Role="GEOB_TIPO_CATALOGO" EntitySet="GEOB_TIPO_CATALOGO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ID_TIPO_SRV_ESTADO" Association="Self.FK_ID_TIPO_SRV_ESTADO">
+            <End Role="GEOB_ESTADO" EntitySet="GEOB_ESTADO" />
+            <End Role="GEOB_TIPO_SRV" EntitySet="GEOB_TIPO_SRV" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TEMATICA_ESTADO" Association="Self.FK_TEMATICA_ESTADO">
+            <End Role="GEOB_ESTADO" EntitySet="GEOB_ESTADO" />
+            <End Role="GEOB_TEMATICAS" EntitySet="GEOB_TEMATICAS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GEOB_GRUPO_TEMA" Association="Self.FK_GEOB_GRUPO_TEMA">
+            <End Role="GEOB_TEMATICAS" EntitySet="GEOB_TEMATICAS" />
+            <End Role="GEOB_GRUPOS" EntitySet="GEOB_GRUPOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GEOB_MAPAS_GRUPO" Association="Self.FK_GEOB_MAPAS_GRUPO">
+            <End Role="GEOB_GRUPOS" EntitySet="GEOB_GRUPOS" />
+            <End Role="GEOB_MAPAS_CATALOGO" EntitySet="GEOB_MAPAS_CATALOGO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GEOB_MAPAS_TIPO_CAT" Association="Self.FK_GEOB_MAPAS_TIPO_CAT">
+            <End Role="GEOB_TIPO_CATALOGO" EntitySet="GEOB_TIPO_CATALOGO" />
+            <End Role="GEOB_MAPAS_CATALOGO" EntitySet="GEOB_MAPAS_CATALOGO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MAPAS_CAT_TEMATICA" Association="Self.FK_MAPAS_CAT_TEMATICA">
+            <End Role="GEOB_TEMATICAS" EntitySet="GEOB_TEMATICAS" />
+            <End Role="GEOB_MAPAS_CATALOGO" EntitySet="GEOB_MAPAS_CATALOGO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SERVS_CAT_TIPO_SRV" Association="Self.FK_SERVS_CAT_TIPO_SRV">
+            <End Role="GEOB_TIPO_SRV" EntitySet="GEOB_TIPO_SRV" />
+            <End Role="GEOB_SERVICIOS_CATALOGO" EntitySet="GEOB_SERVICIOS_CATALOGO" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelGeoStoreContainer" CdmEntityContainer="geo">
+          <EntitySetMapping Name="GEOB_CARROUSEL">
+            <EntityTypeMapping TypeName="ModelGeo.GEOB_CARROUSEL">
+              <MappingFragment StoreEntitySet="GEOB_CARROUSEL">
+                <ScalarProperty Name="ID_CARROUSEL" ColumnName="ID_CARROUSEL" />
+                <ScalarProperty Name="TITULO" ColumnName="TITULO" />
+                <ScalarProperty Name="SUBTITULO" ColumnName="SUBTITULO" />
+                <ScalarProperty Name="URL_IMG_FONDO" ColumnName="URL_IMG_FONDO" />
+                <ScalarProperty Name="FK_ID_USUARIO" ColumnName="FK_ID_USUARIO" />
+                <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+                <ScalarProperty Name="FK_ID_ESTADO" ColumnName="FK_ID_ESTADO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GEOB_ENLACES_PANEL">
+            <EntityTypeMapping TypeName="ModelGeo.GEOB_ENLACES_PANEL">
+              <MappingFragment StoreEntitySet="GEOB_ENLACES_PANEL">
+                <ScalarProperty Name="ID_ENLACE" ColumnName="ID_ENLACE" />
+                <ScalarProperty Name="FK_ID_PANEL" ColumnName="FK_ID_PANEL" />
+                <ScalarProperty Name="TITULO" ColumnName="TITULO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="URL_ENLACE" ColumnName="URL_ENLACE" />
+                <ScalarProperty Name="FK_ID_ESTADO" ColumnName="FK_ID_ESTADO" />
+                <ScalarProperty Name="FK_ID_USUARIO" ColumnName="FK_ID_USUARIO" />
+                <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GEOB_ESTADO">
+            <EntityTypeMapping TypeName="ModelGeo.GEOB_ESTADO">
+              <MappingFragment StoreEntitySet="GEOB_ESTADO">
+                <ScalarProperty Name="ID_ESTADO" ColumnName="ID_ESTADO" />
+                <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GEOB_GRUPOS">
+            <EntityTypeMapping TypeName="ModelGeo.GEOB_GRUPOS">
+              <MappingFragment StoreEntitySet="GEOB_GRUPOS">
+                <ScalarProperty Name="ID_GRUPO" ColumnName="ID_GRUPO" />
+                <ScalarProperty Name="GRUPO" ColumnName="GRUPO" />
+                <ScalarProperty Name="FK_ID_TEMATICA" ColumnName="FK_ID_TEMATICA" />
+                <ScalarProperty Name="FK_ID_ESTADO" ColumnName="FK_ID_ESTADO" />
+                <ScalarProperty Name="FK_ID_USUARIO" ColumnName="FK_ID_USUARIO" />
+                <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GEOB_MAPAS_CATALOGO">
+            <EntityTypeMapping TypeName="ModelGeo.GEOB_MAPAS_CATALOGO">
+              <MappingFragment StoreEntitySet="GEOB_MAPAS_CATALOGO">
+                <ScalarProperty Name="ID_MAPA" ColumnName="ID_MAPA" />
+                <ScalarProperty Name="FK_ID_TEMATICA" ColumnName="FK_ID_TEMATICA" />
+                <ScalarProperty Name="CATALOGO" ColumnName="CATALOGO" />
+                <ScalarProperty Name="TITULO" ColumnName="TITULO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="URL_IMG" ColumnName="URL_IMG" />
+                <ScalarProperty Name="URL_MANUAL" ColumnName="URL_MANUAL" />
+                <ScalarProperty Name="TAGS" ColumnName="TAGS" />
+                <ScalarProperty Name="FK_ID_TIPO_CATAL" ColumnName="FK_ID_TIPO_CATAL" />
+                <ScalarProperty Name="URL" ColumnName="URL" />
+                <ScalarProperty Name="FECHA_PUBLICACION" ColumnName="FECHA_PUBLICACION" />
+                <ScalarProperty Name="FUENTE" ColumnName="FUENTE" />
+                <ScalarProperty Name="FK_ID_USUARIO" ColumnName="FK_ID_USUARIO" />
+                <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+                <ScalarProperty Name="FK_ID_ESTADO" ColumnName="FK_ID_ESTADO" />
+                <ScalarProperty Name="FK_ID_GRUPO" ColumnName="FK_ID_GRUPO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GEOB_PANEL">
+            <EntityTypeMapping TypeName="ModelGeo.GEOB_PANEL">
+              <MappingFragment StoreEntitySet="GEOB_PANEL">
+                <ScalarProperty Name="ID_PANEL" ColumnName="ID_PANEL" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="TITULO" ColumnName="TITULO" />
+                <ScalarProperty Name="FK_ID_ESTADO" ColumnName="FK_ID_ESTADO" />
+                <ScalarProperty Name="FK_ID_USUARIO" ColumnName="FK_ID_USUARIO" />
+                <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GEOB_SERVICIOS_CATALOGO">
+            <EntityTypeMapping TypeName="ModelGeo.GEOB_SERVICIOS_CATALOGO">
+              <MappingFragment StoreEntitySet="GEOB_SERVICIOS_CATALOGO">
+                <ScalarProperty Name="ID_SERVICIO" ColumnName="ID_SERVICIO" />
+                <ScalarProperty Name="TITULO" ColumnName="TITULO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="URL" ColumnName="URL" />
+                <ScalarProperty Name="TAGS" ColumnName="TAGS" />
+                <ScalarProperty Name="FK_ID_TIPO_SRV" ColumnName="FK_ID_TIPO_SRV" />
+                <ScalarProperty Name="FK_ID_ESTADO" ColumnName="FK_ID_ESTADO" />
+                <ScalarProperty Name="FK_ID_USUARIO" ColumnName="FK_ID_USUARIO" />
+                <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GEOB_TEMATICAS">
+            <EntityTypeMapping TypeName="ModelGeo.GEOB_TEMATICAS">
+              <MappingFragment StoreEntitySet="GEOB_TEMATICAS">
+                <ScalarProperty Name="ID_TEMATICA" ColumnName="ID_TEMATICA" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="URL_IMG" ColumnName="URL_IMG" />
+                <ScalarProperty Name="FK_ID_ESTADO" ColumnName="FK_ID_ESTADO" />
+                <ScalarProperty Name="FK_ID_USUARIO" ColumnName="FK_ID_USUARIO" />
+                <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GEOB_TIPO_CATALOGO">
+            <EntityTypeMapping TypeName="ModelGeo.GEOB_TIPO_CATALOGO">
+              <MappingFragment StoreEntitySet="GEOB_TIPO_CATALOGO">
+                <ScalarProperty Name="ID_TIPO_CATAL" ColumnName="ID_TIPO_CATAL" />
+                <ScalarProperty Name="TIPO_MAPA" ColumnName="TIPO_MAPA" />
+                <ScalarProperty Name="FK_ID_ESTADO" ColumnName="FK_ID_ESTADO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GEOB_TIPO_SRV">
+            <EntityTypeMapping TypeName="ModelGeo.GEOB_TIPO_SRV">
+              <MappingFragment StoreEntitySet="GEOB_TIPO_SRV">
+                <ScalarProperty Name="ID_TIPO_SRV" ColumnName="ID_TIPO_SRV" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="ESTANDARD" ColumnName="ESTANDARD" />
+                <ScalarProperty Name="FK_ID_ESTADO" ColumnName="FK_ID_ESTADO" />
+                <ScalarProperty Name="FK_ID_USUARIO" ColumnName="FK_ID_USUARIO" />
+                <ScalarProperty Name="FECHA_REGISTRO" ColumnName="FECHA_REGISTRO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

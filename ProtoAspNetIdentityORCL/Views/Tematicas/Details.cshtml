@@ -1,0 +1,61 @@
+﻿@model NSPecor.Models.GEOB_TEMATICAS
+
+@{
+    ViewBag.Title = "Detalle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Tematicas</h2>
+
+<div>
+    <h4>Detalle</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+           TEMATICA
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOMBRE)
+        </dd>
+
+        <dt>
+            IMAGEN
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.URL_IMG)
+        </dd>
+
+        
+
+        <dt>
+           FECHA REGISTRO
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FECHA_REGISTRO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DESCRIPCION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DESCRIPCION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GEOB_ESTADO.ESTADO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GEOB_ESTADO.ESTADO)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.ID_TEMATICA }) |
+    @Html.ActionLink("Regresar", "Index")
+</p>

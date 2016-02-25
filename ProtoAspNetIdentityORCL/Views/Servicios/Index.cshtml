@@ -1,0 +1,49 @@
+﻿@model IEnumerable<NSPecor.Models.GEOB_SERVICIOS_CATALOGO>
+
+@{
+    ViewBag.Title = "Geoservicios";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Geoservicios</h2>
+
+<p>
+    @Html.ActionLink("Adicionar", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TITULO)
+        </th>
+        
+       
+        <th>
+            @Html.DisplayNameFor(model => model.GEOB_ESTADO.ESTADO)
+        </th>
+        <th>
+           ESTANDAR
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TITULO)
+        </td>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.GEOB_ESTADO.ESTADO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GEOB_TIPO_SRV.NOMBRE)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.ID_SERVICIO }) |
+            @Html.ActionLink("Detalle", "Details", new { id=item.ID_SERVICIO }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.ID_SERVICIO })
+        </td>
+    </tr>
+}
+
+</table>

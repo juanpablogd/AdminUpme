@@ -1,0 +1,65 @@
+﻿@model NSPecor.Models.GEOB_CARROUSEL
+
+@{
+    ViewBag.Title = "Borrar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Imagenes Carrusel</h2>
+
+<h3>Esta seguro que desea borrar?</h3>
+<div>
+    <h4>Borrar</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TITULO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TITULO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SUBTITULO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SUBTITULO)
+        </dd>
+
+        <dt>
+            IMAGEN
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.URL_IMG_FONDO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FECHA_REGISTRO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FECHA_REGISTRO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GEOB_ESTADO.ESTADO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GEOB_ESTADO.ESTADO)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Borrar" class="btn btn-default" /> |
+            @Html.ActionLink("Regresar", "Index")
+        </div>
+    }
+</div>

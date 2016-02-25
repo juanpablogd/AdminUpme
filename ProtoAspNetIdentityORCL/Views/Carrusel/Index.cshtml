@@ -1,0 +1,60 @@
+﻿@model IEnumerable<NSPecor.Models.GEOB_CARROUSEL>
+
+@{
+    ViewBag.Title = "Carrusel";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Imagenes Carrusel</h2>
+
+<p>
+    @Html.ActionLink("Adicionar Imagen", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TITULO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SUBTITULO)
+        </th>
+        <th>
+           IMAGEN
+        </th>
+        
+        <th>
+            FECHA CREACION
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GEOB_ESTADO.ESTADO)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TITULO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SUBTITULO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.URL_IMG_FONDO)
+        </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.FECHA_REGISTRO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GEOB_ESTADO.ESTADO)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.ID_CARROUSEL }) |
+            @Html.ActionLink("Detalle", "Details", new { id=item.ID_CARROUSEL }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.ID_CARROUSEL })
+        </td>
+    </tr>
+}
+
+</table>

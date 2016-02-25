@@ -1,0 +1,126 @@
+﻿@model NSPecor.Models.GEOB_MAPAS_CATALOGO
+
+@{
+    ViewBag.Title = "Detalle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Mapas y Visores</h2>
+
+<div>
+    <h4>Detalle</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TITULO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TITULO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DESCRIPCION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DESCRIPCION)
+        </dd>
+
+        <dt>
+            IMAGEN
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.URL_IMG)
+        </dd>
+
+        <dt>
+            MANUAL DE USUARIO
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.URL_MANUAL)
+        </dd>
+
+        <dt>
+           PALABRAS CLAVE
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TAGS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.URL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.URL)
+        </dd>
+
+        <dt>
+            FECHA PUBLICACION
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FECHA_PUBLICACION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FUENTE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FUENTE)
+        </dd>
+
+       
+        <dt>
+           FECHA REGISTRO
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FECHA_REGISTRO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GEOB_ESTADO.ESTADO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GEOB_ESTADO.ESTADO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GEOB_GRUPOS.GRUPO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GEOB_GRUPOS.GRUPO)
+        </dd>
+
+        <dt>
+           CATALOGO
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GEOB_TIPO_CATALOGO.TIPO_MAPA)
+        </dd>
+
+        <dt>
+           TEMATICA
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GEOB_TEMATICAS.NOMBRE)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.ID_MAPA }) |
+    @Html.ActionLink("Regresar", "Index")
+</p>
