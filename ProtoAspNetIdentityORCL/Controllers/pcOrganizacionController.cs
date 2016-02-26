@@ -34,8 +34,22 @@ namespace NSPecor.Controllers
                     }
                 }
             }
-            var mU_ORGANIZACIONES = db.MUB_ORGANIZACIONES.Include(m => m.MUB_TIPO_ORGANIZACION);
+            var mU_ORGANIZACIONES = db.MUB_ORGANIZACIONES.Include(m => m.MUB_TIPO_ORGANIZACION).OrderByDescending(o => o.ID_ORGANIZACION).Take(2000);
             return View(mU_ORGANIZACIONES);
+        }
+
+        [HttpPost]
+        public ActionResult Index([Bind(Include = "NIT,RAZON_SOCIAL,DIRECCION,TELEFONO,REPRESENTANTE,ID_TIPO_ORGANIZACION,SIGLA,MP_UPME,ID_AREA_DISTRIBUCION,CODIGO")] MUB_ORGANIZACIONES mU_ORGANIZACIONES)
+        {
+            var txt_buscar = Request.Form["txt_buscar"];
+            if (txt_buscar == "" || txt_buscar == null)
+            {   //RETORNA A LA LISTA DE INICIO
+                return RedirectToAction("Index", "pcOrganizacion");
+            }
+
+            var mU_ORGANIZACION = db.MUB_ORGANIZACIONES.Where(h => h.NIT.Contains(txt_buscar) || h.RAZON_SOCIAL.Contains(txt_buscar)).Include(m => m.MUB_TIPO_ORGANIZACION).OrderByDescending(o => o.ID_ORGANIZACION).Take(2000);
+            return View(mU_ORGANIZACIONES);
+
         }
 
         // GET: pcOrganizacion/Details/5

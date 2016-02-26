@@ -21,6 +21,20 @@ namespace NSPecor.Controllers
             return View(geob_mapas_catalogo.ToList());
         }
 
+        [HttpPost]
+        public ActionResult Index([Bind(Include = "ID_MAPA,FK_ID_TEMATICA,CATALOGO,TITULO,DESCRIPCION,URL_IMG,URL_MANUAL,TAGS,FK_ID_TIPO_CATAL,URL,FECHA_PUBLICACION,FUENTE,FK_ID_USUARIO,FECHA_REGISTRO,FK_ID_ESTADO,FK_ID_GRUPO")] GEOB_MAPAS_CATALOGO geob_mapas_catalogo)
+        {
+            var txt_buscar = Request.Form["txt_buscar"];
+            if (txt_buscar == "" || txt_buscar == null)
+            {   //RETORNA A LA LISTA DE INICIO
+                return RedirectToAction("Index", "Mapas");
+            }
+
+            var geob_mapas_catalogov = db.GEOB_MAPAS_CATALOGO.Where(h => h.TITULO.Contains(txt_buscar) || h.DESCRIPCION.Contains(txt_buscar)).Include(g => g.GEOB_ESTADO).Include(g => g.GEOB_GRUPOS).Include(g => g.GEOB_TIPO_CATALOGO).Include(g => g.GEOB_TEMATICAS);
+            return View(geob_mapas_catalogov.ToList());
+
+        }
+
         public ActionResult Mapas()
         {
             var geob_mapas_catalogo = db.GEOB_MAPAS_CATALOGO.Include(g => g.GEOB_ESTADO).Include(g => g.GEOB_GRUPOS).Include(g => g.GEOB_TIPO_CATALOGO).Include(g => g.GEOB_TEMATICAS);

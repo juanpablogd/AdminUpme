@@ -7,6 +7,14 @@
 
 <h2>Mapas y Visores</h2>
 
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken();
+    <p>
+        <label>Buscar título ó descripción: </label>&nbsp;<input type="text" name="txt_buscar" id="txt_buscar"><input type="submit" name="Buscar" value="Buscar" />
+    </p>
+}
+
 <p>
     @Html.ActionLink("Adicionar", "Create")
 </p>
