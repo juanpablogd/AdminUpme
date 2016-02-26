@@ -80,7 +80,7 @@ namespace NSPecor.Controllers
             } 
             ViewBag.ID_ROL = new SelectList((from s in db.MUB_ROL
                                              join m in db.MUB_MODULOS on s.ID_MODULO equals m.ID_MODULO
-                                             where s.ID_MODULO == (long)5 || s.ID_MODULO == (long)6 || s.ID_MODULO == (long)7
+                                             where s.ID_MODULO == (long)2 || s.ID_MODULO == (long)5 || s.ID_MODULO == (long)6 || s.ID_MODULO == (long)7
                                              orderby s.MUB_MODULOS.DESCRIPCION, s.NOMBRE
                                              select new { ID_ROL = s.ID_ROL, NOMBRE = m.DESCRIPCION + " / " + s.NOMBRE })
                                         .ToList(),
@@ -123,7 +123,7 @@ namespace NSPecor.Controllers
 
             ViewBag.ID_ROL = new SelectList((from s in db.MUB_ROL
                                              join m in db.MUB_MODULOS on s.ID_MODULO equals m.ID_MODULO
-                                             where s.ID_MODULO == (long)5 || s.ID_MODULO == (long)6 || s.ID_MODULO == (long)7
+                                             where s.ID_MODULO == (long)2 || s.ID_MODULO == (long)5 || s.ID_MODULO == (long)6 || s.ID_MODULO == (long)7
                                              orderby s.MUB_MODULOS.DESCRIPCION, s.NOMBRE
                                              select new { ID_ROL = s.ID_ROL, NOMBRE = m.DESCRIPCION + " / " + s.NOMBRE })
                                     .ToList(),
@@ -154,7 +154,7 @@ namespace NSPecor.Controllers
 
             ViewBag.ID_ROL = new SelectList((from s in db.MUB_ROL
                                              join m in db.MUB_MODULOS on s.ID_MODULO equals m.ID_MODULO
-                                             where s.ID_MODULO == (long)5 || s.ID_MODULO == (long)6 || s.ID_MODULO == (long)7
+                                             where s.ID_MODULO == (long)2 || s.ID_MODULO == (long)5 || s.ID_MODULO == (long)6 || s.ID_MODULO == (long)7
                                              orderby s.MUB_MODULOS.DESCRIPCION, s.NOMBRE
                                              select new { ID_ROL = s.ID_ROL, NOMBRE = m.DESCRIPCION + " / " + s.NOMBRE })
                                     .ToList(),
@@ -202,7 +202,7 @@ namespace NSPecor.Controllers
             }
             ViewBag.ID_ROL = new SelectList((from s in db.MUB_ROL
                                              join m in db.MUB_MODULOS on s.ID_MODULO equals m.ID_MODULO
-                                             where s.ID_MODULO == (long)5 || s.ID_MODULO == (long)6 || s.ID_MODULO == (long)7
+                                             where s.ID_MODULO == (long)2 || s.ID_MODULO == (long)5 || s.ID_MODULO == (long)6 || s.ID_MODULO == (long)7
                                              orderby s.MUB_MODULOS.DESCRIPCION, s.NOMBRE
                                              select new { ID_ROL = s.ID_ROL, NOMBRE = m.DESCRIPCION + " / " + s.NOMBRE })
                                                 .ToList(),
