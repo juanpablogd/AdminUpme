@@ -30,7 +30,7 @@ namespace NSPecor.Controllers
                 return RedirectToAction("Index", "Mapas");
             }
 
-            var geob_mapas_catalogov = db.GEOB_MAPAS_CATALOGO.Where(h => h.TITULO.Contains(txt_buscar) || h.DESCRIPCION.Contains(txt_buscar)).Include(g => g.GEOB_ESTADO).Include(g => g.GEOB_GRUPOS).Include(g => g.GEOB_TIPO_CATALOGO).Include(g => g.GEOB_TEMATICAS);
+            var geob_mapas_catalogov = db.GEOB_MAPAS_CATALOGO.Where(h => h.TITULO.Contains(txt_buscar) || h.GEOB_TEMATICAS.DESCRIPCION.Contains(txt_buscar)).Include(g => g.GEOB_ESTADO).Include(g => g.GEOB_GRUPOS).Include(g => g.GEOB_TIPO_CATALOGO).Include(g => g.GEOB_TEMATICAS);
             return View(geob_mapas_catalogov.ToList());
 
         }

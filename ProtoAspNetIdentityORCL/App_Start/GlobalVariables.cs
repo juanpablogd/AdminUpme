@@ -9,7 +9,7 @@ namespace NSPecor.Controllers
 {
     public class GlobalVariables
     {
-        private const int cod_modulo = 5;
+        private const int cod_modulo = 2;
 
         // read-write variable
         public static string idUsuario
@@ -57,7 +57,8 @@ namespace NSPecor.Controllers
             foreach (var item in tmp)
             {
                 string nom_rol = item.MUB_ROL.NOMBRE.ToString();
-                if (rol == nom_rol)
+                string id_rol = item.MUB_ROL.ID_ROL.ToString();
+                if (rol == nom_rol || rol == id_rol)
                 {
                     ok = true;
                 }

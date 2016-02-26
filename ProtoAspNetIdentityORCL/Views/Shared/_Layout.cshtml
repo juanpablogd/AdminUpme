@@ -25,13 +25,13 @@
                     <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
                     @if (idUsuario != "" && idUsuario != null && User.Identity.IsAuthenticated == true)
                     {
-                        if (NSPecor.Controllers.GlobalVariables.Acceso("ADMIN"))
+                        if (NSPecor.Controllers.GlobalVariables.Acceso("17"))
                         {
                             <li>@Html.ActionLink("Admin Usuarios", "Parametros", "Home")</li>
                             <li>@Html.ActionLink("Admin GEO", "ParametrosGEO", "Home")</li>
                             <li>@Html.ActionLink("Admin Sitios - Subestaciones", "ParametrosSitiosSub", "Home")</li>
                         }
-                        else if (NSPecor.Controllers.GlobalVariables.Acceso("ADMIN USUARIOS"))
+                        else if (NSPecor.Controllers.GlobalVariables.Acceso("18"))
                         {
                             <li>@Html.ActionLink("Admin Usuarios", "Parametros", "Home")</li>
                             <li>@Html.ActionLink("Admin Sitios - Subestaciones", "ParametrosSitiosSub", "Home")</li>

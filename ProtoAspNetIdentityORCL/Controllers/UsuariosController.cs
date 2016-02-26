@@ -42,6 +42,23 @@ namespace NSPecor.Controllers
             return View(ResultadoQuery);
         }
 
+        [HttpPost]
+        public ActionResult Index([Bind(Include = "ID_USUARIO,NOMBRE,CARGO,DIRECCION,TELEFONO,CELULAR,EXTENSION,FAX,EMAIL,ESTADO,PWDHASH,ID_ORGANIZACION")] MUB_USUARIOS mub_usuarios)
+        {
+            var txt_buscar = Request.Form["txt_buscar"];
+            if (txt_buscar == "" || txt_buscar == null)
+            {   //RETORNA A LA LISTA DE INICIO
+                return RedirectToAction("Index", "Mapas");
+            }
+
+            var ResultadoQuery = (from p in db.MUB_USUARIOS
+                                  join q in db.MUB_ORGANIZACIONES on p.ID_ORGANIZACION equals q.ID_ORGANIZACION into Details
+                                  from m in Details.DefaultIfEmpty()
+                                  select p).Where(h => h.NOMBRE.Contains(txt_buscar)).OrderBy(a => a.NOMBRE);
+            return View(ResultadoQuery);
+
+        }
+
         // GET: /Usuarios/Details/5
         public ActionResult Details(long? id)
         {
