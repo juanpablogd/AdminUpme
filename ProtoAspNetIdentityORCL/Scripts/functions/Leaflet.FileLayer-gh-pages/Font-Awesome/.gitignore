@@ -15,7 +15,6 @@ _gh_pages/*
 src/website/static/*
 src/website/media/*
 
-bin
 cfcache
 develop-eggs
 dist
