@@ -46,6 +46,12 @@
         <AssociationConnector Association="pcMdlSpc.FK_MUB_PEC_PLAN" />
         <EntityTypeShape EntityType="pcMdlSpc.MUH_PECOR_COBERTURA" Width="1.5" PointX="16.625" PointY="7.25" />
         <AssociationConnector Association="pcMdlSpc.MUH_PECOR_COBERTURA_FK2" />
+        <EntityTypeShape EntityType="pcMdlSpc.MUB_ESTADO_SUB" Width="1.5" PointX="14.375" PointY="14.75" />
+        <EntityTypeShape EntityType="pcMdlSpc.MUB_FUENTES_CS" Width="1.5" PointX="15.375" PointY="0.75" />
+        <EntityTypeShape EntityType="pcMdlSpc.MUB_NIVEL_TENSION" Width="1.5" PointX="0.75" PointY="15.75" />
+        <EntityTypeShape EntityType="pcMdlSpc.MUB_TENSION" Width="1.5" PointX="3" PointY="15.625" />
+        <AssociationConnector Association="pcMdlSpc.FK_NIVEL_TENSIÓN_ID" />
+        <EntityTypeShape EntityType="pcMdlSpc.MUB_TIPO_CP" Width="1.5" PointX="15.375" PointY="3.75" />
         </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

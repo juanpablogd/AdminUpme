@@ -9,19 +9,7 @@
 warning 6002: The table/view 'MU.BC_DP_SITIOS_UPME' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="BC_DP_SITIOS_UPME">
           <Key>
-            
             <PropertyRef Name="ID_CENTRO_POBLADO" />
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
           </Key>
           <Property Name="OBJECTID" Type="number" Precision="38" Scale="0" Nullable="false" />
           <Property Name="ID_CENTRO_POBLADO" Type="number" Precision="38" Scale="0" Nullable="false" />
@@ -47,8 +35,25 @@ warning 6002: The table/view 'MU.BC_DP_SITIOS_UPME' does not have a primary key 
             <PropertyRef Name="ID_CLASE_CP" />
           </Key>
           <Property Name="ID_CLASE_CP" Type="number" Precision="11" Scale="0" Nullable="false" />
-          <Property Name="NOM_CLASE_CP" Type="nvarchar2" MaxLength="254" Nullable="false" />
-          <Property Name="ID_USUARIO_ACTUALIZACION" Type="number" Precision="11" Scale="0" Nullable="false" />
+          <Property Name="NOM_CLASE_CP" Type="nvarchar2" MaxLength="254" />
+          <Property Name="ID_USUARIO_ACTUALIZACION" Type="number" Precision="11" Scale="0" />
+          <Property Name="FECHA_ACTUALIZACION" Type="timestamp" Precision="6" />
+        </EntityType>
+        <EntityType Name="MUB_ESTADO_SUB">
+          <Key>
+            <PropertyRef Name="ID_ESTADO_SUB" />
+          </Key>
+          <Property Name="ID_ESTADO_SUB" Type="number" Precision="5" Scale="0" Nullable="false" />
+          <Property Name="NOM_ESTADO_SUB" Type="nvarchar2" MaxLength="1509" />
+          <Property Name="ACTIVO" Type="char" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="MUB_FUENTES_CS">
+          <Key>
+            <PropertyRef Name="ID_FUENTE_CS" />
+          </Key>
+          <Property Name="ID_FUENTE_CS" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="NOM_FUENTE_CS" Type="nvarchar2" MaxLength="50" Nullable="false" />
+          <Property Name="ID_USUARIO_ACTUALIZACION" Type="number" Precision="38" Scale="0" Nullable="false" />
           <Property Name="FECHA_ACTUALIZACION" Type="date" Nullable="false" />
         </EntityType>
         <EntityType Name="MUB_GENERALES">
@@ -58,21 +63,21 @@ warning 6002: The table/view 'MU.BC_DP_SITIOS_UPME' does not have a primary key 
           <Property Name="ID_PARAMETROS" Type="number" Precision="11" Scale="0" Nullable="false" />
           <Property Name="ID_MODULOS" Type="number" Precision="11" Scale="0" Nullable="false" />
           <Property Name="ID_GRUPO" Type="number" Precision="11" Scale="0" Nullable="false" />
-          <Property Name="ID_UNIDAD" Type="number" Precision="11" Scale="0" Nullable="false" />
+          <Property Name="ID_UNIDAD" Type="number" Precision="11" Scale="0" />
           <Property Name="ORDEN_GRUPO" Type="number" Precision="3" Scale="0" />
-          <Property Name="PARAMETRO" Type="nvarchar2" MaxLength="150" Nullable="false" />
-          <Property Name="DESCRIPCION" Type="nvarchar2" MaxLength="254" Nullable="false" />
-          <Property Name="VALOR" Type="nvarchar2" MaxLength="254" Nullable="false" />
-          <Property Name="ANO_VIGENCIA" Type="number" Precision="11" Scale="0" Nullable="false" />
-          <Property Name="ESTADO" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="PARAMETRO" Type="nvarchar2" MaxLength="150" />
+          <Property Name="DESCRIPCION" Type="nvarchar2" MaxLength="254" />
+          <Property Name="VALOR" Type="nvarchar2" MaxLength="254" />
+          <Property Name="ANO_VIGENCIA" Type="number" Precision="11" Scale="0" />
+          <Property Name="ESTADO" Type="char" MaxLength="1" />
         </EntityType>
         <EntityType Name="MUB_GRUPOS">
           <Key>
             <PropertyRef Name="ID_GRUPO" />
           </Key>
           <Property Name="ID_GRUPO" Type="number" Precision="11" Scale="0" Nullable="false" />
-          <Property Name="ID_MODULO" Type="number" Precision="11" Scale="0" Nullable="false" />
-          <Property Name="DESCRIPCION" Type="nvarchar2" MaxLength="254" Nullable="false" />
+          <Property Name="ID_MODULO" Type="number" Precision="11" Scale="0" />
+          <Property Name="DESCRIPCION" Type="nvarchar2" MaxLength="254" />
         </EntityType>
         <EntityType Name="MUB_MODULOS">
           <Key>
@@ -81,14 +86,21 @@ warning 6002: The table/view 'MU.BC_DP_SITIOS_UPME' does not have a primary key 
           <Property Name="ID_MODULO" Type="number" Precision="11" Scale="0" Nullable="false" />
           <Property Name="DESCRIPCION" Type="nvarchar2" MaxLength="254" />
         </EntityType>
+        <EntityType Name="MUB_NIVEL_TENSION">
+          <Key>
+            <PropertyRef Name="ID_NIVEL_TENSION" />
+          </Key>
+          <Property Name="ID_NIVEL_TENSION" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="nvarchar2" MaxLength="150" Nullable="false" />
+        </EntityType>
         <EntityType Name="MUB_ORGANIZACIONES">
           <Key>
             <PropertyRef Name="ID_ORGANIZACION" />
           </Key>
           <Property Name="ID_ORGANIZACION" Type="number" Precision="11" Scale="0" Nullable="false" />
-          <Property Name="NIT" Type="nvarchar2" MaxLength="50" />
-          <Property Name="RAZON_SOCIAL" Type="nvarchar2" MaxLength="254" />
-          <Property Name="DIRECCION" Type="nvarchar2" MaxLength="255" />
+          <Property Name="NIT" Type="nvarchar2" MaxLength="50" Nullable="false" />
+          <Property Name="RAZON_SOCIAL" Type="nvarchar2" MaxLength="254" Nullable="false" />
+          <Property Name="DIRECCION" Type="nvarchar2" MaxLength="50" />
           <Property Name="TELEFONO" Type="nvarchar2" MaxLength="12" />
           <Property Name="REPRESENTANTE" Type="nvarchar2" MaxLength="50" />
           <Property Name="SUBTIPO" Type="nvarchar2" MaxLength="50" />
@@ -135,13 +147,13 @@ warning 6002: The table/view 'MU.BC_DP_SITIOS_UPME' does not have a primary key 
           </Key>
           <Property Name="ID_PROYECTO_PECOR" Type="number" Precision="11" Scale="0" Nullable="false" />
           <Property Name="ID_ORGANIZACION" Type="number" Precision="11" Scale="0" />
-          <Property Name="CODIGO_PLAN" Type="number" Precision="11" Scale="0" Nullable="false" />
           <Property Name="PROG_PROY" Type="char" MaxLength="2" Nullable="false" />
-          <Property Name="CODIGO_UPME" Type="nvarchar2" MaxLength="50" Nullable="false" />
+          <Property Name="CODIGO_UPME" Type="nvarchar2" MaxLength="50" />
           <Property Name="NOMBRE" Type="nvarchar2" MaxLength="150" Nullable="false" />
           <Property Name="ID_TIPO_PROY_PECOR" Type="number" Precision="11" Scale="0" Nullable="false" />
           <Property Name="ID_CLASE" Type="number" Precision="11" Scale="0" Nullable="false" />
           <Property Name="REALIZARA_PROYECTO" Type="char" MaxLength="1" />
+          <Property Name="ADMIN_PROYECTO" Type="char" MaxLength="1" />
           <Property Name="FINANCIA_ACOMETIDA" Type="varchar2" MaxLength="200" />
           <Property Name="INI_EJEC_INV" Type="date" />
           <Property Name="FIN_EJE_INV" Type="date" />
@@ -167,7 +179,6 @@ warning 6002: The table/view 'MU.BC_DP_SITIOS_UPME' does not have a primary key 
           <Property Name="FECHA_REGISTRO" Type="date" />
           <Property Name="ID_SUBESTACION" Type="number" Precision="38" Scale="0" />
           <Property Name="ID_PLAN" Type="number" Precision="38" Scale="0" />
-          <Property Name="ADMIN_PROYECTO" Type="varchar2" MaxLength="1" />
         </EntityType>
         <EntityType Name="MUB_ROL">
           <Key>
@@ -191,12 +202,30 @@ warning 6002: The table/view 'MU.BC_DP_SITIOS_UPME' does not have a primary key 
           <Property Name="ID_USUARIO_ACTUALIZACION" Type="number" Precision="11" Scale="0" />
           <Property Name="FECHA_ACTUALIZACION" Type="date" />
         </EntityType>
+        <EntityType Name="MUB_TENSION">
+          <Key>
+            <PropertyRef Name="ID_TENSION" />
+          </Key>
+          <Property Name="ID_TENSION" Type="number" Precision="5" Scale="0" Nullable="false" />
+          <Property Name="ID_NIVEL_TENSION" Type="number" Precision="5" Scale="0" />
+          <Property Name="DESCRIPCION" Type="nvarchar2" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="MUB_TIPO_CP">
+          <Key>
+            <PropertyRef Name="ID_TIPO_CP" />
+          </Key>
+          <Property Name="ID_TIPO_CP" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="NOM_TIPO_CP" Type="nvarchar2" MaxLength="50" Nullable="false" />
+          <Property Name="ABR_TIPO_CP" Type="nvarchar2" MaxLength="10" Nullable="false" />
+          <Property Name="ID_USUARIO_ACTUALIZACION" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="FECHA_ACTUALIZACION" Type="date" Nullable="false" />
+        </EntityType>
         <EntityType Name="MUB_TIPO_ORGANIZACION">
           <Key>
             <PropertyRef Name="ID_TIPO_ORGANIZACION" />
           </Key>
           <Property Name="ID_TIPO_ORGANIZACION" Type="number" Precision="11" Scale="0" Nullable="false" />
-          <Property Name="NOM_TIPO_ORG" Type="nvarchar2" MaxLength="254" />
+          <Property Name="NOM_TIPO_ORG" Type="nvarchar2" MaxLength="254" Nullable="false" />
           <Property Name="ACTIVO" Type="char" MaxLength="1" />
         </EntityType>
         <EntityType Name="MUB_TIPO_PROY_PECOR">
@@ -212,8 +241,8 @@ warning 6002: The table/view 'MU.BC_DP_SITIOS_UPME' does not have a primary key 
             <PropertyRef Name="ID_UNIDAD" />
           </Key>
           <Property Name="ID_UNIDAD" Type="number" Precision="11" Scale="0" Nullable="false" />
-          <Property Name="UNIDAD" Type="nvarchar2" MaxLength="100" Nullable="false" />
-          <Property Name="UNI_DESCRIPCION" Type="nvarchar2" MaxLength="254" Nullable="false" />
+          <Property Name="UNIDAD" Type="nvarchar2" MaxLength="100" />
+          <Property Name="UNI_DESCRIPCION" Type="nvarchar2" MaxLength="254" />
         </EntityType>
         <EntityType Name="MUB_USUARIOS">
           <Key>
@@ -230,7 +259,7 @@ warning 6002: The table/view 'MU.BC_DP_SITIOS_UPME' does not have a primary key 
           <Property Name="EMAIL" Type="nvarchar2" MaxLength="200" Nullable="false" />
           <Property Name="ESTADO" Type="nvarchar2" MaxLength="1" />
           <Property Name="PWDHASH" Type="nvarchar2" MaxLength="254" />
-          <Property Name="ID_ORGANIZACION" Type="number" Precision="11" Scale="0" />
+          <Property Name="ID_ORGANIZACION" Type="number" Precision="11" Scale="0" Nullable="false"/>
         </EntityType>
         <EntityType Name="MUB_USUARIOS_ORG">
           <Key>
@@ -250,20 +279,20 @@ warning 6002: The table/view 'MU.BC_DP_SITIOS_UPME' does not have a primary key 
         </EntityType>
         <EntityType Name="MUB_USUARIOS_ROLES">
           <Key>
-            <PropertyRef Name="ID_USR_ROL" />
+            <PropertyRef Name="ID_USUARIO" />
+            <PropertyRef Name="ID_ROL" />
           </Key>
           <Property Name="ID_USUARIO" Type="number" Precision="11" Scale="0" Nullable="false" />
           <Property Name="ID_ROL" Type="number" Precision="38" Scale="0" Nullable="false" />
           <Property Name="FECHA_ACTUALIZACION" Type="date" />
-          <Property Name="ID_USR_ROL" Type="number" Precision="11" Scale="0" Nullable="false" />
         </EntityType>
         <EntityType Name="MUB_VSS">
           <Key>
             <PropertyRef Name="ID_VSS" />
           </Key>
           <Property Name="ID_VSS" Type="number" Precision="11" Scale="0" Nullable="false" />
-          <Property Name="COD_UPME" Type="nvarchar2" MaxLength="8" />
-          <Property Name="ID_CENTRO_POBLADO" Type="number" Precision="11" Scale="0" Nullable="false" />
+
+          <Property Name="ID_CENTRO_POBLADO" Type="number" Precision="10" Scale="0" />
           <Property Name="V_TOTAL" Type="number" Precision="38" Scale="0" />
           <Property Name="V_URBANO" Type="number" Precision="38" Scale="0" />
           <Property Name="V_RURAL" Type="number" Precision="38" Scale="0" />
@@ -277,11 +306,22 @@ warning 6002: The table/view 'MU.BC_DP_SITIOS_UPME' does not have a primary key 
           <Property Name="VIGENCIA" Type="number" Precision="38" Scale="0" />
           <Property Name="VSS_TOTAL" Type="number" Precision="38" Scale="0" />
         </EntityType>
+        <EntityType Name="VISTA_BC_MPIO_DPTO">
+          <Key>
+            <PropertyRef Name="MPIO_CCDGO" />
+          </Key>
+          <Property Name="OBJECTID_1" Type="number" Precision="11" Scale="0" Nullable="false" />
+          <Property Name="DPTO_CCDGO" Type="varchar2" MaxLength="2" />
+          <Property Name="DPTO_CNMBR" Type="varchar2" MaxLength="100" />
+          <Property Name="MPIO_CCDGO" Type="nvarchar2" MaxLength="10" Nullable="false"/>
+          <Property Name="MPIO_CNMBR" Type="varchar2" MaxLength="100" />
+          <Property Name="MPIO_CNMBRSA" Type="varchar2" MaxLength="100" />
+        </EntityType>
         <EntityType Name="MUH_PECOR_COBERTURA">
           <Key>
             <PropertyRef Name="DPTO_CCDGO" />
             <PropertyRef Name="MPIO_CCDGO" />
-            <PropertyRef Name="ID_PLAN" />
+            <PropertyRef Name="VIGENCIA_ANT" />
           </Key>
           <Property Name="DPTO_CCDGO" Type="varchar2" MaxLength="2" Nullable="false" />
           <Property Name="MPIO_CCDGO" Type="varchar2" MaxLength="3" Nullable="false" />
@@ -388,6 +428,31 @@ warning 6005: The data type 'st_geometry' is currently not supported for the tar
             </Dependent>
           </ReferentialConstraint>
         </Association>
+
+        <Association Name="FK_PECOR_CP_VSS_FK1">
+          <End Role="BC_DP_SITIOS_UPME" Type="Self.BC_DP_SITIOS_UPME" Multiplicity="1" />
+          <End Role="MUB_PECOR_CP_VSS" Type="Self.MUB_PECOR_CP_VSS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BC_DP_SITIOS_UPME">
+              <PropertyRef Name="ID_CENTRO_POBLADO" />
+            </Principal>
+            <Dependent Role="MUB_PECOR_CP_VSS">
+              <PropertyRef Name="ID_CENTRO_POBLADO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MUB_VSS_ID_CENTRO_POBLADO">
+          <End Role="BC_DP_SITIOS_UPME" Type="Self.BC_DP_SITIOS_UPME" Multiplicity="0..1" />
+          <End Role="MUB_VSS" Type="Self.MUB_VSS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BC_DP_SITIOS_UPME">
+              <PropertyRef Name="ID_CENTRO_POBLADO" />
+            </Principal>
+            <Dependent Role="MUB_VSS">
+              <PropertyRef Name="ID_CENTRO_POBLADO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_MU_USUORG_ORG">
           <End Role="MUB_ORGANIZACIONES" Type="Self.MUB_ORGANIZACIONES" Multiplicity="1" />
           <End Role="MUB_USUARIOS_ORG" Type="Self.MUB_USUARIOS_ORG" Multiplicity="*" />
@@ -409,6 +474,18 @@ warning 6005: The data type 'st_geometry' is currently not supported for the tar
             </Principal>
             <Dependent Role="MUB_PROYECTOS_PECOR">
               <PropertyRef Name="ID_PLAN" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NIVEL_TENSIÓN_ID">
+          <End Role="MUB_NIVEL_TENSION" Type="Self.MUB_NIVEL_TENSION" Multiplicity="0..1" />
+          <End Role="MUB_TENSION" Type="Self.MUB_TENSION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MUB_NIVEL_TENSION">
+              <PropertyRef Name="ID_NIVEL_TENSION" />
+            </Principal>
+            <Dependent Role="MUB_TENSION">
+              <PropertyRef Name="ID_NIVEL_TENSION" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -484,17 +561,80 @@ warning 6005: The data type 'st_geometry' is currently not supported for the tar
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Function Name="PECOR_F1_CUDIS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="MU" ReturnType="varchar2">
+        <Function Name="PECOR_F1_CUDIS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="MU" >
           <Parameter Name="PID_PLAN" Type="number" Mode="In" />
         </Function>
         <Function Name="PECOR_P1_CUDIS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="MU">
           <Parameter Name="PID_PLAN" Type="number" Mode="In" />
         </Function>
+        <Association Name="MU_ORGANIZACIONES_FK_TIPO">
+          <End Role="MUB_TIPO_ORGANIZACION" Type="Self.MUB_TIPO_ORGANIZACION" Multiplicity="1" />
+          <End Role="MUB_ORGANIZACIONES" Type="Self.MUB_ORGANIZACIONES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MUB_TIPO_ORGANIZACION">
+              <PropertyRef Name="ID_TIPO_ORGANIZACION" />
+            </Principal>
+            <Dependent Role="MUB_ORGANIZACIONES">
+              <PropertyRef Name="ID_TIPO_ORGANIZACION" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="MU_PROYECTOS_PECOR_FK_ORGAN">
+          <End Role="MUB_ORGANIZACIONES" Type="Self.MUB_ORGANIZACIONES" Multiplicity="0..1" />
+          <End Role="MUB_PROYECTOS_PECOR" Type="Self.MUB_PROYECTOS_PECOR" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MUB_ORGANIZACIONES">
+              <PropertyRef Name="ID_ORGANIZACION" />
+            </Principal>
+            <Dependent Role="MUB_PROYECTOS_PECOR">
+              <PropertyRef Name="ID_ORGANIZACION" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="MU_PROYECTOS_PECOR_FK_TIPO">
+          <End Role="MUB_TIPO_PROY_PECOR" Type="Self.MUB_TIPO_PROY_PECOR" Multiplicity="1" />
+          <End Role="MUB_PROYECTOS_PECOR" Type="Self.MUB_PROYECTOS_PECOR" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MUB_TIPO_PROY_PECOR">
+              <PropertyRef Name="ID_TIPO_PROY_PECOR" />
+            </Principal>
+            <Dependent Role="MUB_PROYECTOS_PECOR">
+              <PropertyRef Name="ID_TIPO_PROY_PECOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      <Association Name="VISTA_BC_MPIO_DPTOBC_DP_SITIO_UPME">
+        <End Role="VISTA_BC_MPIO_DPTO" Type="Self.VISTA_BC_MPIO_DPTO" Multiplicity="1" />
+        <End Role="BC_DP_SITIOS_UPME" Type="Self.BC_DP_SITIOS_UPME" Multiplicity="*" />
+        <ReferentialConstraint>
+          <Principal Role="VISTA_BC_MPIO_DPTO">
+            <PropertyRef Name="MPIO_CCDGO" />
+          </Principal>
+          <Dependent Role="BC_DP_SITIOS_UPME">
+            <PropertyRef Name="COD_MPIO" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="MUB_ORGANIZACIONESMUB_USUARIOS">
+        <End Role="MUB_ORGANIZACIONES" Type="Self.MUB_ORGANIZACIONES" Multiplicity="1" />
+        <End Role="MUB_USUARIOS" Type="Self.MUB_USUARIOS" Multiplicity="*" />
+        <ReferentialConstraint>
+          <Principal Role="MUB_ORGANIZACIONES">
+            <PropertyRef Name="ID_ORGANIZACION" />
+          </Principal>
+          <Dependent Role="MUB_USUARIOS">
+            <PropertyRef Name="ID_ORGANIZACION" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
         <EntityContainer Name="pcMdlSpcStoreContainer">
+
           <EntitySet Name="MUB_CLASE_CP" EntityType="Self.MUB_CLASE_CP" Schema="MU" store:Type="Tables" />
+          <EntitySet Name="MUB_ESTADO_SUB" EntityType="Self.MUB_ESTADO_SUB" Schema="MU" store:Type="Tables" />
+          <EntitySet Name="MUB_FUENTES_CS" EntityType="Self.MUB_FUENTES_CS" Schema="MU" store:Type="Tables" />
           <EntitySet Name="MUB_GENERALES" EntityType="Self.MUB_GENERALES" Schema="MU" store:Type="Tables" />
-          <EntitySet Name="MUB_GRUPOS" EntityType="Self.MUB_GRUPOS" Schema="MU" store:Type="Tables" />
           <EntitySet Name="MUB_MODULOS" EntityType="Self.MUB_MODULOS" Schema="MU" store:Type="Tables" />
+          <EntitySet Name="MUB_NIVEL_TENSION" EntityType="Self.MUB_NIVEL_TENSION" Schema="MU" store:Type="Tables" />
           <EntitySet Name="MUB_ORGANIZACIONES" EntityType="Self.MUB_ORGANIZACIONES" Schema="MU" store:Type="Tables" />
           <EntitySet Name="MUB_PECOR_CP_VSS" EntityType="Self.MUB_PECOR_CP_VSS" Schema="MU" store:Type="Tables" />
           <EntitySet Name="MUB_PECOR_PLAN" EntityType="Self.MUB_PECOR_PLAN" Schema="MU" store:Type="Tables" />
@@ -504,34 +644,36 @@ warning 6005: The data type 'st_geometry' is currently not supported for the tar
           <EntitySet Name="MUB_ROL_PRIVILEGIOS" EntityType="Self.MUB_ROL_PRIVILEGIOS" Schema="MU" store:Type="Tables" />
           <EntitySet Name="MUB_TIPO_ORGANIZACION" EntityType="Self.MUB_TIPO_ORGANIZACION" Schema="MU" store:Type="Tables" />
           <EntitySet Name="MUB_TIPO_PROY_PECOR" EntityType="Self.MUB_TIPO_PROY_PECOR" Schema="MU" store:Type="Tables" />
-          <EntitySet Name="MUB_UNIDADES" EntityType="Self.MUB_UNIDADES" Schema="MU" store:Type="Tables" />
           <EntitySet Name="MUB_USUARIOS" EntityType="Self.MUB_USUARIOS" Schema="MU" store:Type="Tables" />
           <EntitySet Name="MUB_USUARIOS_ORG" EntityType="Self.MUB_USUARIOS_ORG" Schema="MU" store:Type="Tables" />
           <EntitySet Name="MUB_USUARIOS_ROLES" EntityType="Self.MUB_USUARIOS_ROLES" Schema="MU" store:Type="Tables" />
           <EntitySet Name="MUB_VSS" EntityType="Self.MUB_VSS" Schema="MU" store:Type="Tables" />
           <EntitySet Name="MUH_PECOR_COBERTURA" EntityType="Self.MUH_PECOR_COBERTURA" Schema="MU" store:Type="Tables" />
           <EntitySet Name="VISTA_SUBESTACION" EntityType="Self.VISTA_SUBESTACION" Schema="MU" store:Type="Tables" />
-          <EntitySet Name="BC_DP_SITIOS_UPME" EntityType="Self.BC_DP_SITIOS_UPME" store:Type="Tables" store:Schema="MU">
+          <EntitySet Name="BC_DP_SITIOS_UPME" EntityType="Self.BC_DP_SITIOS_UPME" Schema="MU" store:Type="Tables" />
+          <EntitySet Name="MUB_GRUPOS" EntityType="Self.MUB_GRUPOS" store:Type="Tables" store:Schema="MU">
             <DefiningQuery>SELECT 
-"BC_DP_SITIOS_UPME"."OBJECTID" AS "OBJECTID", 
-"BC_DP_SITIOS_UPME"."ID_CENTRO_POBLADO" AS "ID_CENTRO_POBLADO", 
-"BC_DP_SITIOS_UPME"."COD_CP_UPME" AS "COD_CP_UPME", 
-"BC_DP_SITIOS_UPME"."COD_DPTO" AS "COD_DPTO", 
-"BC_DP_SITIOS_UPME"."COD_MPIO" AS "COD_MPIO", 
-"BC_DP_SITIOS_UPME"."COD_SITIO" AS "COD_SITIO", 
-"BC_DP_SITIOS_UPME"."ID_FUENTE_CP" AS "ID_FUENTE_CP", 
-"BC_DP_SITIOS_UPME"."NOMBRE_SITIO" AS "NOMBRE_SITIO", 
-"BC_DP_SITIOS_UPME"."ID_TIPO" AS "ID_TIPO", 
-"BC_DP_SITIOS_UPME"."ID_CLASE" AS "ID_CLASE", 
-"BC_DP_SITIOS_UPME"."FECHA_OFICIALIZACION" AS "FECHA_OFICIALIZACION", 
-"BC_DP_SITIOS_UPME"."ID_USUARIO_OFICIALIZACION" AS "ID_USUARIO_OFICIALIZACION", 
-"BC_DP_SITIOS_UPME"."OBSERVACION" AS "OBSERVACION", 
-"BC_DP_SITIOS_UPME"."FECHA_DATO" AS "FECHA_DATO", 
-"BC_DP_SITIOS_UPME"."LONGITUD" AS "LONGITUD", 
-"BC_DP_SITIOS_UPME"."LATITUD" AS "LATITUD", 
-"BC_DP_SITIOS_UPME"."ALTITUD" AS "ALTITUD", 
-"BC_DP_SITIOS_UPME"."ACTIVO" AS "ACTIVO"
-FROM "MU"."BC_DP_SITIOS_UPME" "BC_DP_SITIOS_UPME"</DefiningQuery>
+"MUB_GRUPOS"."ID_GRUPO" AS "ID_GRUPO", 
+"MUB_GRUPOS"."ID_MODULO" AS "ID_MODULO", 
+"MUB_GRUPOS"."DESCRIPCION" AS "DESCRIPCION"
+FROM "MU"."MUB_GRUPOS" "MUB_GRUPOS"</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="MUB_UNIDADES" EntityType="Self.MUB_UNIDADES" store:Type="Tables" store:Schema="MU">
+            <DefiningQuery>SELECT 
+"MUB_UNIDADES"."ID_UNIDAD" AS "ID_UNIDAD", 
+"MUB_UNIDADES"."UNIDAD" AS "UNIDAD", 
+"MUB_UNIDADES"."UNI_DESCRIPCION" AS "UNI_DESCRIPCION"
+FROM "MU"."MUB_UNIDADES" "MUB_UNIDADES"</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="VISTA_BC_MPIO_DPTO" EntityType="Self.VISTA_BC_MPIO_DPTO" store:Type="Views" store:Schema="MU">
+            <DefiningQuery>SELECT 
+"VISTA_BC_MPIO_DPTO"."OBJECTID_1" AS "OBJECTID_1", 
+"VISTA_BC_MPIO_DPTO"."DPTO_CCDGO" AS "DPTO_CCDGO", 
+"VISTA_BC_MPIO_DPTO"."DPTO_CNMBR" AS "DPTO_CNMBR", 
+"VISTA_BC_MPIO_DPTO"."MPIO_CCDGO" AS "MPIO_CCDGO", 
+"VISTA_BC_MPIO_DPTO"."MPIO_CNMBR" AS "MPIO_CNMBR", 
+"VISTA_BC_MPIO_DPTO"."MPIO_CNMBRSA" AS "MPIO_CNMBRSA"
+FROM "MU"."VISTA_BC_MPIO_DPTO" "VISTA_BC_MPIO_DPTO"</DefiningQuery>
           </EntitySet>
           <AssociationSet Name="FK_MU_ORG_TIPO_ORG_ID" Association="Self.FK_MU_ORG_TIPO_ORG_ID">
             <End Role="MUB_TIPO_ORGANIZACION" EntitySet="MUB_TIPO_ORGANIZACION" />
@@ -561,6 +703,10 @@ FROM "MU"."BC_DP_SITIOS_UPME" "BC_DP_SITIOS_UPME"</DefiningQuery>
             <End Role="MUB_PECOR_PLAN" EntitySet="MUB_PECOR_PLAN" />
             <End Role="MUB_PROYECTOS_PECOR" EntitySet="MUB_PROYECTOS_PECOR" />
           </AssociationSet>
+          <AssociationSet Name="FK_NIVEL_TENSIÓN_ID" Association="Self.FK_NIVEL_TENSIÓN_ID">
+            <End Role="MUB_NIVEL_TENSION" EntitySet="MUB_NIVEL_TENSION" />
+            <End Role="MUB_TENSION" EntitySet="MUB_TENSION" />
+          </AssociationSet>
           <AssociationSet Name="FK_PECOR_CP_VSS_PECOR" Association="Self.FK_PECOR_CP_VSS_PECOR">
             <End Role="MUB_PROYECTOS_PECOR" EntitySet="MUB_PROYECTOS_PECOR" />
             <End Role="MUB_PECOR_CP_VSS" EntitySet="MUB_PECOR_CP_VSS" />
@@ -584,6 +730,10 @@ FROM "MU"."BC_DP_SITIOS_UPME" "BC_DP_SITIOS_UPME"</DefiningQuery>
           <AssociationSet Name="USUARIOS_ROLES_MU_ROL_FK" Association="Self.USUARIOS_ROLES_MU_ROL_FK">
             <End Role="MUB_ROL" EntitySet="MUB_ROL" />
             <End Role="MUB_USUARIOS_ROLES" EntitySet="MUB_USUARIOS_ROLES" />
+          </AssociationSet>
+          <AssociationSet Name="VISTA_BC_MPIO_DPTOBC_DP_SITIO_UPME" Association="Self.VISTA_BC_MPIO_DPTOBC_DP_SITIO_UPME">
+            <End Role="VISTA_BC_MPIO_DPTO" EntitySet="VISTA_BC_MPIO_DPTO" />
+            <End Role="BC_DP_SITIOS_UPME" EntitySet="BC_DP_SITIOS_UPME" />
           </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -677,7 +827,6 @@ FROM "MU"."BC_DP_SITIOS_UPME" "BC_DP_SITIOS_UPME"</DefiningQuery>
           <NavigationProperty Name="VISTA_SUBESTACION" Relationship="pcMdlSpc.MU_PECOR_PROY_SUBESTA_ID" FromRole="MUB_PROYECTOS_PECOR" ToRole="VISTA_SUBESTACION" />
           <Property Name="ID_PLAN" Type="Decimal" Precision="38" Scale="0" />
           <NavigationProperty Name="MUB_PECOR_PLAN" Relationship="pcMdlSpc.FK_MUB_PEC_PLAN" FromRole="MUB_PROYECTOS_PECOR" ToRole="MUB_PECOR_PLAN" />
-          <Property Name="CODIGO_PLAN" Type="Int64" Nullable="false" />
         </EntityType>
         <EntityType Name="MUB_TIPO_ORGANIZACION">
           <Key>
@@ -840,9 +989,21 @@ FROM "MU"."BC_DP_SITIOS_UPME" "BC_DP_SITIOS_UPME"</DefiningQuery>
             <End Role="MUB_PECOR_PLAN" EntitySet="MUB_PECOR_PLAN" />
             <End Role="MUH_PECOR_COBERTURA" EntitySet="MUH_PECOR_COBERTURA" />
           </AssociationSet>
+          <FunctionImport Name="PECOR_F1_CUDIS">
+          <Parameter Name="PID_PLAN" Mode="In" Type="Decimal" />
+          </FunctionImport>
           <FunctionImport Name="PECOR_P1_CUDIS">
           <Parameter Name="PID_PLAN" Mode="In" Type="Decimal" />
           </FunctionImport>
+          <EntitySet Name="MUB_ESTADO_SUB" EntityType="pcMdlSpc.MUB_ESTADO_SUB" />
+          <EntitySet Name="MUB_FUENTES_CS" EntityType="pcMdlSpc.MUB_FUENTES_CS" />
+          <EntitySet Name="MUB_TENSION" EntityType="pcMdlSpc.MUB_TENSION" />
+          <EntitySet Name="MUB_TIPO_CP" EntityType="pcMdlSpc.MUB_TIPO_CP" />
+          <EntitySet Name="MUB_NIVEL_TENSION" EntityType="pcMdlSpc.MUB_NIVEL_TENSION" />
+          <AssociationSet Name="FK_NIVEL_TENSIÓN_ID" Association="pcMdlSpc.FK_NIVEL_TENSIÓN_ID">
+            <End Role="MUB_NIVEL_TENSION" EntitySet="MUB_NIVEL_TENSION" />
+            <End Role="MUB_TENSION" EntitySet="MUB_TENSION" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="BC_DP_SITIOS_UPME">
           <Key>
@@ -901,7 +1062,6 @@ FROM "MU"."BC_DP_SITIOS_UPME" "BC_DP_SITIOS_UPME"</DefiningQuery>
           <Property Name="OBSERVACION" Type="String" MaxLength="254" FixedLength="false" Unicode="true" />
           <Property Name="ID_CENTRO_POBLADO" Type="Int32" />
           <NavigationProperty Name="BC_DP_SITIOS_UPME" Relationship="pcMdlSpc.FK_MUB_VSS_ID_CENTRO_POBLADO" FromRole="MUB_VSS" ToRole="BC_DP_SITIOS_UPME" />
-          <Property Name="COD_UPME" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
         </EntityType>
         <Association Name="FK_MUB_VSS_ID_CENTRO_POBLADO">
           <End Type="pcMdlSpc.BC_DP_SITIOS_UPME" Role="BC_DP_SITIOS_UPME" Multiplicity="0..1" />
@@ -1079,14 +1239,12 @@ FROM "MU"."BC_DP_SITIOS_UPME" "BC_DP_SITIOS_UPME"</DefiningQuery>
           <Key>
             <PropertyRef Name="ID_USUARIO" />
             <PropertyRef Name="ID_ROL" />
-            <PropertyRef Name="ID_USR_ROL" />
           </Key>
           <Property Name="ID_USUARIO" Type="Int64" Nullable="false" />
           <Property Name="ID_ROL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
           <Property Name="FECHA_ACTUALIZACION" Type="DateTime" />
           <NavigationProperty Name="MUB_ROL" Relationship="pcMdlSpc.USUARIOS_ROLES_MU_ROL_FK" FromRole="MUB_USUARIOS_ROLES" ToRole="MUB_ROL" />
           <NavigationProperty Name="MUB_USUARIOS" Relationship="pcMdlSpc.FK_USUARIOS_ROLES_USUARIOS" FromRole="MUB_USUARIOS_ROLES" ToRole="MUB_USUARIOS" />
-          <Property Name="ID_USR_ROL" Type="Int64" Nullable="false" />
         </EntityType>
         <Association Name="FK_ROL_MODULO">
           <End Type="pcMdlSpc.MUB_MODULOS" Role="MUB_MODULOS" Multiplicity="1" />
@@ -1259,6 +1417,62 @@ FROM "MU"."BC_DP_SITIOS_UPME" "BC_DP_SITIOS_UPME"</DefiningQuery>
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityType Name="MUB_ESTADO_SUB">
+          <Key>
+            <PropertyRef Name="ID_ESTADO_SUB" />
+          </Key>
+          <Property Name="ID_ESTADO_SUB" Type="Int16" Nullable="false" />
+          <Property Name="NOM_ESTADO_SUB" Type="String" MaxLength="1509" FixedLength="false" Unicode="true" />
+          <Property Name="ACTIVO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="MUB_FUENTES_CS">
+          <Key>
+            <PropertyRef Name="ID_FUENTE_CS" />
+          </Key>
+          <Property Name="ID_FUENTE_CS" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="NOM_FUENTE_CS" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ID_USUARIO_ACTUALIZACION" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="FECHA_ACTUALIZACION" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MUB_TENSION">
+          <Key>
+            <PropertyRef Name="ID_TENSION" />
+          </Key>
+          <Property Name="ID_TENSION" Type="Int16" Nullable="false" />
+          <Property Name="ID_NIVEL_TENSION" Type="Int16" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="MUB_NIVEL_TENSION" Relationship="pcMdlSpc.FK_NIVEL_TENSIÓN_ID" FromRole="MUB_TENSION" ToRole="MUB_NIVEL_TENSION" />
+        </EntityType>
+        <EntityType Name="MUB_TIPO_CP">
+          <Key>
+            <PropertyRef Name="ID_TIPO_CP" />
+          </Key>
+          <Property Name="ID_TIPO_CP" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="NOM_TIPO_CP" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ABR_TIPO_CP" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="ID_USUARIO_ACTUALIZACION" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="FECHA_ACTUALIZACION" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MUB_NIVEL_TENSION">
+          <Key>
+            <PropertyRef Name="ID_NIVEL_TENSION" />
+          </Key>
+          <Property Name="ID_NIVEL_TENSION" Type="Int16" Nullable="false" />
+          <Property Name="DESCRIPCION" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="MUB_TENSION" Relationship="pcMdlSpc.FK_NIVEL_TENSIÓN_ID" FromRole="MUB_NIVEL_TENSION" ToRole="MUB_TENSION" />
+        </EntityType>
+        <Association Name="FK_NIVEL_TENSIÓN_ID">
+          <End Type="pcMdlSpc.MUB_NIVEL_TENSION" Role="MUB_NIVEL_TENSION" Multiplicity="0..1" />
+          <End Type="pcMdlSpc.MUB_TENSION" Role="MUB_TENSION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MUB_NIVEL_TENSION">
+              <PropertyRef Name="ID_NIVEL_TENSION" />
+            </Principal>
+            <Dependent Role="MUB_TENSION">
+              <PropertyRef Name="ID_NIVEL_TENSION" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1296,7 +1510,6 @@ FROM "MU"."BC_DP_SITIOS_UPME" "BC_DP_SITIOS_UPME"</DefiningQuery>
           <EntitySetMapping Name="MUB_PROYECTOS_PECOR">
             <EntityTypeMapping TypeName="pcMdlSpc.MUB_PROYECTOS_PECOR">
               <MappingFragment StoreEntitySet="MUB_PROYECTOS_PECOR">
-                <ScalarProperty Name="CODIGO_PLAN" ColumnName="CODIGO_PLAN" />
                 <ScalarProperty Name="ID_PLAN" ColumnName="ID_PLAN" />
                 <ScalarProperty Name="ID_SUBESTACION" ColumnName="ID_SUBESTACION" />
                 <ScalarProperty Name="ID_PROYECTO_PECOR" ColumnName="ID_PROYECTO_PECOR" />
@@ -1390,7 +1603,6 @@ FROM "MU"."BC_DP_SITIOS_UPME" "BC_DP_SITIOS_UPME"</DefiningQuery>
           <EntitySetMapping Name="MUB_VSS">
             <EntityTypeMapping TypeName="pcMdlSpc.MUB_VSS">
               <MappingFragment StoreEntitySet="MUB_VSS">
-                <ScalarProperty Name="COD_UPME" ColumnName="COD_UPME" />
                 <ScalarProperty Name="ID_CENTRO_POBLADO" ColumnName="ID_CENTRO_POBLADO" />
                 <ScalarProperty Name="OBSERVACION" ColumnName="OBSERVACION" />
                 <ScalarProperty Name="ID_USUARIO_REGISTRO" ColumnName="ID_USUARIO_REGISTRO" />
@@ -1521,10 +1733,21 @@ FROM "MU"."BC_DP_SITIOS_UPME" "BC_DP_SITIOS_UPME"</DefiningQuery>
           <EntitySetMapping Name="MUB_USUARIOS_ROLES">
             <EntityTypeMapping TypeName="pcMdlSpc.MUB_USUARIOS_ROLES">
               <MappingFragment StoreEntitySet="MUB_USUARIOS_ROLES">
-                <ScalarProperty Name="ID_USR_ROL" ColumnName="ID_USR_ROL" />
                 <ScalarProperty Name="FECHA_ACTUALIZACION" ColumnName="FECHA_ACTUALIZACION" />
                 <ScalarProperty Name="ID_ROL" ColumnName="ID_ROL" />
                 <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VISTA_BC_MPIO_DPTO">
+            <EntityTypeMapping TypeName="pcMdlSpc.VISTA_BC_MPIO_DPTO">
+              <MappingFragment StoreEntitySet="VISTA_BC_MPIO_DPTO">
+                <ScalarProperty Name="MPIO_CNMBRSA" ColumnName="MPIO_CNMBRSA" />
+                <ScalarProperty Name="MPIO_CNMBR" ColumnName="MPIO_CNMBR" />
+                <ScalarProperty Name="MPIO_CCDGO" ColumnName="MPIO_CCDGO" />
+                <ScalarProperty Name="DPTO_CNMBR" ColumnName="DPTO_CNMBR" />
+                <ScalarProperty Name="DPTO_CCDGO" ColumnName="DPTO_CCDGO" />
+                <ScalarProperty Name="OBJECTID_1" ColumnName="OBJECTID_1" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -1588,7 +1811,55 @@ FROM "MU"."BC_DP_SITIOS_UPME" "BC_DP_SITIOS_UPME"</DefiningQuery>
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+		  <FunctionImportMapping FunctionImportName="PECOR_F1_CUDIS" FunctionName="pcMdlSpc.Store.PECOR_F1_CUDIS" />
           <FunctionImportMapping FunctionImportName="PECOR_P1_CUDIS" FunctionName="pcMdlSpc.Store.PECOR_P1_CUDIS" />
+          <EntitySetMapping Name="MUB_ESTADO_SUB">
+            <EntityTypeMapping TypeName="pcMdlSpc.MUB_ESTADO_SUB">
+              <MappingFragment StoreEntitySet="MUB_ESTADO_SUB">
+                <ScalarProperty Name="ACTIVO" ColumnName="ACTIVO" />
+                <ScalarProperty Name="NOM_ESTADO_SUB" ColumnName="NOM_ESTADO_SUB" />
+                <ScalarProperty Name="ID_ESTADO_SUB" ColumnName="ID_ESTADO_SUB" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MUB_FUENTES_CS">
+            <EntityTypeMapping TypeName="pcMdlSpc.MUB_FUENTES_CS">
+              <MappingFragment StoreEntitySet="MUB_FUENTES_CS">
+                <ScalarProperty Name="FECHA_ACTUALIZACION" ColumnName="FECHA_ACTUALIZACION" />
+                <ScalarProperty Name="ID_USUARIO_ACTUALIZACION" ColumnName="ID_USUARIO_ACTUALIZACION" />
+                <ScalarProperty Name="NOM_FUENTE_CS" ColumnName="NOM_FUENTE_CS" />
+                <ScalarProperty Name="ID_FUENTE_CS" ColumnName="ID_FUENTE_CS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MUB_TENSION">
+            <EntityTypeMapping TypeName="pcMdlSpc.MUB_TENSION">
+              <MappingFragment StoreEntitySet="MUB_TENSION">
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="ID_NIVEL_TENSION" ColumnName="ID_NIVEL_TENSION" />
+                <ScalarProperty Name="ID_TENSION" ColumnName="ID_TENSION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MUB_TIPO_CP">
+            <EntityTypeMapping TypeName="pcMdlSpc.MUB_TIPO_CP">
+              <MappingFragment StoreEntitySet="MUB_TIPO_CP">
+                <ScalarProperty Name="FECHA_ACTUALIZACION" ColumnName="FECHA_ACTUALIZACION" />
+                <ScalarProperty Name="ID_USUARIO_ACTUALIZACION" ColumnName="ID_USUARIO_ACTUALIZACION" />
+                <ScalarProperty Name="ABR_TIPO_CP" ColumnName="ABR_TIPO_CP" />
+                <ScalarProperty Name="NOM_TIPO_CP" ColumnName="NOM_TIPO_CP" />
+                <ScalarProperty Name="ID_TIPO_CP" ColumnName="ID_TIPO_CP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MUB_NIVEL_TENSION">
+            <EntityTypeMapping TypeName="pcMdlSpc.MUB_NIVEL_TENSION">
+              <MappingFragment StoreEntitySet="MUB_NIVEL_TENSION">
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="ID_NIVEL_TENSION" ColumnName="ID_NIVEL_TENSION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

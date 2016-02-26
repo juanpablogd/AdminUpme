@@ -43,6 +43,13 @@ namespace NSPecor.Controllers
             return View();
         }
 
+        public ActionResult ParametrosSitiosSub()
+        {
+            // ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
+
         public ActionResult Proyectos()
         {
             //ViewBag.Message = "Your contact page.";

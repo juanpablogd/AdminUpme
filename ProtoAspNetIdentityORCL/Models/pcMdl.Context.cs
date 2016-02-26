@@ -14,7 +14,6 @@ namespace NSPecor.Models
     using System.Data.Entity.Infrastructure;
     using System.Data.Entity.Core.Objects;
     using System.Linq;
-    using Microsoft.Owin.Security.Provider;
     
     public partial class pcUpmeCnx : DbContext
     {
@@ -50,6 +49,20 @@ namespace NSPecor.Models
         public virtual DbSet<VISTA_SUBESTACION> VISTA_SUBESTACION { get; set; }
         public virtual DbSet<MUB_PECOR_PLAN> MUB_PECOR_PLAN { get; set; }
         public virtual DbSet<MUH_PECOR_COBERTURA> MUH_PECOR_COBERTURA { get; set; }
+        public virtual DbSet<MUB_ESTADO_SUB> MUB_ESTADO_SUB { get; set; }
+        public virtual DbSet<MUB_FUENTES_CS> MUB_FUENTES_CS { get; set; }
+        public virtual DbSet<MUB_TENSION> MUB_TENSION { get; set; }
+        public virtual DbSet<MUB_TIPO_CP> MUB_TIPO_CP { get; set; }
+        public virtual DbSet<MUB_NIVEL_TENSION> MUB_NIVEL_TENSION { get; set; }
+    
+        public virtual int PECOR_F1_CUDIS(Nullable<decimal> pID_PLAN)
+        {
+            var pID_PLANParameter = pID_PLAN.HasValue ?
+                new ObjectParameter("PID_PLAN", pID_PLAN) :
+                new ObjectParameter("PID_PLAN", typeof(decimal));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("PECOR_F1_CUDIS", pID_PLANParameter);
+        }
     
         public virtual int PECOR_P1_CUDIS(Nullable<decimal> pID_PLAN)
         {
@@ -59,6 +72,5 @@ namespace NSPecor.Models
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("PECOR_P1_CUDIS", pID_PLANParameter);
         }
-
     }
 }

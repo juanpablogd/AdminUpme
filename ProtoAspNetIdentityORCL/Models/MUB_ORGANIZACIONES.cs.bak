@@ -11,7 +11,8 @@ namespace NSPecor.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+    using System.ComponentModel.DataAnnotations;
     public partial class MUB_ORGANIZACIONES
     {
         public MUB_ORGANIZACIONES()
@@ -20,13 +21,19 @@ namespace NSPecor.Models
             this.MUB_USUARIOS_ORG = new HashSet<MUB_USUARIOS_ORG>();
             this.MUB_USUARIOS = new HashSet<MUB_USUARIOS>();
         }
-    
+        [Key]
         public long ID_ORGANIZACION { get; set; }
+        [Required]
         public string NIT { get; set; }
+        [DisplayName("RAZÓN SOCIAL")]
+        [Required]
         public string RAZON_SOCIAL { get; set; }
+        [DisplayName("DIRECCIÓN")]
         public string DIRECCION { get; set; }
+        [DisplayName("TELÉFONO")]
         public string TELEFONO { get; set; }
         public string REPRESENTANTE { get; set; }
+        [DisplayName("TIPO ORGANIZACIÓN")]
         public long ID_TIPO_ORGANIZACION { get; set; }
         public string SIGLA { get; set; }
         public string MP_UPME { get; set; }

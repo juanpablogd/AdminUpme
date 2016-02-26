@@ -273,6 +273,12 @@
     <Compile Include="Models\MUB_CLASE_CP.cs">
       <DependentUpon>pcMdl.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\MUB_ESTADO_SUB.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_FUENTES_CS.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\MUB_GENERALES.cs">
       <DependentUpon>pcMdl.tt</DependentUpon>
     </Compile>
@@ -280,6 +286,9 @@
       <DependentUpon>pcMdl.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\MUB_MODULOS.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_NIVEL_TENSION.cs">
       <DependentUpon>pcMdl.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\MUB_ORGANIZACIONES.cs">
@@ -301,6 +310,12 @@
       <DependentUpon>pcMdl.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\MUB_ROL_PRIVILEGIOS.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_TENSION.cs">
+      <DependentUpon>pcMdl.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUB_TIPO_CP.cs">
       <DependentUpon>pcMdl.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\MUB_TIPO_ORGANIZACION.cs">
