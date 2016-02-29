@@ -8,6 +8,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using NSPecor.Models;
 using System.Data.Entity;
+using Oracle.ManagedDataAccess.Client;
 
 namespace NSPecor.Controllers
 {
@@ -287,8 +288,9 @@ namespace NSPecor.Controllers
 
         //
         // GET: /Manage/SetPassword
-        public ActionResult SetPassword()
+        public ActionResult SetPassword(string nombre, long? id)
         {
+            Session["usuario"] = new User() { ss_id_usr = (long)id, ss_nombre_usr = nombre };
             return View();
         }
 
@@ -298,17 +300,25 @@ namespace NSPecor.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> SetPassword(SetPasswordViewModel model)
         {
+            if (Session["usuario"] == null)
+            {
+                return RedirectToAction("Index", "Usuarios");
+            }
+
             if (ModelState.IsValid)
             {
-                var result = await UserManager.AddPasswordAsync(User.Identity.GetUserId(), model.NewPassword);
+                var usuario = Session["usuario"] as User;
+                var IdUsuario = usuario.ss_id_usr.ToString();
+                //ELIMINA EL PASSWORD PARA SER SETEADO
+                pcUpmeCnx dbUsr = new pcUpmeCnx();
+                    dbUsr.Database.ExecuteSqlCommand("UPDATE MUB_USUARIOS SET PWDHASH = NULL WHERE ID_USUARIO = :ID_USR",
+                        new[] { new OracleParameter("ID_USR", IdUsuario) });
+
+                //CAMBIA EL PASSWORD
+                var result = await UserManager.AddPasswordAsync(IdUsuario, model.NewPassword);
                 if (result.Succeeded)
                 {
-                    var user = await UserManager.FindByIdAsync(User.Identity.GetUserId());
-                    if (user != null)
-                    {
-                        await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
-                    }
-                    return RedirectToAction("Index", new { Message = ManageMessageId.SetPasswordSuccess });
+                    return RedirectToAction("Index", "Usuarios");
                 }
                 AddErrors(result);
             }

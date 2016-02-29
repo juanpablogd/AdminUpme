@@ -6,77 +6,104 @@
 }
 
 <h2>Listado de Organizaciones</h2>
-
-@using (Html.BeginForm())
-{
-    @Html.AntiForgeryToken();
-    <p>
-        <label>Buscar NIT ó Razón social: </label>&nbsp;<input type="text" name="txt_buscar" id="txt_buscar"><input type="submit" name="Buscar" value="Buscar" />
-    </p>
-}
+@Styles.Render("~/Content/dataTablescss")
+@Scripts.Render("~/bundles/dataTablesjs")
 
 <p>
     @Html.ActionLink("Crear Nuevo", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.NIT)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.RAZON_SOCIAL)
-        </th>
-       
-        <th>
-            @Html.DisplayNameFor(model => model.REPRESENTANTE)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.SIGLA)
-        </th>
-        <th>
-            TIPO ORG
-        </th>
-        <th>
-            ACTIVO
-        </th>
+<table id="listado">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NIT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RAZON_SOCIAL)
+            </th>
 
-        <th></th>
-    </tr>
+            <th>
+                @Html.DisplayNameFor(model => model.REPRESENTANTE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SIGLA)
+            </th>
+            <th>
+                TIPO ORG
+            </th>
+            <th>
+                ACTIVO
+            </th>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.NIT)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.RAZON_SOCIAL)
-        </td>
-      
-        <td>
-            @Html.DisplayFor(modelItem => item.REPRESENTANTE)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.SIGLA)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.MUB_TIPO_ORGANIZACION.NOM_TIPO_ORG)
-        </td>
-        <td>
-            @if (item.ACTIVO == 1)
-            {
-                @(String.Format("SI"));
-            }
-            else
-            {
-                @(String.Format("NO"));
-            }
-        </td>
-        <td>
-            @Html.ActionLink("Editar", "Edit", new { id=item.ID_ORGANIZACION }) |
-            @Html.ActionLink("Detalles", "Details", new { id=item.ID_ORGANIZACION }) |
-            @Html.ActionLink("Borrar", "Delete", new { id=item.ID_ORGANIZACION })
-        </td>
-    </tr>
-}
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NIT)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RAZON_SOCIAL)
+                </td>
 
+                <td>
+                    @Html.DisplayFor(modelItem => item.REPRESENTANTE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SIGLA)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MUB_TIPO_ORGANIZACION.NOM_TIPO_ORG)
+                </td>
+                <td>
+                    @if (item.ACTIVO == 1)
+                    {
+                        @(String.Format("SI"));
+                    }
+                    else
+                    {
+                        @(String.Format("NO"));
+                    }
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.ID_ORGANIZACION }) |
+                    @Html.ActionLink("Detalles", "Details", new { id = item.ID_ORGANIZACION }) |
+                    @Html.ActionLink("Borrar", "Delete", new { id = item.ID_ORGANIZACION })
+                </td>
+            </tr>
+        }
+    </tbody>
 </table>
+<script>
+    $(document).ready(function () {
+        $('#listado').DataTable({
+            "language": {
+                "sProcessing": "Procesando...",
+                "sLengthMenu": "Mostrar _MENU_ registros",
+                "sZeroRecords": "No se encontraron resultados",
+                "sEmptyTable": "Ningún dato disponible en esta tabla",
+                "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                "sInfoPostFix": "",
+                "sSearch": "Buscar:",
+                "sUrl": "",
+                "sInfoThousands": ",",
+                "sLoadingRecords": "Cargando...",
+                "oPaginate": {
+                    "sFirst": "Primero",
+                    "sLast": "Último",
+                    "sNext": "Siguiente",
+                    "sPrevious": "Anterior"
+                },
+                "oAria": {
+                    "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+                    "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                }
+            }
+        });
+    });
+</script>

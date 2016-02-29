@@ -58,6 +58,9 @@ namespace NSPecor
                       "~/Scripts/libs/pickadate.js-3.5.6/picker.date.js",
                       "~/Scripts/libs/pickadate.js-3.5.6/picker.time.js"
                       ));
+            bundles.Add(new ScriptBundle("~/bundles/dataTablesjs").Include(
+                      "~/Scripts/DataTables/jquery.dataTables.js"
+                      ));
             bundles.Add(new StyleBundle("~/bundles/calendariocss").Include(   //"~/Content/bootstrap.css",
                       "~/Scripts/libs/pickadate.js-3.5.6/themes/default.css",
                       "~/Scripts/libs/pickadate.js-3.5.6/themes/default.date.css",
@@ -71,6 +74,8 @@ namespace NSPecor
                       "~/Content/site.css"));
             bundles.Add(new StyleBundle("~/Content/Proyecto").Include(   //"~/Content/bootstrap.css",
                       "~/Content/Proyecto.css"));
+            bundles.Add(new StyleBundle("~/Content/dataTablescss").Include(   //"~/Content/bootstrap.css",
+                        "~/Content/DataTables/css/jquery.dataTables.css"));
         }
     }
 }

@@ -1,24 +1,18 @@
 ﻿@model IEnumerable<NSPecor.Models.MUB_USUARIOS>
 
-    @{
-        ViewBag.Title = "Index";
-        Layout = "~/Views/Shared/_Layout.cshtml";
-    }
-
-    <h2>Usuarios</h2>
-
-@using (Html.BeginForm())
-{
-    @Html.AntiForgeryToken();
-    <p>
-        <label>Buscar Nombre: </label>&nbsp;<input type="text" name="txt_buscar" id="txt_buscar"><input type="submit" name="Buscar" value="Buscar" />
-    </p>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@Styles.Render("~/Content/dataTablescss")
+@Scripts.Render("~/bundles/dataTablesjs")
+<h2>Usuarios</h2>
 
-    <p>
-        @Html.ActionLink("Crear Usuario", "../Account/Register")
-    </p>
-    <table class="table">
+<p>
+    @Html.ActionLink("Crear Usuario", "../Account/Register")
+</p>
+<table id="listado">
+    <thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.NOMBRE)
@@ -26,7 +20,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.CARGO)
             </th>
-          
+
             <th>
                 @Html.DisplayNameFor(model => model.EMAIL)
             </th>
@@ -38,7 +32,8 @@
             </th>
             <th></th>
         </tr>
-
+</thead>
+    <tbody>
         @foreach (var item in Model)
         {
             <tr>
@@ -48,7 +43,7 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.CARGO)
                 </td>
-                
+
                 <td>
                     @Html.DisplayFor(modelItem => item.EMAIL)
                 </td>
@@ -58,11 +53,11 @@
                 <td>
                     @if (item.ESTADO.ToString() == "1")
                     {
-                        @MvcHtmlString.Create("ACTIVO") 
+                        @MvcHtmlString.Create("ACTIVO")
                     }
                     else
                     {
-                        @MvcHtmlString.Create("INACTIVO") 
+                        @MvcHtmlString.Create("INACTIVO")
                     }
                 </td>
                 <td>
@@ -70,8 +65,39 @@
                     @Html.ActionLink("Detalles", "Details", new { id = item.ID_USUARIO }) |
                     @Html.ActionLink("Borrar", "Delete", new { id = item.ID_USUARIO })
                     @Html.ActionLink("Rol", "rol", new { id = item.ID_USUARIO, nombre = item.NOMBRE }, new { @class = "btn btn-warning btn-xs" })
+                    @Html.ActionLink("CambiarClave", "SetPassword", new { id = item.ID_USUARIO, nombre = item.NOMBRE }, new { @class = "btn btn-warning btn-xs" })
                 </td>
             </tr>
         }
-
-    </table>
+    </tbody>
+</table>
+<script>
+    $(document).ready(function () {
+        $('#listado').DataTable({
+            "language": {
+                "sProcessing": "Procesando...",
+                "sLengthMenu": "Mostrar _MENU_ registros",
+                "sZeroRecords": "No se encontraron resultados",
+                "sEmptyTable": "Ningún dato disponible en esta tabla",
+                "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                "sInfoPostFix": "",
+                "sSearch": "Buscar:",
+                "sUrl": "",
+                "sInfoThousands": ",",
+                "sLoadingRecords": "Cargando...",
+                "oPaginate": {
+                    "sFirst": "Primero",
+                    "sLast": "Último",
+                    "sNext": "Siguiente",
+                    "sPrevious": "Anterior"
+                },
+                "oAria": {
+                    "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+                    "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                }
+            }
+        });
+    });
+</script>

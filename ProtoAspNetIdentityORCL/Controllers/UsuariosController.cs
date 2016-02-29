@@ -166,7 +166,6 @@ namespace NSPecor.Controllers
             return RedirectToAction("Index");
         }
 
-
         // GET: pcProyecto/vss/5
         public ActionResult rol(long? id, string nombre)
         {
@@ -175,6 +174,16 @@ namespace NSPecor.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             return RedirectToAction("Index", "UsuarioRol", new { id = id,nombre = nombre });
+        }
+
+        // GET: pcProyecto/SetPassword/5
+        public ActionResult SetPassword(long? id, string nombre)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            return RedirectToAction("SetPassword", "Manage", new { id = id, nombre = nombre });
         }
 
         protected override void Dispose(bool disposing)

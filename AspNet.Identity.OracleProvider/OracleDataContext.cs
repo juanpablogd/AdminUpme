@@ -105,7 +105,15 @@ namespace AspNet.Identity.OracleProvider
 
         public T ExecuteScalarQuery<T>(string query, params OracleParameter[] parameters)
         {
-            return (T)ExecuteScalarQuery(query, parameters);
+            //var resultadoSQL=(T)ExecuteScalarQuery(query, parameters) is DBNull ? 0: ExecuteScalarQuery(query, parameters);
+            try {
+                return (T)ExecuteScalarQuery(query, parameters);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("{0} Second exception caught.", e);
+                return default(T);
+            }
         }
 
         [SuppressMessage("Microsoft.Security", "CA2100:Review SQL queries for security vulnerabilities", Justification = "It actually is a parameterized SQL query.")]
