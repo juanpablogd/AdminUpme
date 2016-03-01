@@ -5988,9 +5988,6 @@
       </violation>
     </violations>
   </sourcecode>
-  <project key="830625989">
-    <configuration>CODE_ANALYSIS;DEBUG;TRACE</configuration>
-  </project>
   <sourcecode name="RoleNotFoundException.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015/05/12 17:26:49.529</styleCop>
@@ -6073,4 +6070,7 @@
     </timestamps>
     <violations />
   </sourcecode>
+  <project key="830625989">
+    <configuration>CODE_ANALYSIS;DEBUG;TRACE</configuration>
+  </project>
 </stylecopresultscache>
