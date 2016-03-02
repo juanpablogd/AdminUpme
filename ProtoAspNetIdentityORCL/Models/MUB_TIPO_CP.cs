@@ -11,11 +11,14 @@ namespace NSPecor.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
     
     public partial class MUB_TIPO_CP
     {
         public decimal ID_TIPO_CP { get; set; }
+        [DisplayName("Tipo centro poblado")]
         public string NOM_TIPO_CP { get; set; }
+        [DisplayName("Abreviatura")]
         public string ABR_TIPO_CP { get; set; }
         public decimal ID_USUARIO_ACTUALIZACION { get; set; }
         public System.DateTime FECHA_ACTUALIZACION { get; set; }

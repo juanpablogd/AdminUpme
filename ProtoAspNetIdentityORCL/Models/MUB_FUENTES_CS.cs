@@ -11,10 +11,12 @@ namespace NSPecor.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
     
     public partial class MUB_FUENTES_CS
     {
         public decimal ID_FUENTE_CS { get; set; }
+        [DisplayName("Descripción")]
         public string NOM_FUENTE_CS { get; set; }
         public decimal ID_USUARIO_ACTUALIZACION { get; set; }
         public System.DateTime FECHA_ACTUALIZACION { get; set; }

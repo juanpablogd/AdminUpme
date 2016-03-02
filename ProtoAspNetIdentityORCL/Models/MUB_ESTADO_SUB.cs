@@ -11,10 +11,12 @@ namespace NSPecor.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
     
     public partial class MUB_ESTADO_SUB
     {
         public short ID_ESTADO_SUB { get; set; }
+        [DisplayName("Descripción")]
         public string NOM_ESTADO_SUB { get; set; }
         public string ACTIVO { get; set; }
     }

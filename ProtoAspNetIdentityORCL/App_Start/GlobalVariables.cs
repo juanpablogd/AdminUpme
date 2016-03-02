@@ -58,7 +58,7 @@ namespace NSPecor.Controllers
             {
                 string nom_rol = item.MUB_ROL.NOMBRE.ToString();
                 decimal id_rol = item.MUB_ROL.ID_ROL;
-                if (rol == nom_rol || Convert.ToDecimal(rol) == id_rol)
+                if (rol == nom_rol || rol.ToString() == id_rol.ToString())
                 {
                     ok = true;
                 }

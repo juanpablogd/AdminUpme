@@ -18,7 +18,7 @@ namespace NSPecor.Controllers
         // GET: /FuentesCs/
         public ActionResult Index()
         {
-            if (User.Identity.IsAuthenticated == false || GlobalVariables.Acceso("ADMIN") == false)
+            if (User.Identity.IsAuthenticated == false || (GlobalVariables.Acceso("17") == false && GlobalVariables.Acceso("18") == false))
             {
                 return RedirectToAction("../Home/Index/");
             }
