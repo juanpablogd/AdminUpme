@@ -55,7 +55,7 @@ namespace NSPecor.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include="ID_SERVICIO,TITULO,DESCRIPCION,URL,TAGS,FK_ID_TIPO_SRV,FK_ID_ESTADO,FK_ID_USUARIO,FECHA_REGISTRO")] GEOB_SERVICIOS_CATALOGO geob_servicios_catalogo)
+        public ActionResult Create([Bind(Include = "ID_SERVICIO,TITULO,DESCRIPCION,URL,TAGS,ZIP,FK_ID_TIPO_SRV,FK_ID_ESTADO,FK_ID_USUARIO,FECHA_REGISTRO")] GEOB_SERVICIOS_CATALOGO geob_servicios_catalogo)
         {
             if (ModelState.IsValid)
             {
@@ -91,7 +91,7 @@ namespace NSPecor.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="ID_SERVICIO,TITULO,DESCRIPCION,URL,TAGS,FK_ID_TIPO_SRV,FK_ID_ESTADO,FK_ID_USUARIO,FECHA_REGISTRO")] GEOB_SERVICIOS_CATALOGO geob_servicios_catalogo)
+        public ActionResult Edit([Bind(Include = "ID_SERVICIO,TITULO,DESCRIPCION,URL,TAGS,ZIP,FK_ID_TIPO_SRV,FK_ID_ESTADO,FK_ID_USUARIO,FECHA_REGISTRO")] GEOB_SERVICIOS_CATALOGO geob_servicios_catalogo)
         {
             if (ModelState.IsValid)
             {

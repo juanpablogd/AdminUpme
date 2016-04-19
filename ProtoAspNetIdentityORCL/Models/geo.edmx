@@ -89,6 +89,7 @@
           <Property Name="DESCRIPCION" Type="varchar2" MaxLength="200" Nullable="false" />
           <Property Name="URL" Type="varchar2" MaxLength="150" Nullable="false" />
           <Property Name="TAGS" Type="varchar2" MaxLength="200" Nullable="false" />
+		  <Property Name="ZIP" Type="varchar2" MaxLength="200" />
           <Property Name="FK_ID_TIPO_SRV" Type="number" Precision="38" Scale="0" Nullable="false" />
           <Property Name="FK_ID_ESTADO" Type="number" Precision="38" Scale="0" Nullable="false" />
           <Property Name="FK_ID_USUARIO" Type="number" Precision="38" Scale="0" />
@@ -487,6 +488,7 @@
           <Property Name="DESCRIPCION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="URL" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="TAGS" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+		  <Property Name="ZIP" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
           <Property Name="FK_ID_TIPO_SRV" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
           <Property Name="FK_ID_ESTADO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
           <Property Name="FK_ID_USUARIO" Type="Decimal" Precision="38" Scale="0" />
@@ -879,6 +881,7 @@
                 <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
                 <ScalarProperty Name="URL" ColumnName="URL" />
                 <ScalarProperty Name="TAGS" ColumnName="TAGS" />
+				<ScalarProperty Name="ZIP" ColumnName="ZIP" />
                 <ScalarProperty Name="FK_ID_TIPO_SRV" ColumnName="FK_ID_TIPO_SRV" />
                 <ScalarProperty Name="FK_ID_ESTADO" ColumnName="FK_ID_ESTADO" />
                 <ScalarProperty Name="FK_ID_USUARIO" ColumnName="FK_ID_USUARIO" />

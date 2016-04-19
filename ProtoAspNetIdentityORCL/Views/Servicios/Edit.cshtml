@@ -51,6 +51,14 @@
         </div>
 
         <div class="form-group">
+            @Html.LabelFor(model => model.ZIP, "ARCHIVO ZIP", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ZIP)
+                @Html.ValidationMessageFor(model => model.ZIP)
+            </div>
+        </div>
+
+        <div class="form-group">
             @Html.LabelFor(model => model.FK_ID_TIPO_SRV, "ESTANDAR", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("FK_ID_TIPO_SRV", String.Empty)

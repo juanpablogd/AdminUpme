@@ -147,7 +147,12 @@ namespace NSPecor.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
-            ViewBag.ID_ORGANIZACION = new SelectList(db.MUB_ORGANIZACIONES.OrderBy(a=>a.RAZON_SOCIAL), "ID_ORGANIZACION", "RAZON_SOCIAL");
+            ViewBag.ID_ORGANIZACION = new SelectList(db.MUB_ORGANIZACIONES.Select(u => new
+                                        {
+                                            ID_ORGANIZACION = u.ID_ORGANIZACION,
+                                            RAZON_SOCIAL = u.RAZON_SOCIAL + " - " + u.CODIGO
+                                        }).OrderBy(o => o.RAZON_SOCIAL)
+                        , "ID_ORGANIZACION", "RAZON_SOCIAL");
             return View();
         }
 
@@ -160,7 +165,18 @@ namespace NSPecor.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, Nombre = model.Nombre, Cargo = model.Cargo, Direccion = model.Direccion, Telefono = model.Telefono, Celular = model.Celular, ID_ORGANIZACION = Convert.ToInt32(model.ID_ORGANIZACION), Estado = true };
+                var user = new ApplicationUser
+                {
+                    UserName = model.Email.ToLower(),
+                    Email = model.Email.ToLower(),
+                    Nombre = System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(model.Nombre),
+                    Cargo = model.Cargo,
+                    Direccion = model.Direccion,
+                    Telefono = model.Telefono,
+                    Celular = model.Celular,
+                    ID_ORGANIZACION = Convert.ToInt32(model.ID_ORGANIZACION),
+                    Estado = true
+                };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
@@ -172,14 +188,16 @@ namespace NSPecor.Controllers
                     // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
                     // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
 
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Usuarios");
                 }
                 AddErrors(result);
             }
-            else
+            ViewBag.ID_ORGANIZACION = new SelectList(db.MUB_ORGANIZACIONES.Select(u => new
             {
-                ViewBag.ID_ORGANIZACION = new SelectList(db.MUB_ORGANIZACIONES, "ID_ORGANIZACION", "RAZON_SOCIAL", model.ID_ORGANIZACION);
-            }
+                ID_ORGANIZACION = u.ID_ORGANIZACION,
+                RAZON_SOCIAL = u.RAZON_SOCIAL + " - " + u.CODIGO
+            }).OrderBy(o => o.RAZON_SOCIAL)
+                                    , "ID_ORGANIZACION", "RAZON_SOCIAL", model.ID_ORGANIZACION);
 
             // If we got this far, something failed, redisplay form
             return View(model);
@@ -454,7 +472,9 @@ namespace NSPecor.Controllers
         {
             foreach (var error in result.Errors)
             {
-                ModelState.AddModelError("", error);
+                if (error.EndsWith("is already taken."))
+                    ModelState.AddModelError("", "El usuario ya existe en el sistema.");
+                else ModelState.AddModelError("", error);
             }
         }
 

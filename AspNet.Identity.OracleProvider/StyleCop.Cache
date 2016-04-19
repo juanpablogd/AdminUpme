@@ -1,50 +1,5 @@
 <stylecopresultscache>
   <version>12</version>
-  <project key="-436935906">
-    <configuration>CODE_ANALYSIS;DEBUG;TRACE</configuration>
-  </project>
-  <project key="-387006768">
-    <configuration>CODE_ANALYSIS;DEBUG;TRACE</configuration>
-  </project>
-  <project key="-1715958249">
-    <configuration>CODE_ANALYSIS;DEBUG;TRACE</configuration>
-  </project>
-  <project key="-497172212">
-    <configuration>CODE_ANALYSIS;DEBUG;TRACE</configuration>
-  </project>
-  <project key="1702084170">
-    <configuration>CODE_ANALYSIS;DEBUG;TRACE</configuration>
-  </project>
-  <project key="-426079491">
-    <configuration>CODE_ANALYSIS;DEBUG;TRACE</configuration>
-  </project>
-  <project key="-899448575">
-    <configuration>CODE_ANALYSIS;DEBUG;TRACE</configuration>
-  </project>
-  <project key="-491441188">
-    <configuration>CODE_ANALYSIS;DEBUG;TRACE</configuration>
-  </project>
-  <project key="-9144564">
-    <configuration>CODE_ANALYSIS;DEBUG;TRACE</configuration>
-  </project>
-  <project key="-1691553400">
-    <configuration>CODE_ANALYSIS;DEBUG;TRACE</configuration>
-  </project>
-  <project key="-1082048717">
-    <configuration>CODE_ANALYSIS;DEBUG;TRACE</configuration>
-  </project>
-  <project key="-1221280988">
-    <configuration>CODE_ANALYSIS;DEBUG;TRACE</configuration>
-  </project>
-  <project key="-1151303010">
-    <configuration>CODE_ANALYSIS;DEBUG;TRACE</configuration>
-  </project>
-  <project key="-1868826371">
-    <configuration>CODE_ANALYSIS;DEBUG;TRACE</configuration>
-  </project>
-  <project key="-259011890">
-    <configuration>CODE_ANALYSIS;DEBUG;TRACE</configuration>
-  </project>
   <project key="830625989">
     <configuration>CODE_ANALYSIS;DEBUG;TRACE</configuration>
   </project>
@@ -52,7 +7,7 @@
     <timestamps>
       <styleCop>2015/05/12 17:26:49.529</styleCop>
       <settingsFile>2015/05/12 17:26:49.529</settingsFile>
-      <sourceFile>2015/11/30 08:26:36.000</sourceFile>
+      <sourceFile>2015/04/27 12:04:09.313</sourceFile>
       <parser>2015/05/12 17:26:49.529</parser>
       <StyleCop.CSharp.DocumentationRules>2015/05/12 17:26:49.529</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>471780074</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -111,7 +66,7 @@
     <timestamps>
       <styleCop>2015/05/12 17:26:49.529</styleCop>
       <settingsFile>2015/05/12 17:26:49.529</settingsFile>
-      <sourceFile>2015/11/30 08:26:36.000</sourceFile>
+      <sourceFile>2015/04/27 12:04:09.314</sourceFile>
       <parser>2015/05/12 17:26:49.529</parser>
       <StyleCop.CSharp.DocumentationRules>2015/05/12 17:26:49.529</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>471780074</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -155,7 +110,7 @@
     <timestamps>
       <styleCop>2015/05/12 17:26:49.529</styleCop>
       <settingsFile>2015/05/12 17:26:49.529</settingsFile>
-      <sourceFile>2015/11/30 08:26:36.000</sourceFile>
+      <sourceFile>2015/04/27 12:04:09.315</sourceFile>
       <parser>2015/05/12 17:26:49.529</parser>
       <StyleCop.CSharp.DocumentationRules>2015/05/12 17:26:49.529</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>471780074</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -300,7 +255,7 @@
     <timestamps>
       <styleCop>2015/05/12 17:26:49.529</styleCop>
       <settingsFile>2015/05/12 17:26:49.529</settingsFile>
-      <sourceFile>2015/11/30 08:26:36.000</sourceFile>
+      <sourceFile>2015/05/19 19:05:25.569</sourceFile>
       <parser>2015/05/12 17:26:49.529</parser>
       <StyleCop.CSharp.DocumentationRules>2015/05/12 17:26:49.529</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>471780074</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -346,8 +301,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
         <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
         <line>12</line>
-        <index>309</index>
-        <endIndex>346</endIndex>
+        <index>320</index>
+        <endIndex>357</endIndex>
         <startLine>12</startLine>
         <startColumn>13</startColumn>
         <endLine>12</endLine>
@@ -362,8 +317,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to Email must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>18</line>
-        <index>444</index>
-        <endIndex>448</endIndex>
+        <index>461</index>
+        <endIndex>465</endIndex>
         <startLine>18</startLine>
         <startColumn>13</startColumn>
         <endLine>18</endLine>
@@ -373,8 +328,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to UserName must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>19</line>
-        <index>471</index>
-        <endIndex>478</endIndex>
+        <index>489</index>
+        <endIndex>496</endIndex>
         <startLine>19</startLine>
         <startColumn>13</startColumn>
         <endLine>19</endLine>
@@ -414,8 +369,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _email must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>29</line>
-        <index>657</index>
-        <endIndex>662</endIndex>
+        <index>685</index>
+        <endIndex>690</endIndex>
         <startLine>29</startLine>
         <startColumn>24</startColumn>
         <endLine>29</endLine>
@@ -435,8 +390,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _email must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>32</line>
-        <index>713</index>
-        <endIndex>718</endIndex>
+        <index>744</index>
+        <endIndex>749</endIndex>
         <startLine>32</startLine>
         <startColumn>17</startColumn>
         <endLine>32</endLine>
@@ -461,8 +416,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _email must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>39</line>
-        <index>841</index>
-        <endIndex>846</endIndex>
+        <index>879</index>
+        <endIndex>884</endIndex>
         <startLine>39</startLine>
         <startColumn>24</startColumn>
         <endLine>39</endLine>
@@ -477,8 +432,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _email must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>43</line>
-        <index>909</index>
-        <endIndex>914</endIndex>
+        <index>951</index>
+        <endIndex>956</endIndex>
         <startLine>43</startLine>
         <startColumn>17</startColumn>
         <endLine>43</endLine>
@@ -551,7 +506,7 @@
     <timestamps>
       <styleCop>2015/05/12 17:26:49.529</styleCop>
       <settingsFile>2015/05/12 17:26:49.529</settingsFile>
-      <sourceFile>2015/11/30 08:26:36.000</sourceFile>
+      <sourceFile>2016/04/19 17:35:46.058</sourceFile>
       <parser>2015/05/12 17:26:49.529</parser>
       <StyleCop.CSharp.DocumentationRules>2015/05/12 17:26:49.529</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>471780074</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -592,8 +547,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to Connection must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>22</line>
-        <index>654</index>
-        <endIndex>663</endIndex>
+        <index>675</index>
+        <endIndex>684</endIndex>
         <startLine>22</startLine>
         <startColumn>13</startColumn>
         <endLine>22</endLine>
@@ -608,8 +563,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to Connection must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>27</line>
-        <index>802</index>
-        <endIndex>811</endIndex>
+        <index>828</index>
+        <endIndex>837</endIndex>
         <startLine>27</startLine>
         <startColumn>13</startColumn>
         <endLine>27</endLine>
@@ -624,8 +579,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to Dispose must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>32</line>
-        <index>889</index>
-        <endIndex>895</endIndex>
+        <index>920</index>
+        <endIndex>926</endIndex>
         <startLine>32</startLine>
         <startColumn>13</startColumn>
         <endLine>32</endLine>
@@ -655,8 +610,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to OpenClosedConnection must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>41</line>
-        <index>1372</index>
-        <endIndex>1391</endIndex>
+        <index>1412</index>
+        <endIndex>1431</endIndex>
         <startLine>41</startLine>
         <startColumn>13</startColumn>
         <endLine>41</endLine>
@@ -666,8 +621,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to Connection must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>45</line>
-        <index>1586</index>
-        <endIndex>1595</endIndex>
+        <index>1630</index>
+        <endIndex>1639</endIndex>
         <startLine>45</startLine>
         <startColumn>52</startColumn>
         <endLine>45</endLine>
@@ -677,8 +632,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
         <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
         <line>44</line>
-        <index>1456</index>
-        <endIndex>1533</endIndex>
+        <index>1499</index>
+        <endIndex>1576</endIndex>
         <startLine>44</startLine>
         <startColumn>13</startColumn>
         <endLine>44</endLine>
@@ -703,8 +658,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to OpenClosedConnection must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>76</line>
-        <index>2569</index>
-        <endIndex>2588</endIndex>
+        <index>2644</index>
+        <endIndex>2663</endIndex>
         <startLine>76</startLine>
         <startColumn>13</startColumn>
         <endLine>76</endLine>
@@ -714,8 +669,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to Connection must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>80</line>
-        <index>2763</index>
-        <endIndex>2772</endIndex>
+        <index>2842</index>
+        <endIndex>2851</endIndex>
         <startLine>80</startLine>
         <startColumn>52</startColumn>
         <endLine>80</endLine>
@@ -725,8 +680,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
         <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
         <line>79</line>
-        <index>2633</index>
-        <endIndex>2710</endIndex>
+        <index>2711</index>
+        <endIndex>2788</endIndex>
         <startLine>79</startLine>
         <startColumn>13</startColumn>
         <endLine>79</endLine>
@@ -736,8 +691,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
         <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
         <line>101</line>
-        <index>3340</index>
-        <endIndex>3362</endIndex>
+        <index>3440</index>
+        <endIndex>3462</endIndex>
         <startLine>101</startLine>
         <startColumn>13</startColumn>
         <endLine>101</endLine>
@@ -757,8 +712,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to ExecuteScalarQuery must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>110</line>
-        <index>3673</index>
-        <endIndex>3690</endIndex>
+        <index>3782</index>
+        <endIndex>3799</endIndex>
         <startLine>110</startLine>
         <startColumn>27</startColumn>
         <endLine>110</endLine>
@@ -768,8 +723,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
         <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
         <line>108</line>
-        <index>3515</index>
-        <endIndex>3627</endIndex>
+        <index>3622</index>
+        <endIndex>3734</endIndex>
         <startLine>108</startLine>
         <startColumn>13</startColumn>
         <endLine>108</endLine>
@@ -794,8 +749,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to OpenClosedConnection must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>122</line>
-        <index>4177</index>
-        <endIndex>4196</endIndex>
+        <index>4298</index>
+        <endIndex>4317</endIndex>
         <startLine>122</startLine>
         <startColumn>13</startColumn>
         <endLine>122</endLine>
@@ -805,8 +760,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to Connection must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>126</line>
-        <index>4368</index>
-        <endIndex>4377</endIndex>
+        <index>4493</index>
+        <endIndex>4502</endIndex>
         <startLine>126</startLine>
         <startColumn>52</startColumn>
         <endLine>126</endLine>
@@ -816,8 +771,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
         <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
         <line>125</line>
-        <index>4238</index>
-        <endIndex>4315</endIndex>
+        <index>4362</index>
+        <endIndex>4439</endIndex>
         <startLine>125</startLine>
         <startColumn>13</startColumn>
         <endLine>125</endLine>
@@ -827,8 +782,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
         <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
         <line>147</line>
-        <index>4949</index>
-        <endIndex>4971</endIndex>
+        <index>5095</index>
+        <endIndex>5117</endIndex>
         <startLine>147</startLine>
         <startColumn>13</startColumn>
         <endLine>147</endLine>
@@ -843,8 +798,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to Dispose must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>154</line>
-        <index>5064</index>
-        <endIndex>5070</endIndex>
+        <index>5217</index>
+        <endIndex>5223</endIndex>
         <startLine>154</startLine>
         <startColumn>13</startColumn>
         <endLine>154</endLine>
@@ -864,8 +819,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to Connection must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>164</line>
-        <index>5313</index>
-        <endIndex>5322</endIndex>
+        <index>5476</index>
+        <endIndex>5485</endIndex>
         <startLine>164</startLine>
         <startColumn>21</startColumn>
         <endLine>164</endLine>
@@ -875,8 +830,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to Connection must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>165</line>
-        <index>5353</index>
-        <endIndex>5362</endIndex>
+        <index>5517</index>
+        <endIndex>5526</endIndex>
         <startLine>165</startLine>
         <startColumn>21</startColumn>
         <endLine>165</endLine>
@@ -886,8 +841,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to Connection must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>166</line>
-        <index>5395</index>
-        <endIndex>5404</endIndex>
+        <index>5560</index>
+        <endIndex>5569</endIndex>
         <startLine>166</startLine>
         <startColumn>21</startColumn>
         <endLine>166</endLine>
@@ -897,8 +852,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to Connection must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>162</line>
-        <index>5255</index>
-        <endIndex>5264</endIndex>
+        <index>5416</index>
+        <endIndex>5425</endIndex>
         <startLine>162</startLine>
         <startColumn>21</startColumn>
         <endLine>162</endLine>
@@ -913,8 +868,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to Connection must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>175</line>
-        <index>5600</index>
-        <endIndex>5609</endIndex>
+        <index>5774</index>
+        <endIndex>5783</endIndex>
         <startLine>175</startLine>
         <startColumn>17</startColumn>
         <endLine>175</endLine>
@@ -924,8 +879,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to Connection must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>173</line>
-        <index>5526</index>
-        <endIndex>5535</endIndex>
+        <index>5698</index>
+        <endIndex>5707</endIndex>
         <startLine>173</startLine>
         <startColumn>17</startColumn>
         <endLine>173</endLine>
@@ -938,7 +893,7 @@
     <timestamps>
       <styleCop>2015/05/12 17:26:49.529</styleCop>
       <settingsFile>2015/05/12 17:26:49.529</settingsFile>
-      <sourceFile>2015/11/30 08:26:36.000</sourceFile>
+      <sourceFile>2015/04/27 12:04:09.322</sourceFile>
       <parser>2015/05/12 17:26:49.529</parser>
       <StyleCop.CSharp.DocumentationRules>2015/05/12 17:26:49.529</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>471780074</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -967,7 +922,7 @@
     <timestamps>
       <styleCop>2015/05/12 17:26:49.529</styleCop>
       <settingsFile>2015/05/12 17:26:49.529</settingsFile>
-      <sourceFile>2015/11/30 08:26:36.000</sourceFile>
+      <sourceFile>2015/04/27 12:04:09.323</sourceFile>
       <parser>2015/05/12 17:26:49.529</parser>
       <StyleCop.CSharp.DocumentationRules>2015/05/12 17:26:49.529</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>471780074</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -1398,7 +1353,7 @@
     <timestamps>
       <styleCop>2015/05/12 17:26:49.529</styleCop>
       <settingsFile>2015/05/12 17:26:49.529</settingsFile>
-      <sourceFile>2015/11/30 08:26:36.000</sourceFile>
+      <sourceFile>2015/04/27 12:04:09.324</sourceFile>
       <parser>2015/05/12 17:26:49.529</parser>
       <StyleCop.CSharp.DocumentationRules>2015/05/12 17:26:49.529</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>471780074</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -1506,7 +1461,7 @@
     <timestamps>
       <styleCop>2015/05/12 17:26:49.529</styleCop>
       <settingsFile>2015/05/12 17:26:49.529</settingsFile>
-      <sourceFile>2015/11/30 08:26:36.000</sourceFile>
+      <sourceFile>2015/06/23 14:28:22.598</sourceFile>
       <parser>2015/05/12 17:26:49.529</parser>
       <StyleCop.CSharp.DocumentationRules>2015/05/12 17:26:49.529</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>471780074</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -1635,7 +1590,7 @@
     <timestamps>
       <styleCop>2015/05/12 17:26:49.529</styleCop>
       <settingsFile>2015/05/12 17:26:49.529</settingsFile>
-      <sourceFile>2015/11/30 08:26:36.000</sourceFile>
+      <sourceFile>2015/04/27 12:04:09.327</sourceFile>
       <parser>2015/05/12 17:26:49.529</parser>
       <StyleCop.CSharp.DocumentationRules>2015/05/12 17:26:49.529</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>471780074</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -2587,7 +2542,7 @@
     <timestamps>
       <styleCop>2015/05/12 17:26:49.529</styleCop>
       <settingsFile>2015/05/12 17:26:49.529</settingsFile>
-      <sourceFile>2015/11/30 08:26:36.000</sourceFile>
+      <sourceFile>2015/09/02 18:13:59.737</sourceFile>
       <parser>2015/05/12 17:26:49.529</parser>
       <StyleCop.CSharp.DocumentationRules>2015/05/12 17:26:49.529</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>471780074</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -2643,8 +2598,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
         <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
         <line>20</line>
-        <index>594</index>
-        <endIndex>598</endIndex>
+        <index>613</index>
+        <endIndex>617</endIndex>
         <startLine>20</startLine>
         <startColumn>73</startColumn>
         <endLine>20</endLine>
@@ -2654,8 +2609,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
         <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
         <line>21</line>
-        <index>672</index>
-        <endIndex>676</endIndex>
+        <index>692</index>
+        <endIndex>696</endIndex>
         <startLine>21</startLine>
         <startColumn>73</startColumn>
         <endLine>21</endLine>
@@ -2665,8 +2620,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
         <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
         <line>22</line>
-        <index>750</index>
-        <endIndex>754</endIndex>
+        <index>771</index>
+        <endIndex>775</endIndex>
         <startLine>22</startLine>
         <startColumn>73</startColumn>
         <endLine>22</endLine>
@@ -2676,8 +2631,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
         <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
         <line>23</line>
-        <index>828</index>
-        <endIndex>832</endIndex>
+        <index>850</index>
+        <endIndex>854</endIndex>
         <startLine>23</startLine>
         <startColumn>73</startColumn>
         <endLine>23</endLine>
@@ -2687,8 +2642,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
         <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
         <line>24</line>
-        <index>906</index>
-        <endIndex>910</endIndex>
+        <index>929</index>
+        <endIndex>933</endIndex>
         <startLine>24</startLine>
         <startColumn>73</startColumn>
         <endLine>24</endLine>
@@ -2698,8 +2653,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
         <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
         <line>25</line>
-        <index>984</index>
-        <endIndex>988</endIndex>
+        <index>1008</index>
+        <endIndex>1012</endIndex>
         <startLine>25</startLine>
         <startColumn>73</startColumn>
         <endLine>25</endLine>
@@ -2709,8 +2664,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
         <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
         <line>26</line>
-        <index>1062</index>
-        <endIndex>1066</endIndex>
+        <index>1087</index>
+        <endIndex>1091</endIndex>
         <startLine>26</startLine>
         <startColumn>73</startColumn>
         <endLine>26</endLine>
@@ -2720,8 +2675,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
         <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
         <line>27</line>
-        <index>1140</index>
-        <endIndex>1144</endIndex>
+        <index>1166</index>
+        <endIndex>1170</endIndex>
         <startLine>27</startLine>
         <startColumn>73</startColumn>
         <endLine>27</endLine>
@@ -2731,8 +2686,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
         <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
         <line>28</line>
-        <index>1218</index>
-        <endIndex>1222</endIndex>
+        <index>1245</index>
+        <endIndex>1249</endIndex>
         <startLine>28</startLine>
         <startColumn>73</startColumn>
         <endLine>28</endLine>
@@ -2742,8 +2697,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
         <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
         <line>29</line>
-        <index>1296</index>
-        <endIndex>1300</endIndex>
+        <index>1324</index>
+        <endIndex>1328</endIndex>
         <startLine>29</startLine>
         <startColumn>73</startColumn>
         <endLine>29</endLine>
@@ -2753,8 +2708,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
         <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
         <line>30</line>
-        <index>1374</index>
-        <endIndex>1379</endIndex>
+        <index>1403</index>
+        <endIndex>1408</endIndex>
         <startLine>30</startLine>
         <startColumn>73</startColumn>
         <endLine>30</endLine>
@@ -2779,8 +2734,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _db must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>17</line>
-        <index>490</index>
-        <endIndex>492</endIndex>
+        <index>506</index>
+        <endIndex>508</endIndex>
         <startLine>17</startLine>
         <startColumn>13</startColumn>
         <endLine>17</endLine>
@@ -3120,8 +3075,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _db must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>47</line>
-        <index>2103</index>
-        <endIndex>2105</endIndex>
+        <index>2149</index>
+        <endIndex>2151</endIndex>
         <startLine>47</startLine>
         <startColumn>26</startColumn>
         <endLine>47</endLine>
@@ -3131,8 +3086,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to IdCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>49</line>
-        <index>2414</index>
-        <endIndex>2418</endIndex>
+        <index>2462</index>
+        <endIndex>2466</endIndex>
         <startLine>49</startLine>
         <startColumn>153</startColumn>
         <endLine>49</endLine>
@@ -3142,8 +3097,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to EmailCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>49</line>
-        <index>2421</index>
-        <endIndex>2428</endIndex>
+        <index>2469</index>
+        <endIndex>2476</endIndex>
         <startLine>49</startLine>
         <startColumn>160</startColumn>
         <endLine>49</endLine>
@@ -3153,8 +3108,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to NombreCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>49</line>
-        <index>2431</index>
-        <endIndex>2439</endIndex>
+        <index>2479</index>
+        <endIndex>2487</endIndex>
         <startLine>49</startLine>
         <startColumn>170</startColumn>
         <endLine>49</endLine>
@@ -3164,8 +3119,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to CargoCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>49</line>
-        <index>2442</index>
-        <endIndex>2449</endIndex>
+        <index>2490</index>
+        <endIndex>2497</endIndex>
         <startLine>49</startLine>
         <startColumn>181</startColumn>
         <endLine>49</endLine>
@@ -3175,8 +3130,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to DireccionCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>49</line>
-        <index>2452</index>
-        <endIndex>2463</endIndex>
+        <index>2500</index>
+        <endIndex>2511</endIndex>
         <startLine>49</startLine>
         <startColumn>191</startColumn>
         <endLine>49</endLine>
@@ -3186,8 +3141,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to TelefonoCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>49</line>
-        <index>2466</index>
-        <endIndex>2476</endIndex>
+        <index>2514</index>
+        <endIndex>2524</endIndex>
         <startLine>49</startLine>
         <startColumn>205</startColumn>
         <endLine>49</endLine>
@@ -3197,8 +3152,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to CelularCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>49</line>
-        <index>2479</index>
-        <endIndex>2488</endIndex>
+        <index>2527</index>
+        <endIndex>2536</endIndex>
         <startLine>49</startLine>
         <startColumn>218</startColumn>
         <endLine>49</endLine>
@@ -3208,8 +3163,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to ExtensionCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>49</line>
-        <index>2491</index>
-        <endIndex>2502</endIndex>
+        <index>2539</index>
+        <endIndex>2550</endIndex>
         <startLine>49</startLine>
         <startColumn>230</startColumn>
         <endLine>49</endLine>
@@ -3219,8 +3174,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to FaxCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>49</line>
-        <index>2505</index>
-        <endIndex>2510</endIndex>
+        <index>2553</index>
+        <endIndex>2558</endIndex>
         <startLine>49</startLine>
         <startColumn>244</startColumn>
         <endLine>49</endLine>
@@ -3230,8 +3185,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to EstadoCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>49</line>
-        <index>2513</index>
-        <endIndex>2521</endIndex>
+        <index>2561</index>
+        <endIndex>2569</endIndex>
         <startLine>49</startLine>
         <startColumn>252</startColumn>
         <endLine>49</endLine>
@@ -3241,8 +3196,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to TableName must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>49</line>
-        <index>2524</index>
-        <endIndex>2532</endIndex>
+        <index>2572</index>
+        <endIndex>2580</endIndex>
         <startLine>49</startLine>
         <startColumn>263</startColumn>
         <endLine>49</endLine>
@@ -3252,8 +3207,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to RolesTableName must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>50</line>
-        <index>2551</index>
-        <endIndex>2564</endIndex>
+        <index>2600</index>
+        <endIndex>2613</endIndex>
         <startLine>50</startLine>
         <startColumn>17</startColumn>
         <endLine>50</endLine>
@@ -3263,8 +3218,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to RolesUsuarioCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>50</line>
-        <index>2567</index>
-        <endIndex>2581</endIndex>
+        <index>2616</index>
+        <endIndex>2630</endIndex>
         <startLine>50</startLine>
         <startColumn>33</startColumn>
         <endLine>50</endLine>
@@ -3274,8 +3229,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to RolesRolCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>50</line>
-        <index>2584</index>
-        <endIndex>2594</endIndex>
+        <index>2633</index>
+        <endIndex>2643</endIndex>
         <startLine>50</startLine>
         <startColumn>50</startColumn>
         <endLine>50</endLine>
@@ -3285,8 +3240,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to RolTableName must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>50</line>
-        <index>2597</index>
-        <endIndex>2608</endIndex>
+        <index>2646</index>
+        <endIndex>2657</endIndex>
         <startLine>50</startLine>
         <startColumn>63</startColumn>
         <endLine>50</endLine>
@@ -3296,8 +3251,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to RolIdCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>50</line>
-        <index>2611</index>
-        <endIndex>2618</endIndex>
+        <index>2660</index>
+        <endIndex>2667</endIndex>
         <startLine>50</startLine>
         <startColumn>77</startColumn>
         <endLine>50</endLine>
@@ -3307,8 +3262,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to RolNombreCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>50</line>
-        <index>2621</index>
-        <endIndex>2632</endIndex>
+        <index>2670</index>
+        <endIndex>2681</endIndex>
         <startLine>50</startLine>
         <startColumn>87</startColumn>
         <endLine>50</endLine>
@@ -3318,8 +3273,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to RolAplicacionCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>50</line>
-        <index>2635</index>
-        <endIndex>2650</endIndex>
+        <index>2684</index>
+        <endIndex>2699</endIndex>
         <startLine>50</startLine>
         <startColumn>101</startColumn>
         <endLine>50</endLine>
@@ -3329,8 +3284,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="ClosingParenthesisMustBeSpacedCorrectly" ruleCheckId="SA1009">
         <context>Invalid spacing around the closing parenthesis.</context>
         <line>52</line>
-        <index>2816</index>
-        <endIndex>2831</endIndex>
+        <index>2867</index>
+        <endIndex>2882</endIndex>
         <startLine>52</startLine>
         <startColumn>1</startColumn>
         <endLine>52</endLine>
@@ -3345,8 +3300,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _db must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>82</line>
-        <index>3802</index>
-        <endIndex>3804</endIndex>
+        <index>3883</index>
+        <endIndex>3885</endIndex>
         <startLine>82</startLine>
         <startColumn>20</startColumn>
         <endLine>82</endLine>
@@ -3356,8 +3311,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to TableName must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>83</line>
-        <index>3856</index>
-        <endIndex>3864</endIndex>
+        <index>3938</index>
+        <endIndex>3946</endIndex>
         <startLine>83</startLine>
         <startColumn>34</startColumn>
         <endLine>83</endLine>
@@ -3367,8 +3322,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to PwdHashCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>83</line>
-        <index>3873</index>
-        <endIndex>3882</endIndex>
+        <index>3955</index>
+        <endIndex>3964</endIndex>
         <startLine>83</startLine>
         <startColumn>51</startColumn>
         <endLine>83</endLine>
@@ -3378,8 +3333,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to NombreCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>83</line>
-        <index>3889</index>
-        <endIndex>3897</endIndex>
+        <index>3971</index>
+        <endIndex>3979</endIndex>
         <startLine>83</startLine>
         <startColumn>67</startColumn>
         <endLine>83</endLine>
@@ -3389,8 +3344,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to EmailCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>83</line>
-        <index>3904</index>
-        <endIndex>3911</endIndex>
+        <index>3986</index>
+        <endIndex>3993</endIndex>
         <startLine>83</startLine>
         <startColumn>82</startColumn>
         <endLine>83</endLine>
@@ -3400,8 +3355,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to CargoCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>83</line>
-        <index>3918</index>
-        <endIndex>3925</endIndex>
+        <index>4000</index>
+        <endIndex>4007</endIndex>
         <startLine>83</startLine>
         <startColumn>96</startColumn>
         <endLine>83</endLine>
@@ -3411,8 +3366,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to DireccionCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>84</line>
-        <index>3956</index>
-        <endIndex>3967</endIndex>
+        <index>4039</index>
+        <endIndex>4050</endIndex>
         <startLine>84</startLine>
         <startColumn>23</startColumn>
         <endLine>84</endLine>
@@ -3422,8 +3377,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to TelefonoCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>84</line>
-        <index>3978</index>
-        <endIndex>3988</endIndex>
+        <index>4061</index>
+        <endIndex>4071</endIndex>
         <startLine>84</startLine>
         <startColumn>45</startColumn>
         <endLine>84</endLine>
@@ -3433,8 +3388,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to CelularCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>84</line>
-        <index>3999</index>
-        <endIndex>4008</endIndex>
+        <index>4082</index>
+        <endIndex>4091</endIndex>
         <startLine>84</startLine>
         <startColumn>66</startColumn>
         <endLine>84</endLine>
@@ -3444,8 +3399,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to ExtensionCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>84</line>
-        <index>4018</index>
-        <endIndex>4029</endIndex>
+        <index>4101</index>
+        <endIndex>4112</endIndex>
         <startLine>84</startLine>
         <startColumn>85</startColumn>
         <endLine>84</endLine>
@@ -3455,8 +3410,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to FaxCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>84</line>
-        <index>4039</index>
-        <endIndex>4044</endIndex>
+        <index>4122</index>
+        <endIndex>4127</endIndex>
         <startLine>84</startLine>
         <startColumn>106</startColumn>
         <endLine>84</endLine>
@@ -3466,8 +3421,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to EstadoCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>84</line>
-        <index>4054</index>
-        <endIndex>4062</endIndex>
+        <index>4137</index>
+        <endIndex>4145</endIndex>
         <startLine>84</startLine>
         <startColumn>121</startColumn>
         <endLine>84</endLine>
@@ -3477,8 +3432,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to IdOrganizacionCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>84</line>
-        <index>4072</index>
-        <endIndex>4088</endIndex>
+        <index>4155</index>
+        <endIndex>4171</endIndex>
         <startLine>84</startLine>
         <startColumn>139</startColumn>
         <endLine>84</endLine>
@@ -3488,8 +3443,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '+' is invalid.</context>
         <line>83</line>
-        <index>3855</index>
-        <endIndex>3855</endIndex>
+        <index>3937</index>
+        <endIndex>3937</endIndex>
         <startLine>83</startLine>
         <startColumn>33</startColumn>
         <endLine>83</endLine>
@@ -3504,8 +3459,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '+' is invalid.</context>
         <line>83</line>
-        <index>3865</index>
-        <endIndex>3865</endIndex>
+        <index>3947</index>
+        <endIndex>3947</endIndex>
         <startLine>83</startLine>
         <startColumn>43</startColumn>
         <endLine>83</endLine>
@@ -3515,8 +3470,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '+' is invalid.</context>
         <line>83</line>
-        <index>3872</index>
-        <endIndex>3872</endIndex>
+        <index>3954</index>
+        <endIndex>3954</endIndex>
         <startLine>83</startLine>
         <startColumn>50</startColumn>
         <endLine>83</endLine>
@@ -3526,8 +3481,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '+' is invalid.</context>
         <line>83</line>
-        <index>3883</index>
-        <endIndex>3883</endIndex>
+        <index>3965</index>
+        <endIndex>3965</endIndex>
         <startLine>83</startLine>
         <startColumn>61</startColumn>
         <endLine>83</endLine>
@@ -3537,8 +3492,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '+' is invalid.</context>
         <line>83</line>
-        <index>3888</index>
-        <endIndex>3888</endIndex>
+        <index>3970</index>
+        <endIndex>3970</endIndex>
         <startLine>83</startLine>
         <startColumn>66</startColumn>
         <endLine>83</endLine>
@@ -3548,8 +3503,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '+' is invalid.</context>
         <line>83</line>
-        <index>3898</index>
-        <endIndex>3898</endIndex>
+        <index>3980</index>
+        <endIndex>3980</endIndex>
         <startLine>83</startLine>
         <startColumn>76</startColumn>
         <endLine>83</endLine>
@@ -3559,8 +3514,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '+' is invalid.</context>
         <line>83</line>
-        <index>3903</index>
-        <endIndex>3903</endIndex>
+        <index>3985</index>
+        <endIndex>3985</endIndex>
         <startLine>83</startLine>
         <startColumn>81</startColumn>
         <endLine>83</endLine>
@@ -3570,8 +3525,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '+' is invalid.</context>
         <line>83</line>
-        <index>3912</index>
-        <endIndex>3912</endIndex>
+        <index>3994</index>
+        <endIndex>3994</endIndex>
         <startLine>83</startLine>
         <startColumn>90</startColumn>
         <endLine>83</endLine>
@@ -3581,8 +3536,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '+' is invalid.</context>
         <line>83</line>
-        <index>3917</index>
-        <endIndex>3917</endIndex>
+        <index>3999</index>
+        <endIndex>3999</endIndex>
         <startLine>83</startLine>
         <startColumn>95</startColumn>
         <endLine>83</endLine>
@@ -3592,8 +3547,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '+' is invalid.</context>
         <line>83</line>
-        <index>3926</index>
-        <endIndex>3926</endIndex>
+        <index>4008</index>
+        <endIndex>4008</endIndex>
         <startLine>83</startLine>
         <startColumn>104</startColumn>
         <endLine>83</endLine>
@@ -3603,8 +3558,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '?' is invalid.</context>
         <line>96</line>
-        <index>5829</index>
-        <endIndex>5829</endIndex>
+        <index>5924</index>
+        <endIndex>5924</endIndex>
         <startLine>96</startLine>
         <startColumn>85</startColumn>
         <endLine>96</endLine>
@@ -3614,8 +3569,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="CommasMustBeSpacedCorrectly" ruleCheckId="SA1001">
         <context>Invalid spacing around the comma.</context>
         <line>97</line>
-        <index>6015</index>
-        <endIndex>6015</endIndex>
+        <index>6111</index>
+        <endIndex>6111</endIndex>
         <startLine>97</startLine>
         <startColumn>103</startColumn>
         <endLine>97</endLine>
@@ -3660,8 +3615,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _db must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>107</line>
-        <index>6346</index>
-        <endIndex>6348</endIndex>
+        <index>6452</index>
+        <endIndex>6454</endIndex>
         <startLine>107</startLine>
         <startColumn>20</startColumn>
         <endLine>107</endLine>
@@ -3671,8 +3626,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to TableName must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>109</line>
-        <index>6576</index>
-        <endIndex>6584</endIndex>
+        <index>6684</index>
+        <endIndex>6692</endIndex>
         <startLine>109</startLine>
         <startColumn>17</startColumn>
         <endLine>109</endLine>
@@ -3682,8 +3637,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to IdCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>109</line>
-        <index>6587</index>
-        <endIndex>6591</endIndex>
+        <index>6695</index>
+        <endIndex>6699</endIndex>
         <startLine>109</startLine>
         <startColumn>28</startColumn>
         <endLine>109</endLine>
@@ -3693,8 +3648,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to NombreCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>109</line>
-        <index>6594</index>
-        <endIndex>6602</endIndex>
+        <index>6702</index>
+        <endIndex>6710</endIndex>
         <startLine>109</startLine>
         <startColumn>35</startColumn>
         <endLine>109</endLine>
@@ -3704,8 +3659,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to CargoCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>109</line>
-        <index>6605</index>
-        <endIndex>6612</endIndex>
+        <index>6713</index>
+        <endIndex>6720</endIndex>
         <startLine>109</startLine>
         <startColumn>46</startColumn>
         <endLine>109</endLine>
@@ -3715,8 +3670,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to DireccionCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>109</line>
-        <index>6615</index>
-        <endIndex>6626</endIndex>
+        <index>6723</index>
+        <endIndex>6734</endIndex>
         <startLine>109</startLine>
         <startColumn>56</startColumn>
         <endLine>109</endLine>
@@ -3726,8 +3681,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to TelefonoCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>109</line>
-        <index>6629</index>
-        <endIndex>6639</endIndex>
+        <index>6737</index>
+        <endIndex>6747</endIndex>
         <startLine>109</startLine>
         <startColumn>70</startColumn>
         <endLine>109</endLine>
@@ -3737,8 +3692,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to CelularCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>109</line>
-        <index>6642</index>
-        <endIndex>6651</endIndex>
+        <index>6750</index>
+        <endIndex>6759</endIndex>
         <startLine>109</startLine>
         <startColumn>83</startColumn>
         <endLine>109</endLine>
@@ -3748,8 +3703,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to ExtensionCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>109</line>
-        <index>6654</index>
-        <endIndex>6665</endIndex>
+        <index>6762</index>
+        <endIndex>6773</endIndex>
         <startLine>109</startLine>
         <startColumn>95</startColumn>
         <endLine>109</endLine>
@@ -3759,8 +3714,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to FaxCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>109</line>
-        <index>6668</index>
-        <endIndex>6673</endIndex>
+        <index>6776</index>
+        <endIndex>6781</endIndex>
         <startLine>109</startLine>
         <startColumn>109</startColumn>
         <endLine>109</endLine>
@@ -3770,8 +3725,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to EstadoCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>109</line>
-        <index>6676</index>
-        <endIndex>6684</endIndex>
+        <index>6784</index>
+        <endIndex>6792</endIndex>
         <startLine>109</startLine>
         <startColumn>117</startColumn>
         <endLine>109</endLine>
@@ -3781,8 +3736,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
         <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
         <line>106</line>
-        <index>6285</index>
-        <endIndex>6325</endIndex>
+        <index>6390</index>
+        <endIndex>6430</endIndex>
         <startLine>106</startLine>
         <startColumn>13</startColumn>
         <endLine>106</endLine>
@@ -3792,8 +3747,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="ClosingParenthesisMustBeSpacedCorrectly" ruleCheckId="SA1009">
         <context>Invalid spacing around the closing parenthesis.</context>
         <line>119</line>
-        <index>8171</index>
-        <endIndex>8186</endIndex>
+        <index>8289</index>
+        <endIndex>8304</endIndex>
         <startLine>119</startLine>
         <startColumn>1</startColumn>
         <endLine>119</endLine>
@@ -3808,8 +3763,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _db must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>126</line>
-        <index>8310</index>
-        <endIndex>8312</endIndex>
+        <index>8435</index>
+        <endIndex>8437</endIndex>
         <startLine>126</startLine>
         <startColumn>20</startColumn>
         <endLine>126</endLine>
@@ -3824,8 +3779,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to Delete must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>138</line>
-        <index>8748</index>
-        <endIndex>8753</endIndex>
+        <index>8885</index>
+        <endIndex>8890</endIndex>
         <startLine>138</startLine>
         <startColumn>20</startColumn>
         <endLine>138</endLine>
@@ -3870,8 +3825,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _db must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>157</line>
-        <index>9583</index>
-        <endIndex>9585</endIndex>
+        <index>9739</index>
+        <endIndex>9741</endIndex>
         <startLine>157</startLine>
         <startColumn>26</startColumn>
         <endLine>157</endLine>
@@ -3881,8 +3836,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to IdCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>159</line>
-        <index>9721</index>
-        <endIndex>9725</endIndex>
+        <index>9879</index>
+        <endIndex>9883</endIndex>
         <startLine>159</startLine>
         <startColumn>30</startColumn>
         <endLine>159</endLine>
@@ -3892,8 +3847,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to EmailCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>159</line>
-        <index>9728</index>
-        <endIndex>9735</endIndex>
+        <index>9886</index>
+        <endIndex>9893</endIndex>
         <startLine>159</startLine>
         <startColumn>37</startColumn>
         <endLine>159</endLine>
@@ -3903,8 +3858,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to NombreCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>159</line>
-        <index>9738</index>
-        <endIndex>9746</endIndex>
+        <index>9896</index>
+        <endIndex>9904</endIndex>
         <startLine>159</startLine>
         <startColumn>47</startColumn>
         <endLine>159</endLine>
@@ -3914,8 +3869,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to CargoCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>159</line>
-        <index>9749</index>
-        <endIndex>9756</endIndex>
+        <index>9907</index>
+        <endIndex>9914</endIndex>
         <startLine>159</startLine>
         <startColumn>58</startColumn>
         <endLine>159</endLine>
@@ -3925,8 +3880,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to DireccionCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>159</line>
-        <index>9759</index>
-        <endIndex>9770</endIndex>
+        <index>9917</index>
+        <endIndex>9928</endIndex>
         <startLine>159</startLine>
         <startColumn>68</startColumn>
         <endLine>159</endLine>
@@ -3936,8 +3891,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to TelefonoCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>159</line>
-        <index>9773</index>
-        <endIndex>9783</endIndex>
+        <index>9931</index>
+        <endIndex>9941</endIndex>
         <startLine>159</startLine>
         <startColumn>82</startColumn>
         <endLine>159</endLine>
@@ -3947,8 +3902,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to CelularCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>159</line>
-        <index>9786</index>
-        <endIndex>9795</endIndex>
+        <index>9944</index>
+        <endIndex>9953</endIndex>
         <startLine>159</startLine>
         <startColumn>95</startColumn>
         <endLine>159</endLine>
@@ -3958,8 +3913,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to ExtensionCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>159</line>
-        <index>9798</index>
-        <endIndex>9809</endIndex>
+        <index>9956</index>
+        <endIndex>9967</endIndex>
         <startLine>159</startLine>
         <startColumn>107</startColumn>
         <endLine>159</endLine>
@@ -3969,8 +3924,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to FaxCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>159</line>
-        <index>9811</index>
-        <endIndex>9816</endIndex>
+        <index>9969</index>
+        <endIndex>9974</endIndex>
         <startLine>159</startLine>
         <startColumn>120</startColumn>
         <endLine>159</endLine>
@@ -3980,8 +3935,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to EstadoCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>159</line>
-        <index>9819</index>
-        <endIndex>9827</endIndex>
+        <index>9977</index>
+        <endIndex>9985</endIndex>
         <startLine>159</startLine>
         <startColumn>128</startColumn>
         <endLine>159</endLine>
@@ -3991,8 +3946,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to TableName must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>159</line>
-        <index>9830</index>
-        <endIndex>9838</endIndex>
+        <index>9988</index>
+        <endIndex>9996</endIndex>
         <startLine>159</startLine>
         <startColumn>139</startColumn>
         <endLine>159</endLine>
@@ -4002,8 +3957,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="CommasMustBeSpacedCorrectly" ruleCheckId="SA1001">
         <context>Invalid spacing around the comma.</context>
         <line>159</line>
-        <index>9810</index>
-        <endIndex>9810</endIndex>
+        <index>9968</index>
+        <endIndex>9968</endIndex>
         <startLine>159</startLine>
         <startColumn>119</startColumn>
         <endLine>159</endLine>
@@ -4013,8 +3968,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="ClosingParenthesisMustBeSpacedCorrectly" ruleCheckId="SA1009">
         <context>Invalid spacing around the closing parenthesis.</context>
         <line>160</line>
-        <index>9841</index>
-        <endIndex>9856</endIndex>
+        <index>10000</index>
+        <endIndex>10015</endIndex>
         <startLine>160</startLine>
         <startColumn>1</startColumn>
         <endLine>160</endLine>
@@ -4029,8 +3984,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _db must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>183</line>
-        <index>10717</index>
-        <endIndex>10719</endIndex>
+        <index>10899</index>
+        <endIndex>10901</endIndex>
         <startLine>183</startLine>
         <startColumn>26</startColumn>
         <endLine>183</endLine>
@@ -4040,8 +3995,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to TableName must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>184</line>
-        <index>10768</index>
-        <endIndex>10776</endIndex>
+        <index>10951</index>
+        <endIndex>10959</endIndex>
         <startLine>184</startLine>
         <startColumn>34</startColumn>
         <endLine>184</endLine>
@@ -4051,8 +4006,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to IdCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>184</line>
-        <index>10790</index>
-        <endIndex>10794</endIndex>
+        <index>10973</index>
+        <endIndex>10977</endIndex>
         <startLine>184</startLine>
         <startColumn>56</startColumn>
         <endLine>184</endLine>
@@ -4062,8 +4017,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to IdCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>193</line>
-        <index>11158</index>
-        <endIndex>11162</endIndex>
+        <index>11350</index>
+        <endIndex>11354</endIndex>
         <startLine>193</startLine>
         <startColumn>30</startColumn>
         <endLine>193</endLine>
@@ -4073,8 +4028,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to EmailCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>194</line>
-        <index>11212</index>
-        <endIndex>11219</endIndex>
+        <index>11405</index>
+        <endIndex>11412</endIndex>
         <startLine>194</startLine>
         <startColumn>36</startColumn>
         <endLine>194</endLine>
@@ -4084,8 +4039,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to PwdHashCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>195</line>
-        <index>11268</index>
-        <endIndex>11277</endIndex>
+        <index>11462</index>
+        <endIndex>11471</endIndex>
         <startLine>195</startLine>
         <startColumn>35</startColumn>
         <endLine>195</endLine>
@@ -4095,8 +4050,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to PwdHashCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>195</line>
-        <index>11308</index>
-        <endIndex>11317</endIndex>
+        <index>11502</index>
+        <endIndex>11511</endIndex>
         <startLine>195</startLine>
         <startColumn>75</startColumn>
         <endLine>195</endLine>
@@ -4106,8 +4061,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to EstadoCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>196</line>
-        <index>11382</index>
-        <endIndex>11390</endIndex>
+        <index>11577</index>
+        <endIndex>11585</endIndex>
         <startLine>196</startLine>
         <startColumn>44</startColumn>
         <endLine>196</endLine>
@@ -4117,8 +4072,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to EmailCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>197</line>
-        <index>11443</index>
-        <endIndex>11450</endIndex>
+        <index>11639</index>
+        <endIndex>11646</endIndex>
         <startLine>197</startLine>
         <startColumn>33</startColumn>
         <endLine>197</endLine>
@@ -4128,8 +4083,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to DireccionCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>198</line>
-        <index>11501</index>
-        <endIndex>11512</endIndex>
+        <index>11698</index>
+        <endIndex>11709</endIndex>
         <startLine>198</startLine>
         <startColumn>37</startColumn>
         <endLine>198</endLine>
@@ -4139,8 +4094,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to TelefonoCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>199</line>
-        <index>11562</index>
-        <endIndex>11572</endIndex>
+        <index>11760</index>
+        <endIndex>11770</endIndex>
         <startLine>199</startLine>
         <startColumn>36</startColumn>
         <endLine>199</endLine>
@@ -4150,8 +4105,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to CelularCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>200</line>
-        <index>11621</index>
-        <endIndex>11630</endIndex>
+        <index>11820</index>
+        <endIndex>11829</endIndex>
         <startLine>200</startLine>
         <startColumn>35</startColumn>
         <endLine>200</endLine>
@@ -4161,8 +4116,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to ExtensionCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>201</line>
-        <index>11681</index>
-        <endIndex>11692</endIndex>
+        <index>11881</index>
+        <endIndex>11892</endIndex>
         <startLine>201</startLine>
         <startColumn>37</startColumn>
         <endLine>201</endLine>
@@ -4172,8 +4127,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to FaxCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>202</line>
-        <index>11737</index>
-        <endIndex>11742</endIndex>
+        <index>11938</index>
+        <endIndex>11943</endIndex>
         <startLine>202</startLine>
         <startColumn>31</startColumn>
         <endLine>202</endLine>
@@ -4183,8 +4138,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '+' is invalid.</context>
         <line>184</line>
-        <index>10767</index>
-        <endIndex>10767</endIndex>
+        <index>10950</index>
+        <endIndex>10950</endIndex>
         <startLine>184</startLine>
         <startColumn>33</startColumn>
         <endLine>184</endLine>
@@ -4199,8 +4154,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '+' is invalid.</context>
         <line>184</line>
-        <index>10777</index>
-        <endIndex>10777</endIndex>
+        <index>10960</index>
+        <endIndex>10960</endIndex>
         <startLine>184</startLine>
         <startColumn>43</startColumn>
         <endLine>184</endLine>
@@ -4210,8 +4165,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '+' is invalid.</context>
         <line>184</line>
-        <index>10789</index>
-        <endIndex>10789</endIndex>
+        <index>10972</index>
+        <endIndex>10972</endIndex>
         <startLine>184</startLine>
         <startColumn>55</startColumn>
         <endLine>184</endLine>
@@ -4221,8 +4176,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '+' is invalid.</context>
         <line>184</line>
-        <index>10795</index>
-        <endIndex>10795</endIndex>
+        <index>10978</index>
+        <endIndex>10978</endIndex>
         <startLine>184</startLine>
         <startColumn>61</startColumn>
         <endLine>184</endLine>
@@ -4262,8 +4217,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _db must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>211</line>
-        <index>11926</index>
-        <endIndex>11928</endIndex>
+        <index>12136</index>
+        <endIndex>12138</endIndex>
         <startLine>211</startLine>
         <startColumn>26</startColumn>
         <endLine>211</endLine>
@@ -4273,8 +4228,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to IdCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>213</line>
-        <index>12079</index>
-        <endIndex>12083</endIndex>
+        <index>12291</index>
+        <endIndex>12295</endIndex>
         <startLine>213</startLine>
         <startColumn>47</startColumn>
         <endLine>213</endLine>
@@ -4284,8 +4239,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to EmailCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>213</line>
-        <index>12086</index>
-        <endIndex>12093</endIndex>
+        <index>12298</index>
+        <endIndex>12305</endIndex>
         <startLine>213</startLine>
         <startColumn>54</startColumn>
         <endLine>213</endLine>
@@ -4295,8 +4250,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to NombreCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>213</line>
-        <index>12096</index>
-        <endIndex>12104</endIndex>
+        <index>12308</index>
+        <endIndex>12316</endIndex>
         <startLine>213</startLine>
         <startColumn>64</startColumn>
         <endLine>213</endLine>
@@ -4306,8 +4261,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to CargoCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>213</line>
-        <index>12107</index>
-        <endIndex>12114</endIndex>
+        <index>12319</index>
+        <endIndex>12326</endIndex>
         <startLine>213</startLine>
         <startColumn>75</startColumn>
         <endLine>213</endLine>
@@ -4317,8 +4272,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to DireccionCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>213</line>
-        <index>12117</index>
-        <endIndex>12128</endIndex>
+        <index>12329</index>
+        <endIndex>12340</endIndex>
         <startLine>213</startLine>
         <startColumn>85</startColumn>
         <endLine>213</endLine>
@@ -4328,8 +4283,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to TelefonoCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>213</line>
-        <index>12131</index>
-        <endIndex>12141</endIndex>
+        <index>12343</index>
+        <endIndex>12353</endIndex>
         <startLine>213</startLine>
         <startColumn>99</startColumn>
         <endLine>213</endLine>
@@ -4339,8 +4294,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to CelularCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>213</line>
-        <index>12144</index>
-        <endIndex>12153</endIndex>
+        <index>12356</index>
+        <endIndex>12365</endIndex>
         <startLine>213</startLine>
         <startColumn>112</startColumn>
         <endLine>213</endLine>
@@ -4350,8 +4305,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to ExtensionCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>213</line>
-        <index>12156</index>
-        <endIndex>12167</endIndex>
+        <index>12368</index>
+        <endIndex>12379</endIndex>
         <startLine>213</startLine>
         <startColumn>124</startColumn>
         <endLine>213</endLine>
@@ -4361,8 +4316,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to FaxCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>213</line>
-        <index>12169</index>
-        <endIndex>12174</endIndex>
+        <index>12381</index>
+        <endIndex>12386</endIndex>
         <startLine>213</startLine>
         <startColumn>137</startColumn>
         <endLine>213</endLine>
@@ -4372,8 +4327,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to EstadoCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>213</line>
-        <index>12177</index>
-        <endIndex>12185</endIndex>
+        <index>12389</index>
+        <endIndex>12397</endIndex>
         <startLine>213</startLine>
         <startColumn>145</startColumn>
         <endLine>213</endLine>
@@ -4383,8 +4338,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to TableName must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>213</line>
-        <index>12188</index>
-        <endIndex>12196</endIndex>
+        <index>12400</index>
+        <endIndex>12408</endIndex>
         <startLine>213</startLine>
         <startColumn>156</startColumn>
         <endLine>213</endLine>
@@ -4394,8 +4349,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="CommasMustBeSpacedCorrectly" ruleCheckId="SA1001">
         <context>Invalid spacing around the comma.</context>
         <line>213</line>
-        <index>12168</index>
-        <endIndex>12168</endIndex>
+        <index>12380</index>
+        <endIndex>12380</endIndex>
         <startLine>213</startLine>
         <startColumn>136</startColumn>
         <endLine>213</endLine>
@@ -4410,8 +4365,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _db must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>241</line>
-        <index>13204</index>
-        <endIndex>13206</endIndex>
+        <index>13444</index>
+        <endIndex>13446</endIndex>
         <startLine>241</startLine>
         <startColumn>26</startColumn>
         <endLine>241</endLine>
@@ -4421,8 +4376,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to TableName must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>242</line>
-        <index>13257</index>
-        <endIndex>13265</endIndex>
+        <index>13498</index>
+        <endIndex>13506</endIndex>
         <startLine>242</startLine>
         <startColumn>36</startColumn>
         <endLine>242</endLine>
@@ -4432,8 +4387,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to EmailCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>242</line>
-        <index>13279</index>
-        <endIndex>13286</endIndex>
+        <index>13520</index>
+        <endIndex>13527</endIndex>
         <startLine>242</startLine>
         <startColumn>58</startColumn>
         <endLine>242</endLine>
@@ -4443,8 +4398,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to IdCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>248</line>
-        <index>13598</index>
-        <endIndex>13602</endIndex>
+        <index>13845</index>
+        <endIndex>13849</endIndex>
         <startLine>248</startLine>
         <startColumn>28</startColumn>
         <endLine>248</endLine>
@@ -4454,8 +4409,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to EmailCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>249</line>
-        <index>13650</index>
-        <endIndex>13657</endIndex>
+        <index>13898</index>
+        <endIndex>13905</endIndex>
         <startLine>249</startLine>
         <startColumn>34</startColumn>
         <endLine>249</endLine>
@@ -4465,8 +4420,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to PwdHashCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>250</line>
-        <index>13704</index>
-        <endIndex>13713</endIndex>
+        <index>13953</index>
+        <endIndex>13962</endIndex>
         <startLine>250</startLine>
         <startColumn>33</startColumn>
         <endLine>250</endLine>
@@ -4476,8 +4431,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to PwdHashCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>250</line>
-        <index>13742</index>
-        <endIndex>13751</endIndex>
+        <index>13991</index>
+        <endIndex>14000</endIndex>
         <startLine>250</startLine>
         <startColumn>71</startColumn>
         <endLine>250</endLine>
@@ -4487,8 +4442,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to EstadoCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>251</line>
-        <index>13814</index>
-        <endIndex>13822</endIndex>
+        <index>14064</index>
+        <endIndex>14072</endIndex>
         <startLine>251</startLine>
         <startColumn>42</startColumn>
         <endLine>251</endLine>
@@ -4498,8 +4453,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '+' is invalid.</context>
         <line>242</line>
-        <index>13256</index>
-        <endIndex>13256</endIndex>
+        <index>13497</index>
+        <endIndex>13497</endIndex>
         <startLine>242</startLine>
         <startColumn>35</startColumn>
         <endLine>242</endLine>
@@ -4514,8 +4469,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '+' is invalid.</context>
         <line>242</line>
-        <index>13266</index>
-        <endIndex>13266</endIndex>
+        <index>13507</index>
+        <endIndex>13507</endIndex>
         <startLine>242</startLine>
         <startColumn>45</startColumn>
         <endLine>242</endLine>
@@ -4525,8 +4480,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '+' is invalid.</context>
         <line>242</line>
-        <index>13278</index>
-        <endIndex>13278</endIndex>
+        <index>13519</index>
+        <endIndex>13519</endIndex>
         <startLine>242</startLine>
         <startColumn>57</startColumn>
         <endLine>242</endLine>
@@ -4536,8 +4491,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '+' is invalid.</context>
         <line>242</line>
-        <index>13287</index>
-        <endIndex>13287</endIndex>
+        <index>13528</index>
+        <endIndex>13528</endIndex>
         <startLine>242</startLine>
         <startColumn>66</startColumn>
         <endLine>242</endLine>
@@ -4552,8 +4507,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _db must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>257</line>
-        <index>13976</index>
-        <endIndex>13978</endIndex>
+        <index>14232</index>
+        <endIndex>14234</endIndex>
         <startLine>257</startLine>
         <startColumn>32</startColumn>
         <endLine>257</endLine>
@@ -4563,8 +4518,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to PwdHashCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>258</line>
-        <index>14034</index>
-        <endIndex>14043</endIndex>
+        <index>14291</index>
+        <endIndex>14300</endIndex>
         <startLine>258</startLine>
         <startColumn>27</startColumn>
         <endLine>258</endLine>
@@ -4574,8 +4529,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to TableName must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>258</line>
-        <index>14056</index>
-        <endIndex>14064</endIndex>
+        <index>14313</index>
+        <endIndex>14321</endIndex>
         <startLine>258</startLine>
         <startColumn>49</startColumn>
         <endLine>258</endLine>
@@ -4585,8 +4540,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to IdCol must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>258</line>
-        <index>14078</index>
-        <endIndex>14082</endIndex>
+        <index>14335</index>
+        <endIndex>14339</endIndex>
         <startLine>258</startLine>
         <startColumn>71</startColumn>
         <endLine>258</endLine>
@@ -4596,8 +4551,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '+' is invalid.</context>
         <line>258</line>
-        <index>14033</index>
-        <endIndex>14033</endIndex>
+        <index>14290</index>
+        <endIndex>14290</endIndex>
         <startLine>258</startLine>
         <startColumn>26</startColumn>
         <endLine>258</endLine>
@@ -4612,8 +4567,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '+' is invalid.</context>
         <line>258</line>
-        <index>14044</index>
-        <endIndex>14044</endIndex>
+        <index>14301</index>
+        <endIndex>14301</endIndex>
         <startLine>258</startLine>
         <startColumn>37</startColumn>
         <endLine>258</endLine>
@@ -4623,8 +4578,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '+' is invalid.</context>
         <line>258</line>
-        <index>14055</index>
-        <endIndex>14055</endIndex>
+        <index>14312</index>
+        <endIndex>14312</endIndex>
         <startLine>258</startLine>
         <startColumn>48</startColumn>
         <endLine>258</endLine>
@@ -4634,8 +4589,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '+' is invalid.</context>
         <line>258</line>
-        <index>14065</index>
-        <endIndex>14065</endIndex>
+        <index>14322</index>
+        <endIndex>14322</endIndex>
         <startLine>258</startLine>
         <startColumn>58</startColumn>
         <endLine>258</endLine>
@@ -4645,8 +4600,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '+' is invalid.</context>
         <line>258</line>
-        <index>14077</index>
-        <endIndex>14077</endIndex>
+        <index>14334</index>
+        <endIndex>14334</endIndex>
         <startLine>258</startLine>
         <startColumn>70</startColumn>
         <endLine>258</endLine>
@@ -4656,8 +4611,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SymbolsMustBeSpacedCorrectly" ruleCheckId="SA1003">
         <context>The spacing around the symbol '+' is invalid.</context>
         <line>258</line>
-        <index>14083</index>
-        <endIndex>14083</endIndex>
+        <index>14340</index>
+        <endIndex>14340</endIndex>
         <startLine>258</startLine>
         <startColumn>76</startColumn>
         <endLine>258</endLine>
@@ -4675,7 +4630,7 @@
     <timestamps>
       <styleCop>2015/05/12 17:26:49.529</styleCop>
       <settingsFile>2015/05/12 17:26:49.529</settingsFile>
-      <sourceFile>2015/11/30 08:26:36.000</sourceFile>
+      <sourceFile>2015/04/27 12:04:09.328</sourceFile>
       <parser>2015/05/12 17:26:49.529</parser>
       <StyleCop.CSharp.DocumentationRules>2015/05/12 17:26:49.529</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>471780074</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -4927,7 +4882,7 @@
     <timestamps>
       <styleCop>2015/05/12 17:26:49.529</styleCop>
       <settingsFile>2015/05/12 17:26:49.529</settingsFile>
-      <sourceFile>2015/11/30 08:26:36.000</sourceFile>
+      <sourceFile>2015/07/02 16:11:07.644</sourceFile>
       <parser>2015/05/12 17:26:49.529</parser>
       <StyleCop.CSharp.DocumentationRules>2015/05/12 17:26:49.529</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>471780074</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -5068,8 +5023,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>37</line>
-        <index>1250</index>
-        <endIndex>1264</endIndex>
+        <index>1286</index>
+        <endIndex>1300</endIndex>
         <startLine>37</startLine>
         <startColumn>24</startColumn>
         <endLine>37</endLine>
@@ -5084,8 +5039,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to Database must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>45</line>
-        <index>1464</index>
-        <endIndex>1471</endIndex>
+        <index>1508</index>
+        <endIndex>1515</endIndex>
         <startLine>45</startLine>
         <startColumn>13</startColumn>
         <endLine>45</endLine>
@@ -5095,8 +5050,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>47</line>
-        <index>1498</index>
-        <endIndex>1512</endIndex>
+        <index>1544</index>
+        <endIndex>1558</endIndex>
         <startLine>47</startLine>
         <startColumn>13</startColumn>
         <endLine>47</endLine>
@@ -5106,8 +5061,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _roleRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>48</line>
-        <index>1558</index>
-        <endIndex>1572</endIndex>
+        <index>1605</index>
+        <endIndex>1619</endIndex>
         <startLine>48</startLine>
         <startColumn>13</startColumn>
         <endLine>48</endLine>
@@ -5117,8 +5072,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userRolesRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>49</line>
-        <index>1618</index>
-        <endIndex>1637</endIndex>
+        <index>1666</index>
+        <endIndex>1685</endIndex>
         <startLine>49</startLine>
         <startColumn>13</startColumn>
         <endLine>49</endLine>
@@ -5128,8 +5083,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userLoginsRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>50</line>
-        <index>1688</index>
-        <endIndex>1708</endIndex>
+        <index>1737</index>
+        <endIndex>1757</endIndex>
         <startLine>50</startLine>
         <startColumn>13</startColumn>
         <endLine>50</endLine>
@@ -5149,8 +5104,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>62</line>
-        <index>2013</index>
-        <endIndex>2027</endIndex>
+        <index>2074</index>
+        <endIndex>2088</endIndex>
         <startLine>62</startLine>
         <startColumn>13</startColumn>
         <endLine>62</endLine>
@@ -5165,8 +5120,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>71</line>
-        <index>2226</index>
-        <endIndex>2240</endIndex>
+        <index>2296</index>
+        <endIndex>2310</endIndex>
         <startLine>71</startLine>
         <startColumn>17</startColumn>
         <endLine>71</endLine>
@@ -5181,8 +5136,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>84</line>
-        <index>2551</index>
-        <endIndex>2565</endIndex>
+        <index>2634</index>
+        <endIndex>2648</endIndex>
         <startLine>84</startLine>
         <startColumn>26</startColumn>
         <endLine>84</endLine>
@@ -5197,8 +5152,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>96</line>
-        <index>2852</index>
-        <endIndex>2866</endIndex>
+        <index>2947</index>
+        <endIndex>2961</endIndex>
         <startLine>96</startLine>
         <startColumn>26</startColumn>
         <endLine>96</endLine>
@@ -5213,8 +5168,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>108</line>
-        <index>3165</index>
-        <endIndex>3179</endIndex>
+        <index>3272</index>
+        <endIndex>3286</endIndex>
         <startLine>108</startLine>
         <startColumn>26</startColumn>
         <endLine>108</endLine>
@@ -5234,8 +5189,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>124</line>
-        <index>3580</index>
-        <endIndex>3594</endIndex>
+        <index>3703</index>
+        <endIndex>3717</endIndex>
         <startLine>124</startLine>
         <startColumn>13</startColumn>
         <endLine>124</endLine>
@@ -5245,8 +5200,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SemicolonsMustBeSpacedCorrectly" ruleCheckId="SA1002">
         <context>Invalid spacing around the semicolon.</context>
         <line>122</line>
-        <index>3552</index>
-        <endIndex>3552</endIndex>
+        <index>3673</index>
+        <endIndex>3673</endIndex>
         <startLine>122</startLine>
         <startColumn>45</startColumn>
         <endLine>122</endLine>
@@ -5291,8 +5246,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userLoginsRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>184</line>
-        <index>5011</index>
-        <endIndex>5031</endIndex>
+        <index>5194</index>
+        <endIndex>5214</endIndex>
         <startLine>184</startLine>
         <startColumn>13</startColumn>
         <endLine>184</endLine>
@@ -5307,8 +5262,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userLoginsRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>196</line>
-        <index>5334</index>
-        <endIndex>5354</endIndex>
+        <index>5529</index>
+        <endIndex>5549</endIndex>
         <startLine>196</startLine>
         <startColumn>26</startColumn>
         <endLine>196</endLine>
@@ -5318,8 +5273,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>200</line>
-        <index>5456</index>
-        <endIndex>5470</endIndex>
+        <index>5655</index>
+        <endIndex>5669</endIndex>
         <startLine>200</startLine>
         <startColumn>28</startColumn>
         <endLine>200</endLine>
@@ -5334,8 +5289,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userLoginsRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>218</line>
-        <index>5927</index>
-        <endIndex>5947</endIndex>
+        <index>6144</index>
+        <endIndex>6164</endIndex>
         <startLine>218</startLine>
         <startColumn>30</startColumn>
         <endLine>218</endLine>
@@ -5350,8 +5305,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userLoginsRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>235</line>
-        <index>6365</index>
-        <endIndex>6385</endIndex>
+        <index>6599</index>
+        <endIndex>6619</endIndex>
         <startLine>235</startLine>
         <startColumn>13</startColumn>
         <endLine>235</endLine>
@@ -5366,8 +5321,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userRolesRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>253</line>
-        <index>6832</index>
-        <endIndex>6851</endIndex>
+        <index>7084</index>
+        <endIndex>7103</endIndex>
         <startLine>253</startLine>
         <startColumn>13</startColumn>
         <endLine>253</endLine>
@@ -5377,8 +5332,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _roleRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>255</line>
-        <index>6897</index>
-        <endIndex>6911</endIndex>
+        <index>7151</index>
+        <endIndex>7165</endIndex>
         <startLine>255</startLine>
         <startColumn>26</startColumn>
         <endLine>255</endLine>
@@ -5388,8 +5343,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userRolesRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>259</line>
-        <index>7014</index>
-        <endIndex>7033</endIndex>
+        <index>7272</index>
+        <endIndex>7291</endIndex>
         <startLine>259</startLine>
         <startColumn>17</startColumn>
         <endLine>259</endLine>
@@ -5399,8 +5354,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _roleRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>263</line>
-        <index>7292</index>
-        <endIndex>7306</endIndex>
+        <index>7554</index>
+        <endIndex>7568</endIndex>
         <startLine>263</startLine>
         <startColumn>47</startColumn>
         <endLine>263</endLine>
@@ -5410,8 +5365,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userRolesRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>266</line>
-        <index>7466</index>
-        <endIndex>7485</endIndex>
+        <index>7731</index>
+        <endIndex>7750</endIndex>
         <startLine>266</startLine>
         <startColumn>25</startColumn>
         <endLine>266</endLine>
@@ -5426,8 +5381,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userRolesRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>281</line>
-        <index>7856</index>
-        <endIndex>7875</endIndex>
+        <index>8136</index>
+        <endIndex>8155</endIndex>
         <startLine>281</startLine>
         <startColumn>25</startColumn>
         <endLine>281</endLine>
@@ -5442,8 +5397,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>288</line>
-        <index>8058</index>
-        <endIndex>8072</endIndex>
+        <index>8345</index>
+        <endIndex>8359</endIndex>
         <startLine>288</startLine>
         <startColumn>25</startColumn>
         <endLine>288</endLine>
@@ -5458,8 +5413,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userRolesRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>304</line>
-        <index>8493</index>
-        <endIndex>8512</endIndex>
+        <index>8796</index>
+        <endIndex>8815</endIndex>
         <startLine>304</startLine>
         <startColumn>25</startColumn>
         <endLine>304</endLine>
@@ -5474,8 +5429,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _roleRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>321</line>
-        <index>8968</index>
-        <endIndex>8982</endIndex>
+        <index>9288</index>
+        <endIndex>9302</endIndex>
         <startLine>321</startLine>
         <startColumn>26</startColumn>
         <endLine>321</endLine>
@@ -5485,8 +5440,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userRolesRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>325</line>
-        <index>9067</index>
-        <endIndex>9086</endIndex>
+        <index>9391</index>
+        <endIndex>9410</endIndex>
         <startLine>325</startLine>
         <startColumn>17</startColumn>
         <endLine>325</endLine>
@@ -5501,8 +5456,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>338</line>
-        <index>9411</index>
-        <endIndex>9425</endIndex>
+        <index>9748</index>
+        <endIndex>9762</endIndex>
         <startLine>338</startLine>
         <startColumn>32</startColumn>
         <endLine>338</endLine>
@@ -5517,8 +5472,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>350</line>
-        <index>9733</index>
-        <endIndex>9747</endIndex>
+        <index>10082</index>
+        <endIndex>10096</endIndex>
         <startLine>350</startLine>
         <startColumn>31</startColumn>
         <endLine>350</endLine>
@@ -5563,8 +5518,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to Database must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>372</line>
-        <index>10751</index>
-        <endIndex>10758</endIndex>
+        <index>11122</index>
+        <endIndex>11129</endIndex>
         <startLine>372</startLine>
         <startColumn>17</startColumn>
         <endLine>372</endLine>
@@ -5574,8 +5529,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
         <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
         <line>361</line>
-        <index>10065</index>
-        <endIndex>10176</endIndex>
+        <index>10425</index>
+        <endIndex>10536</endIndex>
         <startLine>361</startLine>
         <startColumn>13</startColumn>
         <endLine>361</endLine>
@@ -5605,8 +5560,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>396</line>
-        <index>11637</index>
-        <endIndex>11651</endIndex>
+        <index>12032</index>
+        <endIndex>12046</endIndex>
         <startLine>396</startLine>
         <startColumn>13</startColumn>
         <endLine>396</endLine>
@@ -5666,8 +5621,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>445</line>
-        <index>13023</index>
-        <endIndex>13037</endIndex>
+        <index>13467</index>
+        <endIndex>13481</endIndex>
         <startLine>445</startLine>
         <startColumn>35</startColumn>
         <endLine>445</endLine>
@@ -5722,8 +5677,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to _userRepository must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>494</line>
-        <index>14453</index>
-        <endIndex>14467</endIndex>
+        <index>14946</index>
+        <endIndex>14960</endIndex>
         <startLine>494</startLine>
         <startColumn>13</startColumn>
         <endLine>494</endLine>
@@ -5838,8 +5793,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to Dispose must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>577</line>
-        <index>16816</index>
-        <endIndex>16822</endIndex>
+        <index>17392</index>
+        <endIndex>17398</endIndex>
         <startLine>577</startLine>
         <startColumn>13</startColumn>
         <endLine>577</endLine>
@@ -5874,8 +5829,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to Database must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>587</line>
-        <index>17063</index>
-        <endIndex>17070</endIndex>
+        <index>17649</index>
+        <endIndex>17656</endIndex>
         <startLine>587</startLine>
         <startColumn>21</startColumn>
         <endLine>587</endLine>
@@ -5885,8 +5840,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to Database must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>588</line>
-        <index>17103</index>
-        <endIndex>17110</endIndex>
+        <index>17690</index>
+        <endIndex>17697</endIndex>
         <startLine>588</startLine>
         <startColumn>21</startColumn>
         <endLine>588</endLine>
@@ -5896,8 +5851,8 @@
       <violation namespace="StyleCop.CSharp.ReadabilityRules" rule="PrefixLocalCallsWithThis" ruleCheckId="SA1101">
         <context>The call to Database must begin with the 'this.' prefix to indicate that the item is a member of the class.</context>
         <line>585</line>
-        <index>17007</index>
-        <endIndex>17014</endIndex>
+        <index>17591</index>
+        <endIndex>17598</endIndex>
         <startLine>585</startLine>
         <startColumn>21</startColumn>
         <endLine>585</endLine>
@@ -5917,8 +5872,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
         <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
         <line>597</line>
-        <index>17311</index>
-        <endIndex>17348</endIndex>
+        <index>17907</index>
+        <endIndex>17944</endIndex>
         <startLine>597</startLine>
         <startColumn>13</startColumn>
         <endLine>597</endLine>
@@ -5948,8 +5903,8 @@
       <violation namespace="StyleCop.CSharp.SpacingRules" rule="SingleLineCommentsMustBeginWithSingleSpace" ruleCheckId="SA1005">
         <context>The comment must start with a single space. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
         <line>608</line>
-        <index>17650</index>
-        <endIndex>17680</endIndex>
+        <index>18257</index>
+        <endIndex>18287</endIndex>
         <startLine>608</startLine>
         <startColumn>13</startColumn>
         <endLine>608</endLine>
@@ -5967,7 +5922,7 @@
     <timestamps>
       <styleCop>2015/05/12 17:26:49.529</styleCop>
       <settingsFile>2015/05/12 17:26:49.529</settingsFile>
-      <sourceFile>2016/02/29 22:35:11.765</sourceFile>
+      <sourceFile>2016/04/19 15:32:42.185</sourceFile>
       <parser>2015/05/12 17:26:49.529</parser>
       <StyleCop.CSharp.DocumentationRules>2015/05/12 17:26:49.529</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>471780074</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -5990,7 +5945,7 @@
     <timestamps>
       <styleCop>2015/05/12 17:26:49.529</styleCop>
       <settingsFile>2015/05/12 17:26:49.529</settingsFile>
-      <sourceFile>2016/02/29 10:43:00.402</sourceFile>
+      <sourceFile>2015/04/27 12:05:12.781</sourceFile>
       <parser>2015/05/12 17:26:49.529</parser>
       <StyleCop.CSharp.DocumentationRules>2015/05/12 17:26:49.529</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>471780074</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -6019,7 +5974,7 @@
     <timestamps>
       <styleCop>2015/05/12 17:26:49.529</styleCop>
       <settingsFile>2015/05/12 17:26:49.529</settingsFile>
-      <sourceFile>2016/02/29 10:43:00.402</sourceFile>
+      <sourceFile>2015/04/27 12:05:12.792</sourceFile>
       <parser>2015/05/12 17:26:49.529</parser>
       <StyleCop.CSharp.DocumentationRules>2015/05/12 17:26:49.529</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>471780074</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -6048,7 +6003,7 @@
     <timestamps>
       <styleCop>2015/05/12 17:26:49.529</styleCop>
       <settingsFile>2015/05/12 17:26:49.529</settingsFile>
-      <sourceFile>2016/02/29 10:43:00.402</sourceFile>
+      <sourceFile>2015/04/27 12:05:12.793</sourceFile>
       <parser>2015/05/12 17:26:49.529</parser>
       <StyleCop.CSharp.DocumentationRules>2015/05/12 17:26:49.529</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>471780074</StyleCop.CSharp.DocumentationRules.FilesHashCode>

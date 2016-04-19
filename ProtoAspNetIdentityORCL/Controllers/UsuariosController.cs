@@ -111,7 +111,12 @@ namespace NSPecor.Controllers
                 return HttpNotFound();
             }
 
-            ViewBag.ID_ORGANIZACION = new SelectList(db.MUB_ORGANIZACIONES.OrderBy(a=>a.RAZON_SOCIAL), "ID_ORGANIZACION", "RAZON_SOCIAL", mub_usuarios.ID_ORGANIZACION);
+            ViewBag.ID_ORGANIZACION = new SelectList(db.MUB_ORGANIZACIONES.Select(u => new
+                                                    {
+                                                        ID_ORGANIZACION = u.ID_ORGANIZACION,
+                                                        RAZON_SOCIAL = u.RAZON_SOCIAL + " - " + u.CODIGO
+                                                    }).OrderBy(o => o.RAZON_SOCIAL)
+                                    , "ID_ORGANIZACION", "RAZON_SOCIAL", mub_usuarios.ID_ORGANIZACION);
             return View(mub_usuarios);
         }
 
@@ -126,6 +131,8 @@ namespace NSPecor.Controllers
             {
                 if (mub_usuarios.ID_ORGANIZACION.ToString() != "")
                 {
+                    mub_usuarios.EMAIL = mub_usuarios.EMAIL.ToLower();
+                    mub_usuarios.NOMBRE = System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(mub_usuarios.NOMBRE);
                     db.Entry(mub_usuarios).State = EntityState.Modified;
                     db.Entry(mub_usuarios).Property(x => x.PWDHASH).IsModified=false;   //EXCLUIR PASSWORD
                     db.SaveChanges();
@@ -134,7 +141,12 @@ namespace NSPecor.Controllers
                 else
                 {
                     ViewBag.MsjValidaOrganizacion = "seleccione una organización";
-                    ViewBag.ID_ORGANIZACION = new SelectList(db.MUB_ORGANIZACIONES.OrderBy(a => a.RAZON_SOCIAL), "ID_ORGANIZACION", "RAZON_SOCIAL", mub_usuarios.ID_ORGANIZACION);
+                    ViewBag.ID_ORGANIZACION = new SelectList(db.MUB_ORGANIZACIONES.Select(u => new
+                    {
+                        ID_ORGANIZACION = u.ID_ORGANIZACION,
+                        RAZON_SOCIAL = u.RAZON_SOCIAL + " - " + u.CODIGO
+                    }).OrderBy(o => o.RAZON_SOCIAL)
+                                            , "ID_ORGANIZACION", "RAZON_SOCIAL",mub_usuarios.ID_ORGANIZACION);
                 }
             }
             return View(mub_usuarios);

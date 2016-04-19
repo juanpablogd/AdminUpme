@@ -19,6 +19,7 @@ namespace NSPecor.Models
         public string DESCRIPCION { get; set; }
         public string URL { get; set; }
         public string TAGS { get; set; }
+		public string ZIP { get; set; }
         public decimal FK_ID_TIPO_SRV { get; set; }
         public decimal FK_ID_ESTADO { get; set; }
         public Nullable<decimal> FK_ID_USUARIO { get; set; }
