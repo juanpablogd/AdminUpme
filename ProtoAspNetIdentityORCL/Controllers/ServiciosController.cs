@@ -144,7 +144,8 @@ namespace NSPecor.Controllers
                 tipo = c.GEOB_TIPO_SRV.NOMBRE,
                 estandar = c.GEOB_TIPO_SRV.ESTANDARD,
                 tags = c.TAGS,
-                estado = c.FK_ID_ESTADO
+                estado = c.FK_ID_ESTADO,
+                zip=c.ZIP
             });
 
             return Json(ResultadoQuery, JsonRequestBehavior.AllowGet);

@@ -32,7 +32,7 @@
   </Exception>
   <Exception Keyword="CA0063" Kind="Engine" TreatAsWarning="True">
    <Type>Microsoft.FxCop.Sdk.FxCopException</Type>
-   <ExceptionMessage>* Failed to load rule set file 'C:\Users\Administrador\Documents\GitHub\AdminUpme\AspNet.Identity.OracleProvider\..\CodeAnalysis.ruleset' or one of its dependent rule set files. </ExceptionMessage>
+   <ExceptionMessage>* Failed to load rule set file 'C:\Users\Administrador\Documents\GitHub\AdminUpme\AdminUpme\AspNet.Identity.OracleProvider\..\CodeAnalysis.ruleset' or one of its dependent rule set files. </ExceptionMessage>
   </Exception>
  </Exceptions>
 </FxCopReport>
